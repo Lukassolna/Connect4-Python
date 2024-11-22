@@ -4,7 +4,7 @@ import random
 # simple random class ( will be useful for statistics later)
 class RandomAgent:
     def __init__(self):
-        pass
+        self.name="Random"
         
     def get_move(self, board, event=None):
         # Return random column (0-6)

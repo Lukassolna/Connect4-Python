@@ -10,6 +10,7 @@ import math
 class MinimaxAgent:
     # default depth of 5, but can be changed
     def __init__(self, depth=5):
+        self.name= "Minimax"
         self.depth = depth
         self.ROW_COUNT = 6
         self.COLUMN_COUNT = 7

@@ -3,6 +3,7 @@ import math
 #Player controlled class
 class PlayerAgent:
     def __init__(self):
+        self.name="Player"
         self.SQUARESIZE = 100
     
     def get_move(self, board, event):
