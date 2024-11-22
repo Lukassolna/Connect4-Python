@@ -99,7 +99,7 @@ def start_game(agent1, agent2, use_gui=True):
                 if event.type == pygame.QUIT:
                     sys.exit()
 
-        # set current agent and current piece (for printing)
+        # set current agent and current piece 
         current_agent = agent1 if turn == 0 else agent2
         current_piece = 1 if turn == 0 else 2
         
@@ -127,7 +127,7 @@ def start_game(agent1, agent2, use_gui=True):
             # if its a winning move
             if winning_move(board, current_piece, ROW_COUNT, COLUMN_COUNT):
                 #print winner
-                print(f"Player {current_piece} , agent_name:{current_agent} wins!")
+                print(f"Player {current_piece} , :{current_agent.name} wins!")
                 # show it visually
                 if use_gui:
                     color = (255,0,0) if current_piece == 1 else (255,255,0)
@@ -151,6 +151,6 @@ def start_game(agent1, agent2, use_gui=True):
 
 # main program
 if __name__ == "__main__":
-    first_player = PlayerAgent()
-    second_player = MinimaxAgent()
+    first_player = MinimaxAgent()
+    second_player = RandomAgent()
     start_game(first_player, second_player,True)
