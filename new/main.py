@@ -5,7 +5,7 @@ import random
 import sys
 from player_agent import PlayerAgent
 from mimimax_agent import MinimaxAgent
-from testing.random_agent import RandomAgent
+from random_agent import RandomAgent
 BLUE = (0,0,255)
 BLACK = (0,0,0)
 RED = (255,0,0)
@@ -104,7 +104,7 @@ def start_game(agent1, agent2, use_gui=True):
         current_piece = 1 if turn == 0 else 2
         
         # player needs to be handled seperately, since we need input
-        if current_agent.__class__.__name__ == 'Player':
+        if current_agent.__class__.__name__ == 'PlayerAgent':
             col = None
             while col is None:
                 for event in pygame.event.get():
@@ -151,6 +151,6 @@ def start_game(agent1, agent2, use_gui=True):
 
 # main program
 if __name__ == "__main__":
-    first_player = Player()
-    second_player = RandomAgent()
+    first_player = PlayerAgent()
+    second_player = MinimaxAgent()
     start_game(first_player, second_player,True)
