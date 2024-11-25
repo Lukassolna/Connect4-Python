@@ -2,9 +2,9 @@ import math
 
 #Player controlled class
 class PlayerAgent:
-    def __init__(self):
+    def __init__(self, squaresize):
         self.name="Player"
-        self.SQUARESIZE = 100
+        self.SQUARESIZE = squaresize
     
     def get_move(self, board, event):
         posx = event.pos[0]
