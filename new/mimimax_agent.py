@@ -9,8 +9,8 @@ import math
 
 class MinimaxAgent:
     # default depth of 5, but can be changed
-    def __init__(self, depth=5):
-        self.name= "Minimax"
+    def __init__(self, depth=5, name="Minimax"):
+        self.name= name
         self.depth = depth
         self.ROW_COUNT = 6
         self.COLUMN_COUNT = 7
@@ -29,7 +29,7 @@ class MinimaxAgent:
             score += 2
 
         if window.count(opp_piece) == 3 and window.count(0) == 1:
-            score -= 4
+            score -= 10 #prev value 4
 
         return score
 
@@ -122,9 +122,9 @@ class MinimaxAgent:
             # if its a end node, check who won
             if is_terminal:
                 if self.winning_move(board, 2):
-                    return (None, 100000000000000)
+                    return (None, 101* pow(10,depth))
                 elif self.winning_move(board, 1):
-                    return (None, -10000000000000)
+                    return (None, -101* pow(10,depth))
                 else:
                     return (None, 0)
             else:
