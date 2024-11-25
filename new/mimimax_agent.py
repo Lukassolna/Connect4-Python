@@ -9,12 +9,12 @@ import math
 
 class MinimaxAgent:
     # default depth of 5, but can be changed
-    def __init__(self, depth=5, name="Minimax"):
+    def __init__(self,rows,cols,win_len, depth=5, name="Minimax"):
         self.name= name
         self.depth = depth
-        self.ROW_COUNT = 6
-        self.COLUMN_COUNT = 7
-        self.WINDOW_LENGTH = 4
+        self.ROW_COUNT = rows
+        self.COLUMN_COUNT = cols
+        self.WINDOW_LENGTH = win_len
     
     # evaluate a window. A window is a all straight lines ( horizantal, vertical and diagonal)
     def evaluate_window(self, window, piece):

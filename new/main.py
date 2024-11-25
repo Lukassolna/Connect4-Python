@@ -10,9 +10,10 @@ BLUE = (0,0,255)
 BLACK = (0,0,0)
 RED = (255,0,0)
 YELLOW = (255,255,0)
-ROW_COUNT = 6
-COLUMN_COUNT = 7
+ROW_COUNT = 7
+COLUMN_COUNT = 12
 SQUARESIZE = 100
+WIN_COUNT = 4
 RADIUS = int(SQUARESIZE/2 - 5)
     
 
@@ -154,13 +155,16 @@ def start_game(agent1, agent2, use_gui=True):
         if game_over and use_gui:
             pygame.time.wait(3000)
 
+
 # main program
 if __name__ == "__main__":
-    first_player = MinimaxAgent(depth=3)
-    second_player = MinimaxAgent(depth = 4)
+    minimax_player1 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, depth = 3)
+    minimax_player2 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, depth = 3)
+    random_player = RandomAgent(COLUMN_COUNT)
+    user_player = PlayerAgent(SQUARESIZE)
     wins = []
     for i in range(10):
-        wins.append(start_game(first_player, second_player, True))
+        wins.append(start_game(random_player, user_player, True))
 
     wins.sort()
     print (wins)
