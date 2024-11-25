@@ -81,7 +81,8 @@ def start_game(agent1, agent2, use_gui=True):
     board = create_board(ROW_COUNT, COLUMN_COUNT)
     game_over = False
     turn = random.randint(0, 1)
-    
+    max_count = ROW_COUNT * COLUMN_COUNT
+    count =1
     if use_gui:
         pygame.init()
         width = COLUMN_COUNT * SQUARESIZE
@@ -90,9 +91,11 @@ def start_game(agent1, agent2, use_gui=True):
         screen = pygame.display.set_mode(size)
         draw_board(board, screen, COLUMN_COUNT, ROW_COUNT, SQUARESIZE, RADIUS, height)
         myfont = pygame.font.SysFont("monospace", 75)
-    
     while not game_over:
-
+        if count == max_count:
+            print("DRAW")
+            return 10
+        count += 1
         # check if game is over
         if use_gui:
             for event in pygame.event.get():
@@ -137,6 +140,7 @@ def start_game(agent1, agent2, use_gui=True):
                 
                 # set game_over to True in order to finish our main game loop.
                 game_over = True
+                return current_piece
 
             # after the piece has been placed, show it visually 
             if use_gui:
@@ -152,6 +156,13 @@ def start_game(agent1, agent2, use_gui=True):
 
 # main program
 if __name__ == "__main__":
-    first_player = MinimaxAgent()
-    second_player = PlayerAgent()
-    start_game(first_player, second_player,True)
+    first_player = MinimaxAgent(depth=3)
+    second_player = MinimaxAgent(depth = 4)
+    wins = []
+    for i in range(10):
+        wins.append(start_game(first_player, second_player, True))
+
+    wins.sort()
+    print (wins)
+    print(wins.count(1))
+    print(wins.count(2))
