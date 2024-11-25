@@ -102,6 +102,7 @@ def start_game(agent1, agent2, use_gui=True):
         # set current agent and current piece 
         current_agent = agent1 if turn == 0 else agent2
         current_piece = 1 if turn == 0 else 2
+        current_color = RED if turn == 0 else YELLOW 
         
         # player needs to be handled seperately, since we need input
         if current_agent.__class__.__name__ == 'PlayerAgent':
@@ -111,7 +112,7 @@ def start_game(agent1, agent2, use_gui=True):
                     if event.type == pygame.MOUSEMOTION:
                         pygame.draw.rect(screen, BLACK, (0,0, width, SQUARESIZE))
                         posx = event.pos[0]
-                        pygame.draw.circle(screen, RED, (posx, int(SQUARESIZE/2)), RADIUS)
+                        pygame.draw.circle(screen, current_color, (posx, int(SQUARESIZE/2)), RADIUS)
                         pygame.display.update()
                     if event.type == pygame.MOUSEBUTTONDOWN:
                         col = current_agent.get_move(board, event)
@@ -152,5 +153,5 @@ def start_game(agent1, agent2, use_gui=True):
 # main program
 if __name__ == "__main__":
     first_player = MinimaxAgent()
-    second_player = RandomAgent()
+    second_player = PlayerAgent()
     start_game(first_player, second_player,True)
