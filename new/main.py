@@ -10,8 +10,8 @@ BLUE = (0,0,255)
 BLACK = (0,0,0)
 RED = (255,0,0)
 YELLOW = (255,255,0)
-ROW_COUNT = 7
-COLUMN_COUNT = 12
+ROW_COUNT = 6
+COLUMN_COUNT = 8
 SQUARESIZE = 100
 WIN_COUNT = 4
 RADIUS = int(SQUARESIZE/2 - 5)
@@ -122,7 +122,7 @@ def start_game(agent1, agent2, use_gui=True):
                         col = current_agent.get_move(board, event)
         # if its not a player, use the agent interface. They all share find_move()
         else:
-            col = current_agent.find_move(board)
+            col = current_agent.find_move(board, current_piece)
         
         # now we have a column, so lets find out which row to place it
         if is_valid_location(board, col, ROW_COUNT):
@@ -141,7 +141,6 @@ def start_game(agent1, agent2, use_gui=True):
                 
                 # set game_over to True in order to finish our main game loop.
                 game_over = True
-                return current_piece
 
             # after the piece has been placed, show it visually 
             if use_gui:
@@ -153,18 +152,19 @@ def start_game(agent1, agent2, use_gui=True):
 
         # if the game is over, we want to wait a while in order for the user to have time to see who won
         if game_over and use_gui:
-            pygame.time.wait(3000)
+            pygame.time.wait(5000)
+            return current_piece
 
 
 # main program
 if __name__ == "__main__":
-    minimax_player1 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, depth = 3)
-    minimax_player2 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, depth = 3)
+    minimax_player1 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, 3, "lesssmart")
+    minimax_player2 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, 5, "smarter")
     random_player = RandomAgent(COLUMN_COUNT)
     user_player = PlayerAgent(SQUARESIZE)
     wins = []
     for i in range(10):
-        wins.append(start_game(random_player, user_player, True))
+        wins.append(start_game(minimax_player1, user_player, True))
 
     wins.sort()
     print (wins)

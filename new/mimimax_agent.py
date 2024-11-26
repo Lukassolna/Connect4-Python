@@ -113,22 +113,22 @@ class MinimaxAgent:
 
     # the main minimax logic. Lets look through it
     # I think it alternates between maximizingPlayer and else, until alpha and beta are equal.
-    def minimax(self, board, depth, alpha, beta, maximizingPlayer):
-        #
+    def minimax(self, board, depth, alpha, beta, maximizingPlayer, piece):
+        opp_piece = 1 if piece == 2 else 2
         valid_locations = self.get_valid_locations(board)
         is_terminal = self.is_terminal_node(board)
         if depth == 0 or is_terminal:
 
             # if its a end node, check who won
             if is_terminal:
-                if self.winning_move(board, 2):
-                    return (None, 101* pow(10,depth))
-                elif self.winning_move(board, 1):
-                    return (None, -101* pow(10,depth))
+                if self.winning_move(board, piece):
+                    return (None, 1000000 * pow(10,depth))
+                elif self.winning_move(board, opp_piece):
+                    return (None, -1000000 * pow(10,depth))
                 else:
                     return (None, 0)
             else:
-                return (None, self.score_position(board, 2))
+                return (None, self.score_position(board, piece))
 
         if maximizingPlayer:
             value = float('-inf')
@@ -136,8 +136,8 @@ class MinimaxAgent:
             for col in valid_locations:
                 row = self.get_next_open_row(board, col)
                 b_copy = board.copy()
-                self.drop_piece(b_copy, row, col, 2)
-                new_score = self.minimax(b_copy, depth-1, alpha, beta, False)[1]
+                self.drop_piece(b_copy, row, col, piece)
+                new_score = self.minimax(b_copy, depth-1, alpha, beta, False, piece)[1]
                 if new_score > value:
                     value = new_score
                     column = col
@@ -152,8 +152,8 @@ class MinimaxAgent:
             for col in valid_locations:
                 row = self.get_next_open_row(board, col)
                 b_copy = board.copy()
-                self.drop_piece(b_copy, row, col, 1)
-                new_score = self.minimax(b_copy, depth-1, alpha, beta, True)[1]
+                self.drop_piece(b_copy, row, col, opp_piece)
+                new_score = self.minimax(b_copy, depth-1, alpha, beta, True, piece)[1]
                 if new_score < value:
                     value = new_score
                     column = col
@@ -205,6 +205,6 @@ class MinimaxAgent:
 
     # find_move
     #the main function
-    def find_move(self, board):
-        col, _ = self.minimax(board, self.depth, float('-inf'), float('inf'), True)
+    def find_move(self, board, piece):
+        col, _ = self.minimax(board, self.depth, float('-inf'), float('inf'), True, piece)
         return col
