@@ -212,7 +212,7 @@ if __name__ == "__main__":
         else:
             random_wins += 1
     
-        if i % 100  == 0 and i !=0:
+        if i % 1000  == 0 and i !=0:
            
             print(f"After {i} games - Mr.Q: {mr_q_wins/(1000):.1%}, Random: {random_wins/(1000):.1%}, Draws: {draws/(1000):.1%}")
             random_wins=0
