@@ -4,9 +4,9 @@ import sys
 class Qlearning:
     def __init__(self,piece):
         
-        self.total_states_in_q_table=0
-        self.piece = piece  # Added this to store which piece we are (1 or 2)
-        self.name="Mr.Q"
+        self.total_states_in_q_table = 0
+        self.piece = piece
+        self.name = "Mr.Q"
         self.COLUMN_COUNT = 7
         self.ROW_COUNT = 6 
         self.WINDOW_LENGTH = 4
