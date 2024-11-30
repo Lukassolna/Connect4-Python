@@ -10,8 +10,9 @@ class Qlearning:
         self.COLUMN_COUNT = 7
         self.ROW_COUNT = 6 
         self.WINDOW_LENGTH = 4
-        self.alpha = 0.1
-        self.gamma = 0.98
+        self.alpha = 0.5  
+        self.gamma = 0.5  
+        self.epsilon = 0.05 # 5% random choises
         self.q_table = {}
     def save(self, filename='C:/Users/lukas/Downloads/q_agent.pkl'):
         print("saving the trained model please wait")
@@ -134,18 +135,24 @@ class Qlearning:
     
     def find_move(self, board, piece):
         grid = board
-        state = self.grid_to_key(grid, True)  # True because it our turn
+        state = self.grid_to_key(grid, True)
         
         if state not in self.q_table:
             self.q_table[state] = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0}
 
         valid_moves = self.get_valid_locations(grid)
-        q_values = {move: self.q_table[state][move] for move in valid_moves}
-        if all(value == 0 for value in q_values.values()):
+        
+        # Epsilon-greedy strategy
+        if np.random.random() < self.epsilon:
+            # Exploration: choose random move
             column_to_place = np.random.choice(valid_moves)
         else:
-            column_to_place = max(q_values, key=q_values.get)
-            
+            # Exploitation: choose best move
+            q_values = {move: self.q_table[state][move] for move in valid_moves}
+            if all(value == 0 for value in q_values.values()):
+                column_to_place = np.random.choice(valid_moves)
+            else:
+                column_to_place = max(q_values, key=q_values.get)
         row = self.get_next_open_row(board, column_to_place)
         b_copy = board.copy()
         self.drop_piece(b_copy, row, column_to_place, piece)
