@@ -6,12 +6,13 @@ import sys
 from player_agent import PlayerAgent
 from mimimax_agent import MinimaxAgent
 from random_agent import RandomAgent
+from q import Qlearning
 BLUE = (0,0,255)
 BLACK = (0,0,0)
 RED = (255,0,0)
 YELLOW = (255,255,0)
 ROW_COUNT = 6
-COLUMN_COUNT = 8
+COLUMN_COUNT = 7
 SQUARESIZE = 100
 WIN_COUNT = 4
 RADIUS = int(SQUARESIZE/2 - 5)
@@ -79,6 +80,16 @@ def draw_board(board, screen, COLUMN_COUNT, ROW_COUNT, SQUARESIZE, RADIUS, heigh
     pygame.display.update()
 
 def start_game(agent1, agent2, use_gui=True):
+
+    # flag to know if we are running q agent or not
+    q_agent = None
+    if hasattr(agent1, 'name') and agent1.name == "Mr.Q":
+        q_agent = agent1
+    elif hasattr(agent2, 'name') and agent2.name == "Mr.Q":
+        q_agent = agent2
+
+    
+    
     board = create_board(ROW_COUNT, COLUMN_COUNT)
     game_over = False
     turn = random.randint(0, 1)
@@ -94,7 +105,7 @@ def start_game(agent1, agent2, use_gui=True):
         myfont = pygame.font.SysFont("monospace", 75)
     while not game_over:
         if count == max_count:
-            print("DRAW")
+            #print("DRAW")
             return 10
         count += 1
         # check if game is over
@@ -128,24 +139,39 @@ def start_game(agent1, agent2, use_gui=True):
         if is_valid_location(board, col, ROW_COUNT):
             row = get_next_open_row(board, col, ROW_COUNT)
             drop_piece(board, row, col, current_piece) # place the piece on the known row and column in our board
-
-            # if its a winning move
-            if winning_move(board, current_piece, ROW_COUNT, COLUMN_COUNT):
-                #print winner
-                print(f"Player {current_piece} , :{current_agent.name} wins!")
-                # show it visually
-                if use_gui:
-                    color = (255,0,0) if current_piece == 1 else (255,255,0)
-                    label = myfont.render(f"Player {current_piece} wins!", 1, color)
-                    screen.blit(label, (40,10))
-                
-                # set game_over to True in order to finish our main game loop.
-                game_over = True
-
             # after the piece has been placed, show it visually 
             if use_gui:
                 draw_board(board, screen, COLUMN_COUNT, ROW_COUNT, SQUARESIZE, RADIUS, height)
                 pygame.time.wait(500)  # Add delay to visualize moves
+            # if its a winning move
+            if winning_move(board, current_piece, ROW_COUNT, COLUMN_COUNT):
+                # If opponent won, update Q-learner with negative reward
+                if q_agent and current_agent != q_agent:
+                    q_agent.update_after_opponent_move(board, True, current_piece)
+                if use_gui:
+                    color = (255,0,0) if current_piece == 1 else (255,255,0)
+                    label = myfont.render(f"Player {current_agent.name} wins!", 1, color)
+                    screen.blit(label, (40,10))
+                    pygame.display.update()
+                    pygame.time.wait(3000)
+                    pygame.quit()
+                 # set game_over to True in order to finish our main game loop.
+                
+                game_over = True
+                return current_agent.name
+                
+                
+
+                
+            
+            # If it's not a winning move and this was opponent's move, update Q-learner
+            if q_agent and current_agent != q_agent:
+                q_agent.update_after_opponent_move(board, False, current_piece)
+            
+                
+               
+
+            
 
             # not sure what this does, probably switch whose turn it is but seems like a weird way to do it
             turn = (turn + 1) % 2
@@ -153,20 +179,42 @@ def start_game(agent1, agent2, use_gui=True):
         # if the game is over, we want to wait a while in order for the user to have time to see who won
         if game_over and use_gui:
             pygame.time.wait(5000)
-            return current_piece
+           
 
 
 # main program
 if __name__ == "__main__":
-    minimax_player1 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, 3, "lesssmart")
-    minimax_player2 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, 5, "smarter")
+    minimax_player1 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, 1, "lesssmart")
+    minimax_player2 = MinimaxAgent(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, 2, "smarter")
     random_player = RandomAgent(COLUMN_COUNT)
     user_player = PlayerAgent(SQUARESIZE)
-    wins = []
-    for i in range(10):
-        wins.append(start_game(minimax_player1, user_player, True))
+    q_learner = Qlearning(piece=2)  # Right now this only works if q_learner goes second i think?? 
+    # we need to fix this piece thing
 
-    wins.sort()
-    print (wins)
-    print(wins.count(1))
-    print(wins.count(2))
+    #q_learner.load()
+    
+    board = create_board(ROW_COUNT, COLUMN_COUNT)
+    
+   
+    mr_q_wins = 0
+    random_wins = 0
+    draws = 0
+    num_games = 1000000
+
+    for i in range(num_games):
+        #print(i)
+        winner = start_game(random_player,q_learner, False)
+        #print(winner)
+        if winner == 'Mr.Q':
+            mr_q_wins += 1
+        elif winner == 10:
+            draws += 1
+        else:
+            random_wins += 1
+    
+        if i % 100  == 0 and i !=0:
+           
+            print(f"After {i} games - Mr.Q: {mr_q_wins/(1000):.1%}, Random: {random_wins/(1000):.1%}, Draws: {draws/(1000):.1%}")
+            random_wins=0
+            mr_q_wins=0
+            draws=0 
