@@ -12,8 +12,13 @@ class Qlearning:
         self.WINDOW_LENGTH = 4
         self.alpha = 0.5  
         self.gamma = 0.5  
-        self.epsilon = 0.05 # 5% random choises
+        self.initial_epsilon = 1  # Starting epsilon value
+        self.epsilon = self.initial_epsilon  # Current epsilon value
+        self.epsilon_decay = 0.999999  # Decay rate
         self.q_table = {}
+    def decay_epsilon(self):
+        """Apply decay to epsilon after each iteration"""
+        self.epsilon *= self.epsilon_decay
     def save(self, filename='C:/Users/lukas/Downloads/q_agent.pkl'):
         print("saving the trained model please wait")
         print(f"Number of states in Q-table: {len(self.q_table)}")
@@ -142,7 +147,7 @@ class Qlearning:
 
         valid_moves = self.get_valid_locations(grid)
         
-        # Epsilon-greedy strategy
+        # Epsilon-greedy strategy with decaying epsilon
         if np.random.random() < self.epsilon:
             # Exploration: choose random move
             column_to_place = np.random.choice(valid_moves)
@@ -153,6 +158,10 @@ class Qlearning:
                 column_to_place = np.random.choice(valid_moves)
             else:
                 column_to_place = max(q_values, key=q_values.get)
+
+        # Apply epsilon decay after making a move
+        self.decay_epsilon()
+        
         row = self.get_next_open_row(board, column_to_place)
         b_copy = board.copy()
         self.drop_piece(b_copy, row, column_to_place, piece)
@@ -160,7 +169,7 @@ class Qlearning:
         self.last_state = state
         self.last_action = column_to_place
 
-        next_state = self.grid_to_key(b_copy, False)  # False because it will be opponents turn
+        next_state = self.grid_to_key(b_copy, False)
         
         if next_state not in self.q_table:
             self.q_table[next_state] = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0}

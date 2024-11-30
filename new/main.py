@@ -213,8 +213,8 @@ if __name__ == "__main__":
             random_wins += 1
     
         if i % 1000  == 0 and i !=0:
-           
-            print(f"After {i} games - Mr.Q: {mr_q_wins/(1000):.1%}, Random: {random_wins/(1000):.1%}, Draws: {draws/(1000):.1%}")
+        
+            print(f"After {i} games - Mr.Q: {mr_q_wins/(1000):.1%}, Random: {random_wins/(1000):.1%}, Draws: {draws/(1000):.1%} , epsilon {q_learner.epsilon}")
             random_wins=0
             mr_q_wins=0
             draws=0 

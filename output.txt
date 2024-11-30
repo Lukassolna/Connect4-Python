@@ -1,375 +1,1002 @@
+[Running] python -u "c:\Users\lukas\OneDrive\Documents\MAIN AI PROJECT\Connect4-Python\new\main.py"
 pygame 2.5.2 (SDL 2.28.3, Python 3.12.0)
 Hello from the pygame community. https://www.pygame.org/contribute.html
-After 1000 games - Mr.Q: 57.8%, Random: 40.7%, Draws: 1.6%
-After 2000 games - Mr.Q: 58.4%, Random: 38.5%, Draws: 3.1%
-After 3000 games - Mr.Q: 56.6%, Random: 41.4%, Draws: 2.0%
-After 4000 games - Mr.Q: 64.1%, Random: 34.8%, Draws: 1.1%
-After 5000 games - Mr.Q: 62.9%, Random: 35.6%, Draws: 1.5%
-After 6000 games - Mr.Q: 63.1%, Random: 35.2%, Draws: 1.7%
-After 7000 games - Mr.Q: 63.2%, Random: 34.7%, Draws: 2.1%
-After 8000 games - Mr.Q: 64.8%, Random: 33.7%, Draws: 1.5%
-After 9000 games - Mr.Q: 67.2%, Random: 31.7%, Draws: 1.1%
-After 10000 games - Mr.Q: 65.3%, Random: 33.0%, Draws: 1.7%
-After 11000 games - Mr.Q: 65.2%, Random: 32.3%, Draws: 2.5%
-After 12000 games - Mr.Q: 64.9%, Random: 33.4%, Draws: 1.7%
-After 13000 games - Mr.Q: 67.3%, Random: 31.3%, Draws: 1.4%
-After 14000 games - Mr.Q: 64.0%, Random: 34.0%, Draws: 2.0%
-After 15000 games - Mr.Q: 66.5%, Random: 32.3%, Draws: 1.2%
-After 16000 games - Mr.Q: 65.9%, Random: 31.9%, Draws: 2.2%
-After 17000 games - Mr.Q: 68.1%, Random: 30.0%, Draws: 1.9%
-After 18000 games - Mr.Q: 65.0%, Random: 33.6%, Draws: 1.4%
-After 19000 games - Mr.Q: 69.3%, Random: 29.0%, Draws: 1.7%
-After 20000 games - Mr.Q: 64.0%, Random: 34.5%, Draws: 1.5%
-After 21000 games - Mr.Q: 67.7%, Random: 30.4%, Draws: 1.9%
-After 22000 games - Mr.Q: 68.3%, Random: 29.5%, Draws: 2.2%
-After 23000 games - Mr.Q: 66.0%, Random: 32.7%, Draws: 1.3%
-After 24000 games - Mr.Q: 65.1%, Random: 33.0%, Draws: 1.9%
-After 25000 games - Mr.Q: 69.7%, Random: 28.9%, Draws: 1.4%
-After 26000 games - Mr.Q: 69.8%, Random: 28.7%, Draws: 1.5%
-After 27000 games - Mr.Q: 68.1%, Random: 30.5%, Draws: 1.4%
-After 28000 games - Mr.Q: 65.9%, Random: 32.6%, Draws: 1.5%
-After 29000 games - Mr.Q: 66.6%, Random: 31.2%, Draws: 2.2%
-After 30000 games - Mr.Q: 69.7%, Random: 29.5%, Draws: 0.8%
-After 31000 games - Mr.Q: 69.3%, Random: 29.4%, Draws: 1.3%
-After 32000 games - Mr.Q: 70.5%, Random: 27.6%, Draws: 1.9%
-After 33000 games - Mr.Q: 70.4%, Random: 27.8%, Draws: 1.8%
-After 34000 games - Mr.Q: 69.5%, Random: 28.8%, Draws: 1.7%
-After 35000 games - Mr.Q: 68.6%, Random: 29.8%, Draws: 1.6%
-After 36000 games - Mr.Q: 69.7%, Random: 28.8%, Draws: 1.5%
-After 37000 games - Mr.Q: 69.7%, Random: 29.1%, Draws: 1.2%
-After 38000 games - Mr.Q: 67.8%, Random: 30.4%, Draws: 1.8%
-After 39000 games - Mr.Q: 68.6%, Random: 30.1%, Draws: 1.3%
-After 40000 games - Mr.Q: 72.6%, Random: 25.8%, Draws: 1.6%
-After 41000 games - Mr.Q: 69.3%, Random: 28.4%, Draws: 2.3%
-After 42000 games - Mr.Q: 71.8%, Random: 26.9%, Draws: 1.3%
-After 43000 games - Mr.Q: 71.1%, Random: 27.8%, Draws: 1.1%
-After 44000 games - Mr.Q: 69.7%, Random: 29.0%, Draws: 1.3%
-After 45000 games - Mr.Q: 73.0%, Random: 25.9%, Draws: 1.1%
-After 46000 games - Mr.Q: 70.5%, Random: 28.3%, Draws: 1.2%
-After 47000 games - Mr.Q: 71.9%, Random: 27.2%, Draws: 0.9%
-After 48000 games - Mr.Q: 71.1%, Random: 28.1%, Draws: 0.8%
-After 49000 games - Mr.Q: 72.1%, Random: 26.7%, Draws: 1.2%
-After 50000 games - Mr.Q: 72.0%, Random: 27.2%, Draws: 0.8%
-After 51000 games - Mr.Q: 72.7%, Random: 26.3%, Draws: 1.0%
-After 52000 games - Mr.Q: 73.5%, Random: 25.4%, Draws: 1.1%
-After 53000 games - Mr.Q: 71.2%, Random: 27.4%, Draws: 1.4%
-After 54000 games - Mr.Q: 73.3%, Random: 25.1%, Draws: 1.6%
-After 55000 games - Mr.Q: 71.6%, Random: 27.4%, Draws: 1.0%
-After 56000 games - Mr.Q: 74.7%, Random: 24.1%, Draws: 1.2%
-After 57000 games - Mr.Q: 75.1%, Random: 24.1%, Draws: 0.8%
-After 58000 games - Mr.Q: 70.6%, Random: 27.6%, Draws: 1.8%
-After 59000 games - Mr.Q: 74.9%, Random: 24.4%, Draws: 0.7%
-After 60000 games - Mr.Q: 73.6%, Random: 25.1%, Draws: 1.3%
-After 61000 games - Mr.Q: 75.4%, Random: 23.6%, Draws: 1.0%
-After 62000 games - Mr.Q: 74.1%, Random: 24.4%, Draws: 1.5%
-After 63000 games - Mr.Q: 74.7%, Random: 23.7%, Draws: 1.6%
-After 64000 games - Mr.Q: 76.2%, Random: 22.8%, Draws: 1.0%
-After 65000 games - Mr.Q: 76.2%, Random: 22.9%, Draws: 0.9%
-After 66000 games - Mr.Q: 75.9%, Random: 22.6%, Draws: 1.5%
-After 67000 games - Mr.Q: 74.2%, Random: 24.9%, Draws: 0.9%
-After 68000 games - Mr.Q: 75.3%, Random: 23.5%, Draws: 1.2%
-After 69000 games - Mr.Q: 73.9%, Random: 25.0%, Draws: 1.1%
-After 70000 games - Mr.Q: 75.4%, Random: 23.5%, Draws: 1.1%
-After 71000 games - Mr.Q: 73.0%, Random: 25.4%, Draws: 1.6%
-After 72000 games - Mr.Q: 75.2%, Random: 22.9%, Draws: 1.9%
-After 73000 games - Mr.Q: 71.2%, Random: 27.2%, Draws: 1.6%
-After 74000 games - Mr.Q: 75.6%, Random: 23.4%, Draws: 1.0%
-After 75000 games - Mr.Q: 76.6%, Random: 22.6%, Draws: 0.8%
-After 76000 games - Mr.Q: 74.9%, Random: 24.2%, Draws: 0.9%
-After 77000 games - Mr.Q: 77.0%, Random: 22.0%, Draws: 1.0%
-After 78000 games - Mr.Q: 73.9%, Random: 24.8%, Draws: 1.3%
-After 79000 games - Mr.Q: 76.0%, Random: 22.6%, Draws: 1.4%
-After 80000 games - Mr.Q: 75.3%, Random: 22.7%, Draws: 2.0%
-After 81000 games - Mr.Q: 74.4%, Random: 25.0%, Draws: 0.6%
-After 82000 games - Mr.Q: 76.4%, Random: 22.9%, Draws: 0.7%
-After 83000 games - Mr.Q: 75.2%, Random: 23.5%, Draws: 1.3%
-After 84000 games - Mr.Q: 74.1%, Random: 24.7%, Draws: 1.2%
-After 85000 games - Mr.Q: 75.2%, Random: 23.4%, Draws: 1.4%
-After 86000 games - Mr.Q: 78.7%, Random: 20.2%, Draws: 1.1%
-After 87000 games - Mr.Q: 77.0%, Random: 21.0%, Draws: 2.0%
-After 88000 games - Mr.Q: 77.7%, Random: 21.3%, Draws: 1.0%
-After 89000 games - Mr.Q: 73.7%, Random: 24.9%, Draws: 1.4%
-After 90000 games - Mr.Q: 75.9%, Random: 22.9%, Draws: 1.2%
-After 91000 games - Mr.Q: 76.8%, Random: 22.1%, Draws: 1.1%
-After 92000 games - Mr.Q: 74.6%, Random: 24.6%, Draws: 0.8%
-After 93000 games - Mr.Q: 78.3%, Random: 20.6%, Draws: 1.1%
-After 94000 games - Mr.Q: 77.2%, Random: 22.1%, Draws: 0.7%
-After 95000 games - Mr.Q: 78.6%, Random: 20.6%, Draws: 0.8%
-After 96000 games - Mr.Q: 76.7%, Random: 22.1%, Draws: 1.2%
-After 97000 games - Mr.Q: 77.2%, Random: 22.2%, Draws: 0.6%
-After 98000 games - Mr.Q: 77.4%, Random: 21.4%, Draws: 1.2%
-After 99000 games - Mr.Q: 79.1%, Random: 19.7%, Draws: 1.2%
-After 100000 games - Mr.Q: 75.9%, Random: 23.4%, Draws: 0.7%
-After 101000 games - Mr.Q: 78.4%, Random: 20.7%, Draws: 0.9%
-After 102000 games - Mr.Q: 77.2%, Random: 21.5%, Draws: 1.3%
-After 103000 games - Mr.Q: 77.8%, Random: 21.1%, Draws: 1.1%
-After 104000 games - Mr.Q: 76.8%, Random: 21.5%, Draws: 1.7%
-After 105000 games - Mr.Q: 77.1%, Random: 21.6%, Draws: 1.3%
-After 106000 games - Mr.Q: 77.3%, Random: 21.9%, Draws: 0.8%
-After 107000 games - Mr.Q: 75.3%, Random: 24.0%, Draws: 0.7%
-After 108000 games - Mr.Q: 77.4%, Random: 21.5%, Draws: 1.1%
-After 109000 games - Mr.Q: 79.7%, Random: 19.2%, Draws: 1.1%
-After 110000 games - Mr.Q: 76.3%, Random: 22.4%, Draws: 1.3%
-After 111000 games - Mr.Q: 77.7%, Random: 21.4%, Draws: 0.9%
-After 112000 games - Mr.Q: 76.4%, Random: 22.0%, Draws: 1.6%
-After 113000 games - Mr.Q: 76.3%, Random: 22.3%, Draws: 1.4%
-After 114000 games - Mr.Q: 77.6%, Random: 21.4%, Draws: 1.0%
-After 115000 games - Mr.Q: 76.4%, Random: 22.7%, Draws: 0.9%
-After 116000 games - Mr.Q: 77.4%, Random: 21.2%, Draws: 1.4%
-After 117000 games - Mr.Q: 78.8%, Random: 20.5%, Draws: 0.7%
-After 118000 games - Mr.Q: 79.2%, Random: 19.5%, Draws: 1.3%
-After 119000 games - Mr.Q: 79.5%, Random: 18.9%, Draws: 1.6%
-After 120000 games - Mr.Q: 77.5%, Random: 21.3%, Draws: 1.2%
-After 121000 games - Mr.Q: 78.8%, Random: 20.1%, Draws: 1.1%
-After 122000 games - Mr.Q: 79.6%, Random: 19.0%, Draws: 1.4%
-After 123000 games - Mr.Q: 78.9%, Random: 20.4%, Draws: 0.7%
-After 124000 games - Mr.Q: 79.5%, Random: 19.6%, Draws: 0.9%
-After 125000 games - Mr.Q: 78.5%, Random: 20.4%, Draws: 1.1%
-After 126000 games - Mr.Q: 77.8%, Random: 21.3%, Draws: 0.9%
-After 127000 games - Mr.Q: 80.7%, Random: 18.7%, Draws: 0.6%
-After 128000 games - Mr.Q: 75.7%, Random: 22.8%, Draws: 1.5%
-After 129000 games - Mr.Q: 79.1%, Random: 20.0%, Draws: 0.9%
-After 130000 games - Mr.Q: 79.5%, Random: 19.5%, Draws: 1.0%
-After 131000 games - Mr.Q: 77.3%, Random: 21.3%, Draws: 1.4%
-After 132000 games - Mr.Q: 75.2%, Random: 23.6%, Draws: 1.2%
-After 133000 games - Mr.Q: 77.1%, Random: 21.9%, Draws: 1.0%
-After 134000 games - Mr.Q: 79.7%, Random: 19.1%, Draws: 1.2%
-After 135000 games - Mr.Q: 76.9%, Random: 21.9%, Draws: 1.2%
-After 136000 games - Mr.Q: 80.5%, Random: 18.6%, Draws: 0.9%
-After 137000 games - Mr.Q: 78.7%, Random: 19.6%, Draws: 1.7%
-After 138000 games - Mr.Q: 77.3%, Random: 21.8%, Draws: 0.9%
-After 139000 games - Mr.Q: 77.4%, Random: 21.3%, Draws: 1.3%
-After 140000 games - Mr.Q: 77.7%, Random: 21.7%, Draws: 0.6%
-After 141000 games - Mr.Q: 79.0%, Random: 19.9%, Draws: 1.1%
-After 142000 games - Mr.Q: 76.8%, Random: 22.3%, Draws: 0.9%
-After 143000 games - Mr.Q: 79.0%, Random: 20.2%, Draws: 0.8%
-After 144000 games - Mr.Q: 77.4%, Random: 21.6%, Draws: 1.0%
-After 145000 games - Mr.Q: 77.8%, Random: 21.0%, Draws: 1.2%
-After 146000 games - Mr.Q: 77.2%, Random: 21.8%, Draws: 1.0%
-After 147000 games - Mr.Q: 78.5%, Random: 20.6%, Draws: 0.9%
-After 148000 games - Mr.Q: 82.2%, Random: 16.8%, Draws: 1.0%
-After 149000 games - Mr.Q: 79.3%, Random: 19.5%, Draws: 1.2%
-After 150000 games - Mr.Q: 76.9%, Random: 22.7%, Draws: 0.4%
-After 151000 games - Mr.Q: 77.5%, Random: 21.6%, Draws: 0.9%
-After 152000 games - Mr.Q: 78.8%, Random: 19.7%, Draws: 1.5%
-After 153000 games - Mr.Q: 77.5%, Random: 21.4%, Draws: 1.1%
-After 154000 games - Mr.Q: 75.3%, Random: 23.4%, Draws: 1.3%
-After 155000 games - Mr.Q: 78.0%, Random: 21.0%, Draws: 1.0%
-After 156000 games - Mr.Q: 81.5%, Random: 17.8%, Draws: 0.7%
-After 157000 games - Mr.Q: 81.1%, Random: 17.9%, Draws: 1.0%
-After 158000 games - Mr.Q: 78.0%, Random: 20.7%, Draws: 1.3%
-After 159000 games - Mr.Q: 77.7%, Random: 20.9%, Draws: 1.4%
-After 160000 games - Mr.Q: 81.1%, Random: 18.1%, Draws: 0.8%
-After 161000 games - Mr.Q: 78.4%, Random: 20.3%, Draws: 1.3%
-After 162000 games - Mr.Q: 79.0%, Random: 19.9%, Draws: 1.1%
-After 163000 games - Mr.Q: 78.5%, Random: 20.1%, Draws: 1.4%
-After 164000 games - Mr.Q: 79.9%, Random: 19.0%, Draws: 1.1%
-After 165000 games - Mr.Q: 79.8%, Random: 19.3%, Draws: 0.9%
-After 166000 games - Mr.Q: 80.1%, Random: 18.4%, Draws: 1.5%
-After 167000 games - Mr.Q: 81.2%, Random: 17.4%, Draws: 1.4%
-After 168000 games - Mr.Q: 79.5%, Random: 19.1%, Draws: 1.4%
-After 169000 games - Mr.Q: 80.4%, Random: 18.8%, Draws: 0.8%
-After 170000 games - Mr.Q: 79.2%, Random: 19.8%, Draws: 1.0%
-After 171000 games - Mr.Q: 80.1%, Random: 19.0%, Draws: 0.9%
-After 172000 games - Mr.Q: 80.2%, Random: 18.7%, Draws: 1.1%
-After 173000 games - Mr.Q: 80.1%, Random: 18.9%, Draws: 1.0%
-After 174000 games - Mr.Q: 80.2%, Random: 19.0%, Draws: 0.8%
-After 175000 games - Mr.Q: 80.9%, Random: 18.3%, Draws: 0.8%
-After 176000 games - Mr.Q: 79.7%, Random: 19.0%, Draws: 1.3%
-After 177000 games - Mr.Q: 75.8%, Random: 23.7%, Draws: 0.5%
-After 178000 games - Mr.Q: 79.3%, Random: 20.3%, Draws: 0.4%
-After 179000 games - Mr.Q: 82.4%, Random: 16.8%, Draws: 0.8%
-After 180000 games - Mr.Q: 81.7%, Random: 17.5%, Draws: 0.8%
-After 181000 games - Mr.Q: 78.7%, Random: 20.2%, Draws: 1.1%
-After 182000 games - Mr.Q: 81.6%, Random: 17.3%, Draws: 1.1%
-After 183000 games - Mr.Q: 78.9%, Random: 20.7%, Draws: 0.4%
-After 184000 games - Mr.Q: 79.8%, Random: 19.1%, Draws: 1.1%
-After 185000 games - Mr.Q: 79.5%, Random: 19.7%, Draws: 0.8%
-After 186000 games - Mr.Q: 81.3%, Random: 17.9%, Draws: 0.8%
-After 187000 games - Mr.Q: 79.3%, Random: 20.3%, Draws: 0.4%
-After 188000 games - Mr.Q: 82.0%, Random: 16.8%, Draws: 1.2%
-After 189000 games - Mr.Q: 79.7%, Random: 19.1%, Draws: 1.2%
-After 190000 games - Mr.Q: 81.4%, Random: 17.7%, Draws: 0.9%
-After 191000 games - Mr.Q: 79.2%, Random: 19.7%, Draws: 1.1%
-After 192000 games - Mr.Q: 82.3%, Random: 16.8%, Draws: 0.9%
-After 193000 games - Mr.Q: 79.6%, Random: 19.3%, Draws: 1.1%
-After 194000 games - Mr.Q: 80.6%, Random: 18.2%, Draws: 1.2%
-After 195000 games - Mr.Q: 78.1%, Random: 20.9%, Draws: 1.0%
-After 196000 games - Mr.Q: 80.5%, Random: 18.6%, Draws: 0.9%
-After 197000 games - Mr.Q: 81.1%, Random: 17.8%, Draws: 1.1%
-After 198000 games - Mr.Q: 81.6%, Random: 17.4%, Draws: 1.0%
-After 199000 games - Mr.Q: 81.4%, Random: 17.4%, Draws: 1.2%
-After 200000 games - Mr.Q: 81.2%, Random: 18.0%, Draws: 0.8%
-After 201000 games - Mr.Q: 84.5%, Random: 14.5%, Draws: 1.0%
-After 202000 games - Mr.Q: 80.6%, Random: 18.9%, Draws: 0.5%
-After 203000 games - Mr.Q: 83.2%, Random: 15.8%, Draws: 1.0%
-After 204000 games - Mr.Q: 80.4%, Random: 18.6%, Draws: 1.0%
-After 205000 games - Mr.Q: 82.1%, Random: 17.4%, Draws: 0.5%
-After 206000 games - Mr.Q: 80.7%, Random: 18.3%, Draws: 1.0%
-After 207000 games - Mr.Q: 81.7%, Random: 17.4%, Draws: 0.9%
-After 208000 games - Mr.Q: 80.5%, Random: 18.2%, Draws: 1.3%
-After 209000 games - Mr.Q: 80.7%, Random: 18.3%, Draws: 1.0%
-After 210000 games - Mr.Q: 79.5%, Random: 19.3%, Draws: 1.2%
-After 211000 games - Mr.Q: 78.7%, Random: 20.4%, Draws: 0.9%
-After 212000 games - Mr.Q: 79.1%, Random: 20.2%, Draws: 0.7%
-After 213000 games - Mr.Q: 80.7%, Random: 18.8%, Draws: 0.5%
-After 214000 games - Mr.Q: 81.0%, Random: 17.6%, Draws: 1.4%
-After 215000 games - Mr.Q: 81.5%, Random: 17.6%, Draws: 0.9%
-After 216000 games - Mr.Q: 81.6%, Random: 17.5%, Draws: 0.9%
-After 217000 games - Mr.Q: 81.2%, Random: 18.4%, Draws: 0.4%
-After 218000 games - Mr.Q: 80.1%, Random: 18.6%, Draws: 1.3%
-After 219000 games - Mr.Q: 80.1%, Random: 19.1%, Draws: 0.8%
-After 220000 games - Mr.Q: 81.5%, Random: 17.6%, Draws: 0.9%
-After 221000 games - Mr.Q: 81.5%, Random: 17.3%, Draws: 1.2%
-After 222000 games - Mr.Q: 82.2%, Random: 16.9%, Draws: 0.9%
-After 223000 games - Mr.Q: 83.3%, Random: 15.8%, Draws: 0.9%
-After 224000 games - Mr.Q: 81.0%, Random: 18.0%, Draws: 1.0%
-After 225000 games - Mr.Q: 81.8%, Random: 17.2%, Draws: 1.0%
-After 226000 games - Mr.Q: 83.2%, Random: 16.3%, Draws: 0.5%
-After 227000 games - Mr.Q: 81.3%, Random: 17.4%, Draws: 1.3%
-After 228000 games - Mr.Q: 81.8%, Random: 17.4%, Draws: 0.8%
-After 229000 games - Mr.Q: 83.4%, Random: 15.5%, Draws: 1.1%
-After 230000 games - Mr.Q: 80.1%, Random: 18.7%, Draws: 1.2%
-After 231000 games - Mr.Q: 81.6%, Random: 18.0%, Draws: 0.4%
-After 232000 games - Mr.Q: 82.6%, Random: 15.7%, Draws: 1.7%
-After 233000 games - Mr.Q: 80.9%, Random: 18.3%, Draws: 0.8%
-After 234000 games - Mr.Q: 81.0%, Random: 17.6%, Draws: 1.4%
-After 235000 games - Mr.Q: 82.9%, Random: 16.6%, Draws: 0.5%
-After 236000 games - Mr.Q: 81.6%, Random: 17.4%, Draws: 1.0%
-After 237000 games - Mr.Q: 82.4%, Random: 16.6%, Draws: 1.0%
-After 238000 games - Mr.Q: 81.5%, Random: 18.0%, Draws: 0.5%
-After 239000 games - Mr.Q: 81.0%, Random: 17.6%, Draws: 1.4%
-After 240000 games - Mr.Q: 81.5%, Random: 17.8%, Draws: 0.7%
-After 241000 games - Mr.Q: 82.6%, Random: 17.0%, Draws: 0.4%
-After 242000 games - Mr.Q: 83.5%, Random: 16.0%, Draws: 0.5%
-After 243000 games - Mr.Q: 80.5%, Random: 18.6%, Draws: 0.9%
-After 244000 games - Mr.Q: 82.7%, Random: 16.1%, Draws: 1.2%
-After 245000 games - Mr.Q: 84.9%, Random: 14.2%, Draws: 0.9%
-After 246000 games - Mr.Q: 80.2%, Random: 18.4%, Draws: 1.4%
-After 247000 games - Mr.Q: 80.8%, Random: 17.8%, Draws: 1.4%
-After 248000 games - Mr.Q: 79.7%, Random: 19.3%, Draws: 1.0%
-After 249000 games - Mr.Q: 81.7%, Random: 17.8%, Draws: 0.5%
-After 250000 games - Mr.Q: 81.1%, Random: 18.0%, Draws: 0.9%
-After 251000 games - Mr.Q: 82.8%, Random: 16.5%, Draws: 0.7%
-After 252000 games - Mr.Q: 84.4%, Random: 14.8%, Draws: 0.8%
-After 253000 games - Mr.Q: 83.7%, Random: 15.1%, Draws: 1.2%
-After 254000 games - Mr.Q: 81.5%, Random: 17.5%, Draws: 1.0%
-After 255000 games - Mr.Q: 82.7%, Random: 16.7%, Draws: 0.6%
-After 256000 games - Mr.Q: 82.7%, Random: 16.8%, Draws: 0.5%
-After 257000 games - Mr.Q: 81.4%, Random: 17.9%, Draws: 0.7%
-After 258000 games - Mr.Q: 81.8%, Random: 17.2%, Draws: 1.0%
-After 259000 games - Mr.Q: 81.9%, Random: 17.0%, Draws: 1.1%
-After 260000 games - Mr.Q: 83.0%, Random: 16.2%, Draws: 0.8%
-After 261000 games - Mr.Q: 81.4%, Random: 18.1%, Draws: 0.5%
-After 262000 games - Mr.Q: 81.0%, Random: 18.0%, Draws: 1.0%
-After 263000 games - Mr.Q: 82.6%, Random: 16.7%, Draws: 0.7%
-After 264000 games - Mr.Q: 80.3%, Random: 18.8%, Draws: 0.9%
-After 265000 games - Mr.Q: 82.2%, Random: 16.9%, Draws: 0.9%
-After 266000 games - Mr.Q: 80.0%, Random: 18.8%, Draws: 1.2%
-After 267000 games - Mr.Q: 83.2%, Random: 16.1%, Draws: 0.7%
-After 268000 games - Mr.Q: 81.3%, Random: 17.8%, Draws: 0.9%
-After 269000 games - Mr.Q: 82.4%, Random: 16.9%, Draws: 0.7%
-After 270000 games - Mr.Q: 81.0%, Random: 17.4%, Draws: 1.6%
-After 271000 games - Mr.Q: 83.1%, Random: 15.8%, Draws: 1.1%
-After 272000 games - Mr.Q: 81.3%, Random: 18.1%, Draws: 0.6%
-After 273000 games - Mr.Q: 83.0%, Random: 16.2%, Draws: 0.8%
-After 274000 games - Mr.Q: 80.5%, Random: 18.8%, Draws: 0.7%
-After 275000 games - Mr.Q: 83.9%, Random: 15.7%, Draws: 0.4%
-After 276000 games - Mr.Q: 81.5%, Random: 17.2%, Draws: 1.3%
-After 277000 games - Mr.Q: 81.9%, Random: 17.7%, Draws: 0.4%
-After 278000 games - Mr.Q: 82.1%, Random: 16.8%, Draws: 1.1%
-After 279000 games - Mr.Q: 81.8%, Random: 17.3%, Draws: 0.9%
-After 280000 games - Mr.Q: 81.4%, Random: 17.7%, Draws: 0.9%
-After 281000 games - Mr.Q: 80.2%, Random: 18.7%, Draws: 1.1%
-After 282000 games - Mr.Q: 81.4%, Random: 17.6%, Draws: 1.0%
-After 283000 games - Mr.Q: 82.1%, Random: 17.1%, Draws: 0.8%
-After 284000 games - Mr.Q: 82.0%, Random: 17.1%, Draws: 0.9%
-After 285000 games - Mr.Q: 82.8%, Random: 16.8%, Draws: 0.4%
-After 286000 games - Mr.Q: 83.3%, Random: 16.4%, Draws: 0.3%
-After 287000 games - Mr.Q: 83.9%, Random: 14.6%, Draws: 1.5%
-After 288000 games - Mr.Q: 82.9%, Random: 16.2%, Draws: 0.9%
-After 289000 games - Mr.Q: 85.0%, Random: 14.3%, Draws: 0.7%
-After 290000 games - Mr.Q: 82.1%, Random: 16.9%, Draws: 1.0%
-After 291000 games - Mr.Q: 81.5%, Random: 17.3%, Draws: 1.2%
-After 292000 games - Mr.Q: 84.8%, Random: 14.5%, Draws: 0.7%
-After 293000 games - Mr.Q: 82.2%, Random: 17.0%, Draws: 0.8%
-After 294000 games - Mr.Q: 84.9%, Random: 14.7%, Draws: 0.4%
-After 295000 games - Mr.Q: 81.8%, Random: 17.7%, Draws: 0.5%
-After 296000 games - Mr.Q: 82.9%, Random: 16.3%, Draws: 0.8%
-After 297000 games - Mr.Q: 83.7%, Random: 15.0%, Draws: 1.3%
-After 298000 games - Mr.Q: 82.3%, Random: 17.1%, Draws: 0.6%
-After 299000 games - Mr.Q: 84.8%, Random: 14.3%, Draws: 0.9%
-After 300000 games - Mr.Q: 80.9%, Random: 17.8%, Draws: 1.3%
-After 301000 games - Mr.Q: 83.6%, Random: 15.8%, Draws: 0.6%
-After 302000 games - Mr.Q: 83.0%, Random: 16.1%, Draws: 0.9%
-After 303000 games - Mr.Q: 80.8%, Random: 18.3%, Draws: 0.9%
-After 304000 games - Mr.Q: 84.9%, Random: 14.5%, Draws: 0.6%
-After 305000 games - Mr.Q: 82.9%, Random: 15.7%, Draws: 1.4%
-After 306000 games - Mr.Q: 82.5%, Random: 16.5%, Draws: 1.0%
-After 307000 games - Mr.Q: 82.4%, Random: 17.0%, Draws: 0.6%
-After 308000 games - Mr.Q: 82.8%, Random: 16.2%, Draws: 1.0%
-After 309000 games - Mr.Q: 82.7%, Random: 16.7%, Draws: 0.6%
-After 310000 games - Mr.Q: 82.8%, Random: 16.2%, Draws: 1.0%
-After 311000 games - Mr.Q: 83.5%, Random: 15.8%, Draws: 0.7%
-After 312000 games - Mr.Q: 80.6%, Random: 18.5%, Draws: 0.9%
-After 313000 games - Mr.Q: 81.8%, Random: 17.1%, Draws: 1.1%
-After 314000 games - Mr.Q: 83.4%, Random: 16.0%, Draws: 0.6%
-After 315000 games - Mr.Q: 85.0%, Random: 14.2%, Draws: 0.8%
-After 316000 games - Mr.Q: 82.7%, Random: 16.2%, Draws: 1.1%
-After 317000 games - Mr.Q: 83.0%, Random: 16.1%, Draws: 0.9%
-After 318000 games - Mr.Q: 83.6%, Random: 15.8%, Draws: 0.6%
-After 319000 games - Mr.Q: 83.9%, Random: 15.1%, Draws: 1.0%
-After 320000 games - Mr.Q: 82.0%, Random: 17.4%, Draws: 0.6%
-After 321000 games - Mr.Q: 83.1%, Random: 15.7%, Draws: 1.2%
-After 322000 games - Mr.Q: 83.3%, Random: 15.5%, Draws: 1.2%
-After 323000 games - Mr.Q: 83.8%, Random: 15.6%, Draws: 0.6%
-After 324000 games - Mr.Q: 81.9%, Random: 17.3%, Draws: 0.8%
-After 325000 games - Mr.Q: 83.6%, Random: 15.8%, Draws: 0.6%
-After 326000 games - Mr.Q: 82.4%, Random: 16.9%, Draws: 0.7%
-After 327000 games - Mr.Q: 83.1%, Random: 16.2%, Draws: 0.7%
-After 328000 games - Mr.Q: 82.9%, Random: 16.5%, Draws: 0.6%
-After 329000 games - Mr.Q: 81.6%, Random: 17.9%, Draws: 0.5%
-After 330000 games - Mr.Q: 83.7%, Random: 15.9%, Draws: 0.4%
-After 331000 games - Mr.Q: 80.9%, Random: 18.0%, Draws: 1.1%
-After 332000 games - Mr.Q: 81.6%, Random: 17.1%, Draws: 1.3%
-After 333000 games - Mr.Q: 84.1%, Random: 15.2%, Draws: 0.7%
-After 334000 games - Mr.Q: 83.4%, Random: 15.3%, Draws: 1.3%
-After 335000 games - Mr.Q: 83.4%, Random: 15.9%, Draws: 0.7%
-After 336000 games - Mr.Q: 80.1%, Random: 18.7%, Draws: 1.2%
-After 337000 games - Mr.Q: 81.5%, Random: 17.5%, Draws: 1.0%
-After 338000 games - Mr.Q: 81.6%, Random: 17.5%, Draws: 0.9%
-After 339000 games - Mr.Q: 83.4%, Random: 16.0%, Draws: 0.6%
-After 340000 games - Mr.Q: 83.9%, Random: 15.4%, Draws: 0.7%
-After 341000 games - Mr.Q: 82.9%, Random: 16.3%, Draws: 0.8%
-After 342000 games - Mr.Q: 83.5%, Random: 15.3%, Draws: 1.2%
-After 343000 games - Mr.Q: 81.7%, Random: 17.4%, Draws: 0.9%
-After 344000 games - Mr.Q: 82.1%, Random: 16.6%, Draws: 1.3%
-After 345000 games - Mr.Q: 83.5%, Random: 15.8%, Draws: 0.7%
-After 346000 games - Mr.Q: 83.5%, Random: 15.5%, Draws: 1.0%
-After 347000 games - Mr.Q: 84.2%, Random: 15.4%, Draws: 0.4%
-After 348000 games - Mr.Q: 83.2%, Random: 16.7%, Draws: 0.1%
-After 349000 games - Mr.Q: 83.2%, Random: 16.1%, Draws: 0.7%
-After 350000 games - Mr.Q: 85.6%, Random: 13.3%, Draws: 1.1%
-After 351000 games - Mr.Q: 86.6%, Random: 12.8%, Draws: 0.6%
-After 352000 games - Mr.Q: 84.9%, Random: 14.4%, Draws: 0.7%
-After 353000 games - Mr.Q: 83.4%, Random: 15.8%, Draws: 0.8%
-After 354000 games - Mr.Q: 84.5%, Random: 14.3%, Draws: 1.2%
-After 355000 games - Mr.Q: 83.4%, Random: 16.0%, Draws: 0.6%
-After 356000 games - Mr.Q: 83.2%, Random: 16.2%, Draws: 0.6%
-After 357000 games - Mr.Q: 83.3%, Random: 16.1%, Draws: 0.6%
-After 358000 games - Mr.Q: 84.1%, Random: 14.5%, Draws: 1.4%
-After 359000 games - Mr.Q: 83.9%, Random: 15.6%, Draws: 0.5%
-After 360000 games - Mr.Q: 81.2%, Random: 17.6%, Draws: 1.2%
-After 361000 games - Mr.Q: 81.6%, Random: 17.2%, Draws: 1.2%
-After 362000 games - Mr.Q: 81.9%, Random: 17.1%, Draws: 1.0%
-After 363000 games - Mr.Q: 83.4%, Random: 15.5%, Draws: 1.1%
-After 364000 games - Mr.Q: 83.0%, Random: 16.3%, Draws: 0.7%
-After 365000 games - Mr.Q: 82.5%, Random: 16.6%, Draws: 0.9%
-After 366000 games - Mr.Q: 83.6%, Random: 15.8%, Draws: 0.6%
-After 367000 games - Mr.Q: 82.6%, Random: 16.5%, Draws: 0.9%
-After 368000 games - Mr.Q: 81.3%, Random: 17.9%, Draws: 0.8%
-After 369000 games - Mr.Q: 83.9%, Random: 15.0%, Draws: 1.1%
-After 370000 games - Mr.Q: 84.6%, Random: 14.7%, Draws: 0.7%
-After 371000 games - Mr.Q: 82.0%, Random: 16.7%, Draws: 1.3%
-After 372000 games - Mr.Q: 81.5%, Random: 17.4%, Draws: 1.1%
-After 373000 games - Mr.Q: 83.5%, Random: 15.5%, Draws: 1.0%
+After 1000 games - Mr.Q: 48.4%, Random: 49.6%, Draws: 2.1% , epsilon 0.9896113336390602
+After 2000 games - Mr.Q: 50.1%, Random: 48.2%, Draws: 1.7% , epsilon 0.9792385388717819
+After 3000 games - Mr.Q: 47.9%, Random: 50.9%, Draws: 1.2% , epsilon 0.9689444307190711
+After 4000 games - Mr.Q: 47.6%, Random: 50.1%, Draws: 2.3% , epsilon 0.9587479916470666
+After 5000 games - Mr.Q: 49.1%, Random: 48.6%, Draws: 2.3% , epsilon 0.9485677852715458
+After 6000 games - Mr.Q: 48.9%, Random: 48.8%, Draws: 2.3% , epsilon 0.9386674351754191
+After 7000 games - Mr.Q: 52.3%, Random: 45.5%, Draws: 2.2% , epsilon 0.9286716594784428
+After 8000 games - Mr.Q: 49.5%, Random: 48.1%, Draws: 2.4% , epsilon 0.9188705351792442
+After 9000 games - Mr.Q: 50.7%, Random: 46.7%, Draws: 2.6% , epsilon 0.9092028543537752
+After 10000 games - Mr.Q: 49.8%, Random: 47.8%, Draws: 2.4% , epsilon 0.8998402307801031
+After 11000 games - Mr.Q: 49.5%, Random: 48.7%, Draws: 1.8% , epsilon 0.890314010145831
+After 12000 games - Mr.Q: 52.9%, Random: 45.5%, Draws: 1.6% , epsilon 0.8810657160036711
+After 13000 games - Mr.Q: 50.8%, Random: 47.7%, Draws: 1.5% , epsilon 0.8718507146088104
+After 14000 games - Mr.Q: 50.3%, Random: 47.2%, Draws: 2.5% , epsilon 0.8626794671555896
+After 15000 games - Mr.Q: 48.8%, Random: 48.4%, Draws: 2.8% , epsilon 0.8535696975893603
+After 16000 games - Mr.Q: 51.1%, Random: 46.4%, Draws: 2.5% , epsilon 0.844550213988218
+After 17000 games - Mr.Q: 52.9%, Random: 44.7%, Draws: 2.4% , epsilon 0.8357580767008996
+After 18000 games - Mr.Q: 51.6%, Random: 46.9%, Draws: 1.5% , epsilon 0.82722455197715
+After 19000 games - Mr.Q: 52.6%, Random: 45.5%, Draws: 1.9% , epsilon 0.8184891811529355
+After 20000 games - Mr.Q: 54.0%, Random: 43.9%, Draws: 2.1% , epsilon 0.809995080031225
+After 21000 games - Mr.Q: 53.8%, Random: 44.2%, Draws: 2.0% , epsilon 0.8015394318168975
+After 22000 games - Mr.Q: 53.5%, Random: 44.3%, Draws: 2.2% , epsilon 0.7932291637304791
+After 23000 games - Mr.Q: 51.9%, Random: 45.7%, Draws: 2.4% , epsilon 0.7850144756639302
+After 24000 games - Mr.Q: 54.4%, Random: 44.2%, Draws: 1.4% , epsilon 0.7766487217573773
+After 25000 games - Mr.Q: 52.0%, Random: 45.6%, Draws: 2.4% , epsilon 0.7685411806880694
+After 26000 games - Mr.Q: 52.4%, Random: 45.9%, Draws: 1.7% , epsilon 0.7605296832021463
+After 27000 games - Mr.Q: 54.1%, Random: 43.8%, Draws: 2.1% , epsilon 0.7526483626785874
+After 28000 games - Mr.Q: 50.3%, Random: 48.2%, Draws: 1.5% , epsilon 0.7448300947817141
+After 29000 games - Mr.Q: 53.2%, Random: 44.5%, Draws: 2.3% , epsilon 0.7370200718889899
+After 30000 games - Mr.Q: 54.9%, Random: 43.0%, Draws: 2.1% , epsilon 0.7293765449270315
+After 31000 games - Mr.Q: 53.3%, Random: 44.9%, Draws: 1.8% , epsilon 0.7219140706200312
+After 32000 games - Mr.Q: 55.4%, Random: 42.4%, Draws: 2.2% , epsilon 0.7144772174592913
+After 33000 games - Mr.Q: 56.1%, Random: 41.9%, Draws: 2.0% , epsilon 0.7070328336560836
+After 34000 games - Mr.Q: 56.1%, Random: 41.5%, Draws: 2.4% , epsilon 0.6997856686260071
+After 35000 games - Mr.Q: 54.9%, Random: 43.3%, Draws: 1.8% , epsilon 0.6926266402431801
+After 36000 games - Mr.Q: 54.1%, Random: 43.9%, Draws: 2.0% , epsilon 0.6855477064277573
+After 37000 games - Mr.Q: 57.6%, Random: 41.2%, Draws: 1.2% , epsilon 0.6785119456197216
+After 38000 games - Mr.Q: 55.5%, Random: 42.7%, Draws: 1.8% , epsilon 0.6715799561997803
+After 39000 games - Mr.Q: 58.5%, Random: 39.8%, Draws: 1.7% , epsilon 0.6647633248379843
+After 40000 games - Mr.Q: 56.2%, Random: 42.2%, Draws: 1.6% , epsilon 0.6579395577931598
+After 41000 games - Mr.Q: 54.7%, Random: 43.1%, Draws: 2.2% , epsilon 0.6512945935946887
+After 42000 games - Mr.Q: 55.3%, Random: 43.2%, Draws: 1.5% , epsilon 0.6446961106428692
+After 43000 games - Mr.Q: 57.8%, Random: 39.7%, Draws: 2.5% , epsilon 0.6380955610480633
+After 44000 games - Mr.Q: 55.3%, Random: 42.5%, Draws: 2.2% , epsilon 0.6315499582922915
+After 45000 games - Mr.Q: 54.0%, Random: 43.7%, Draws: 2.3% , epsilon 0.6250771261908933
+After 46000 games - Mr.Q: 59.2%, Random: 39.2%, Draws: 1.6% , epsilon 0.6188036634836603
+After 47000 games - Mr.Q: 57.4%, Random: 39.9%, Draws: 2.7% , epsilon 0.6125147561957541
+After 48000 games - Mr.Q: 55.9%, Random: 42.2%, Draws: 1.9% , epsilon 0.6062679370805822
+After 49000 games - Mr.Q: 55.5%, Random: 42.7%, Draws: 1.8% , epsilon 0.6001064304946926
+After 50000 games - Mr.Q: 56.3%, Random: 42.4%, Draws: 1.3% , epsilon 0.5940681352464046
+After 51000 games - Mr.Q: 61.0%, Random: 38.0%, Draws: 1.0% , epsilon 0.5880764835578342
+After 52000 games - Mr.Q: 56.9%, Random: 41.3%, Draws: 1.8% , epsilon 0.5821778635265189
+After 53000 games - Mr.Q: 55.7%, Random: 42.7%, Draws: 1.6% , epsilon 0.576419101855553
+After 54000 games - Mr.Q: 55.9%, Random: 42.5%, Draws: 1.6% , epsilon 0.5707167337355287
+After 55000 games - Mr.Q: 59.0%, Random: 39.9%, Draws: 1.1% , epsilon 0.5649600346238081
+After 56000 games - Mr.Q: 57.8%, Random: 40.0%, Draws: 2.2% , epsilon 0.5591668948816243
+After 57000 games - Mr.Q: 58.0%, Random: 39.8%, Draws: 2.2% , epsilon 0.5534276240931909
+After 58000 games - Mr.Q: 58.5%, Random: 39.2%, Draws: 2.3% , epsilon 0.547817377164923
+After 59000 games - Mr.Q: 61.6%, Random: 36.9%, Draws: 1.5% , epsilon 0.5423019626692993
+After 60000 games - Mr.Q: 57.4%, Random: 40.9%, Draws: 1.7% , epsilon 0.5368753625147615
+After 61000 games - Mr.Q: 57.8%, Random: 40.9%, Draws: 1.3% , epsilon 0.5315466492507132
+After 62000 games - Mr.Q: 58.5%, Random: 39.9%, Draws: 1.6% , epsilon 0.5262745096124353
+After 63000 games - Mr.Q: 58.9%, Random: 38.4%, Draws: 2.7% , epsilon 0.5209931807802314
+After 64000 games - Mr.Q: 59.7%, Random: 38.3%, Draws: 2.0% , epsilon 0.5156941967499022
+After 65000 games - Mr.Q: 60.7%, Random: 38.0%, Draws: 1.3% , epsilon 0.510571120281348
+After 66000 games - Mr.Q: 61.2%, Random: 37.4%, Draws: 1.4% , epsilon 0.5056490937031267
+After 67000 games - Mr.Q: 60.8%, Random: 37.7%, Draws: 1.5% , epsilon 0.5006868887108309
+After 68000 games - Mr.Q: 60.4%, Random: 38.0%, Draws: 1.6% , epsilon 0.4957664397078396
+After 69000 games - Mr.Q: 61.4%, Random: 37.1%, Draws: 1.5% , epsilon 0.49087176528049625
+After 70000 games - Mr.Q: 61.6%, Random: 37.8%, Draws: 0.6% , epsilon 0.486004517046962
+After 71000 games - Mr.Q: 63.1%, Random: 35.6%, Draws: 1.3% , epsilon 0.48127503898238255
+After 72000 games - Mr.Q: 58.6%, Random: 39.0%, Draws: 2.4% , epsilon 0.4765720452405889
+After 73000 games - Mr.Q: 62.6%, Random: 36.0%, Draws: 1.4% , epsilon 0.4720108174191112
+After 74000 games - Mr.Q: 61.4%, Random: 37.4%, Draws: 1.2% , epsilon 0.4674609887582568
+After 75000 games - Mr.Q: 62.3%, Random: 35.6%, Draws: 2.1% , epsilon 0.4629105754471656
+After 76000 games - Mr.Q: 61.6%, Random: 36.5%, Draws: 1.9% , epsilon 0.45843333770535155
+After 77000 games - Mr.Q: 63.9%, Random: 35.1%, Draws: 1.0% , epsilon 0.45407658998232886
+After 78000 games - Mr.Q: 61.1%, Random: 37.1%, Draws: 1.8% , epsilon 0.4496659075374387
+After 79000 games - Mr.Q: 62.9%, Random: 35.1%, Draws: 2.0% , epsilon 0.4453092009450717
+After 80000 games - Mr.Q: 63.5%, Random: 34.8%, Draws: 1.7% , epsilon 0.44102601720342977
+After 81000 games - Mr.Q: 63.2%, Random: 35.0%, Draws: 1.8% , epsilon 0.43679189323248097
+After 82000 games - Mr.Q: 64.9%, Random: 33.7%, Draws: 1.4% , epsilon 0.4326040433030204
+After 83000 games - Mr.Q: 64.2%, Random: 33.7%, Draws: 2.1% , epsilon 0.4285651872053911
+After 84000 games - Mr.Q: 63.3%, Random: 35.4%, Draws: 1.3% , epsilon 0.4245606419723776
+After 85000 games - Mr.Q: 63.1%, Random: 34.6%, Draws: 2.3% , epsilon 0.4204803910138783
+After 86000 games - Mr.Q: 62.2%, Random: 35.5%, Draws: 2.3% , epsilon 0.4164743358044759
+After 87000 games - Mr.Q: 63.8%, Random: 33.8%, Draws: 2.4% , epsilon 0.41240250902286096
+After 88000 games - Mr.Q: 64.1%, Random: 34.7%, Draws: 1.2% , epsilon 0.40855634301795185
+After 89000 games - Mr.Q: 63.4%, Random: 34.8%, Draws: 1.8% , epsilon 0.40457689871391234
+After 90000 games - Mr.Q: 64.0%, Random: 34.0%, Draws: 2.0% , epsilon 0.40076604245474123
+After 91000 games - Mr.Q: 63.4%, Random: 35.1%, Draws: 1.5% , epsilon 0.3969331255341187
+After 92000 games - Mr.Q: 64.0%, Random: 34.1%, Draws: 1.9% , epsilon 0.39317775492069906
+After 93000 games - Mr.Q: 64.7%, Random: 34.0%, Draws: 1.3% , epsilon 0.3894999774862757
+After 94000 games - Mr.Q: 65.3%, Random: 33.2%, Draws: 1.5% , epsilon 0.3858766669888495
+After 95000 games - Mr.Q: 64.4%, Random: 34.5%, Draws: 1.1% , epsilon 0.3822855330700365
+After 96000 games - Mr.Q: 66.6%, Random: 31.7%, Draws: 1.7% , epsilon 0.37870812644069346
+After 97000 games - Mr.Q: 66.4%, Random: 31.8%, Draws: 1.8% , epsilon 0.37520321610738444
+After 98000 games - Mr.Q: 67.9%, Random: 30.5%, Draws: 1.6% , epsilon 0.37180360981312605
+After 99000 games - Mr.Q: 66.3%, Random: 32.3%, Draws: 1.4% , epsilon 0.36828267412077426
+After 100000 games - Mr.Q: 65.8%, Random: 32.7%, Draws: 1.5% , epsilon 0.3649271610585502
+After 101000 games - Mr.Q: 67.9%, Random: 30.8%, Draws: 1.3% , epsilon 0.3615910113916683
+After 102000 games - Mr.Q: 66.5%, Random: 33.1%, Draws: 0.4% , epsilon 0.35833050749524153
+After 103000 games - Mr.Q: 67.5%, Random: 30.5%, Draws: 2.0% , epsilon 0.3550592799171619
+After 104000 games - Mr.Q: 65.6%, Random: 32.3%, Draws: 2.1% , epsilon 0.3516554132173492
+After 105000 games - Mr.Q: 68.2%, Random: 30.1%, Draws: 1.7% , epsilon 0.34845139517531143
+After 106000 games - Mr.Q: 69.1%, Random: 29.5%, Draws: 1.4% , epsilon 0.34521684201149216
+After 107000 games - Mr.Q: 64.1%, Random: 34.4%, Draws: 1.5% , epsilon 0.34197127504439684
+After 108000 games - Mr.Q: 67.1%, Random: 31.2%, Draws: 1.7% , epsilon 0.3388412599029096
+After 109000 games - Mr.Q: 67.7%, Random: 31.2%, Draws: 1.1% , epsilon 0.335835257069634
+After 110000 games - Mr.Q: 65.0%, Random: 33.3%, Draws: 1.7% , epsilon 0.33277338367266324
+After 111000 games - Mr.Q: 69.5%, Random: 28.8%, Draws: 1.7% , epsilon 0.32974041517335967
+After 112000 games - Mr.Q: 69.2%, Random: 29.7%, Draws: 1.1% , epsilon 0.3268275689659335
+After 113000 games - Mr.Q: 70.3%, Random: 28.6%, Draws: 1.1% , epsilon 0.3239427217219723
+After 114000 games - Mr.Q: 67.3%, Random: 31.4%, Draws: 1.3% , epsilon 0.32100115164222404
+After 115000 games - Mr.Q: 68.8%, Random: 29.6%, Draws: 1.6% , epsilon 0.31809901627653697
+After 116000 games - Mr.Q: 69.9%, Random: 28.7%, Draws: 1.4% , epsilon 0.3152533816779335
+After 117000 games - Mr.Q: 70.5%, Random: 28.1%, Draws: 1.4% , epsilon 0.3124869465775756
+After 118000 games - Mr.Q: 69.6%, Random: 29.6%, Draws: 0.8% , epsilon 0.30965961955778265
+After 119000 games - Mr.Q: 65.1%, Random: 33.2%, Draws: 1.7% , epsilon 0.30686953452296994
+After 120000 games - Mr.Q: 68.7%, Random: 30.1%, Draws: 1.2% , epsilon 0.30413347994429507
+After 121000 games - Mr.Q: 70.6%, Random: 28.3%, Draws: 1.1% , epsilon 0.3013992142799547
+After 122000 games - Mr.Q: 69.5%, Random: 29.9%, Draws: 0.6% , epsilon 0.2987471832855712
+After 123000 games - Mr.Q: 70.3%, Random: 28.2%, Draws: 1.5% , epsilon 0.29614869332311
+After 124000 games - Mr.Q: 69.7%, Random: 28.5%, Draws: 1.8% , epsilon 0.2934929639289464
+After 125000 games - Mr.Q: 70.6%, Random: 28.0%, Draws: 1.4% , epsilon 0.2909363927375708
+After 126000 games - Mr.Q: 70.6%, Random: 27.9%, Draws: 1.5% , epsilon 0.2883969002434678
+After 127000 games - Mr.Q: 71.6%, Random: 27.1%, Draws: 1.3% , epsilon 0.2858146868518099
+After 128000 games - Mr.Q: 70.4%, Random: 28.4%, Draws: 1.2% , epsilon 0.2832966688305727
+After 129000 games - Mr.Q: 71.7%, Random: 27.8%, Draws: 0.5% , epsilon 0.2808783462307571
+After 130000 games - Mr.Q: 71.6%, Random: 27.3%, Draws: 1.1% , epsilon 0.27843082370212713
+After 131000 games - Mr.Q: 70.8%, Random: 27.8%, Draws: 1.4% , epsilon 0.2760195330969037
+After 132000 games - Mr.Q: 68.5%, Random: 29.6%, Draws: 1.9% , epsilon 0.2735700274205277
+After 133000 games - Mr.Q: 71.1%, Random: 28.1%, Draws: 0.8% , epsilon 0.27124721203291013
+After 134000 games - Mr.Q: 69.4%, Random: 29.1%, Draws: 1.5% , epsilon 0.26893389940832974
+After 135000 games - Mr.Q: 69.4%, Random: 29.9%, Draws: 0.7% , epsilon 0.2665723310604356
+After 136000 games - Mr.Q: 69.6%, Random: 29.4%, Draws: 1.0% , epsilon 0.26427827330734294
+After 137000 games - Mr.Q: 74.5%, Random: 25.0%, Draws: 0.5% , epsilon 0.2620713013709338
+After 138000 games - Mr.Q: 70.0%, Random: 28.9%, Draws: 1.1% , epsilon 0.25977882735618324
+After 139000 games - Mr.Q: 72.4%, Random: 26.0%, Draws: 1.6% , epsilon 0.2575414300746635
+After 140000 games - Mr.Q: 71.9%, Random: 27.2%, Draws: 0.9% , epsilon 0.25531360072019516
+After 141000 games - Mr.Q: 73.0%, Random: 26.6%, Draws: 0.4% , epsilon 0.25309441272606065
+After 142000 games - Mr.Q: 73.3%, Random: 24.8%, Draws: 1.9% , epsilon 0.2509692916767662
+After 143000 games - Mr.Q: 71.4%, Random: 27.7%, Draws: 0.9% , epsilon 0.24883414332360765
+After 144000 games - Mr.Q: 71.5%, Random: 27.2%, Draws: 1.3% , epsilon 0.2467006304714161
+After 145000 games - Mr.Q: 73.3%, Random: 25.6%, Draws: 1.1% , epsilon 0.24463751270196044
+After 146000 games - Mr.Q: 71.7%, Random: 26.8%, Draws: 1.5% , epsilon 0.24259164845521572
+After 147000 games - Mr.Q: 74.3%, Random: 24.4%, Draws: 1.3% , epsilon 0.2405655396504471
+After 148000 games - Mr.Q: 75.2%, Random: 23.4%, Draws: 1.4% , epsilon 0.23854776488900317
+After 149000 games - Mr.Q: 72.9%, Random: 25.9%, Draws: 1.2% , epsilon 0.23654549519794493
+After 150000 games - Mr.Q: 73.3%, Random: 24.9%, Draws: 1.8% , epsilon 0.23459287243689686
+After 151000 games - Mr.Q: 71.1%, Random: 27.9%, Draws: 1.0% , epsilon 0.2325989090238036
+After 152000 games - Mr.Q: 71.6%, Random: 27.1%, Draws: 1.3% , epsilon 0.23061981806498436
+After 153000 games - Mr.Q: 73.6%, Random: 25.7%, Draws: 0.7% , epsilon 0.2286955267241117
+After 154000 games - Mr.Q: 75.4%, Random: 22.8%, Draws: 1.8% , epsilon 0.22683832457380323
+After 155000 games - Mr.Q: 73.8%, Random: 25.4%, Draws: 0.8% , epsilon 0.2249523344798983
+After 156000 games - Mr.Q: 73.9%, Random: 24.7%, Draws: 1.4% , epsilon 0.22307421723727855
+After 157000 games - Mr.Q: 73.5%, Random: 25.6%, Draws: 0.9% , epsilon 0.22125381456612114
+After 158000 games - Mr.Q: 72.7%, Random: 26.6%, Draws: 0.7% , epsilon 0.2193945090692987
+After 159000 games - Mr.Q: 73.5%, Random: 24.7%, Draws: 1.8% , epsilon 0.21764200118038826
+After 160000 games - Mr.Q: 74.2%, Random: 24.0%, Draws: 1.8% , epsilon 0.2158102419893212
+After 161000 games - Mr.Q: 73.0%, Random: 25.5%, Draws: 1.5% , epsilon 0.21405832148249954
+After 162000 games - Mr.Q: 71.5%, Random: 27.5%, Draws: 1.0% , epsilon 0.21227328060315429
+After 163000 games - Mr.Q: 74.6%, Random: 24.2%, Draws: 1.2% , epsilon 0.2104957577667521
+After 164000 games - Mr.Q: 73.8%, Random: 24.4%, Draws: 1.8% , epsilon 0.20879574881870894
+After 165000 games - Mr.Q: 75.5%, Random: 23.5%, Draws: 1.0% , epsilon 0.20708461785040205
+After 166000 games - Mr.Q: 74.4%, Random: 24.1%, Draws: 1.5% , epsilon 0.20538011618759122
+After 167000 games - Mr.Q: 76.0%, Random: 23.2%, Draws: 0.8% , epsilon 0.20371632928518818
+After 168000 games - Mr.Q: 76.9%, Random: 22.1%, Draws: 1.0% , epsilon 0.20207935754553996
+After 169000 games - Mr.Q: 75.0%, Random: 23.8%, Draws: 1.2% , epsilon 0.2004609521413847
+After 170000 games - Mr.Q: 75.6%, Random: 23.0%, Draws: 1.4% , epsilon 0.19884755409510332
+After 171000 games - Mr.Q: 75.8%, Random: 23.6%, Draws: 0.6% , epsilon 0.19728817308007707
+After 172000 games - Mr.Q: 74.9%, Random: 23.9%, Draws: 1.2% , epsilon 0.1956780023823065
+After 173000 games - Mr.Q: 74.9%, Random: 24.7%, Draws: 0.4% , epsilon 0.1940735981788575
+After 174000 games - Mr.Q: 73.6%, Random: 25.5%, Draws: 0.9% , epsilon 0.19248793088743402
+After 175000 games - Mr.Q: 73.7%, Random: 25.8%, Draws: 0.5% , epsilon 0.19092533798021646
+After 176000 games - Mr.Q: 77.1%, Random: 21.9%, Draws: 1.0% , epsilon 0.18942903086410917
+After 177000 games - Mr.Q: 76.9%, Random: 22.6%, Draws: 0.5% , epsilon 0.18788131174566378
+After 178000 games - Mr.Q: 75.4%, Random: 23.5%, Draws: 1.1% , epsilon 0.18639898165283936
+After 179000 games - Mr.Q: 77.0%, Random: 22.2%, Draws: 0.8% , epsilon 0.1849346343965105
+After 180000 games - Mr.Q: 78.6%, Random: 20.8%, Draws: 0.6% , epsilon 0.18347500232346098
+After 181000 games - Mr.Q: 76.5%, Random: 22.5%, Draws: 1.0% , epsilon 0.18199722269650148
+After 182000 games - Mr.Q: 76.2%, Random: 22.3%, Draws: 1.5% , epsilon 0.18054596932480008
+After 183000 games - Mr.Q: 78.1%, Random: 21.3%, Draws: 0.6% , epsilon 0.1791532203262619
+After 184000 games - Mr.Q: 77.0%, Random: 22.1%, Draws: 0.9% , epsilon 0.17774170754038848
+After 185000 games - Mr.Q: 78.4%, Random: 20.7%, Draws: 0.9% , epsilon 0.1763090482601985
+After 186000 games - Mr.Q: 79.1%, Random: 20.1%, Draws: 0.8% , epsilon 0.17493813677273584
+After 187000 games - Mr.Q: 78.1%, Random: 21.7%, Draws: 0.2% , epsilon 0.17360097237233182
+After 188000 games - Mr.Q: 78.8%, Random: 20.3%, Draws: 0.9% , epsilon 0.17227351195564797
+After 189000 games - Mr.Q: 78.4%, Random: 20.2%, Draws: 1.4% , epsilon 0.1709059483615309
+After 190000 games - Mr.Q: 79.4%, Random: 19.0%, Draws: 1.6% , epsilon 0.16956721411648099
+After 191000 games - Mr.Q: 77.3%, Random: 22.0%, Draws: 0.7% , epsilon 0.1682411535175929
+After 192000 games - Mr.Q: 76.6%, Random: 22.2%, Draws: 1.2% , epsilon 0.16693297488298867
+After 193000 games - Mr.Q: 76.9%, Random: 22.2%, Draws: 0.9% , epsilon 0.16561608682378215
+After 194000 games - Mr.Q: 78.4%, Random: 20.6%, Draws: 1.0% , epsilon 0.1643368649992949
+After 195000 games - Mr.Q: 76.8%, Random: 22.8%, Draws: 0.4% , epsilon 0.1630750251910442
+After 196000 games - Mr.Q: 76.9%, Random: 22.2%, Draws: 0.9% , epsilon 0.1618374389813443
+After 197000 games - Mr.Q: 75.8%, Random: 23.3%, Draws: 0.9% , epsilon 0.16055673422471975
+After 198000 games - Mr.Q: 78.8%, Random: 20.7%, Draws: 0.5% , epsilon 0.159320095941852
+After 199000 games - Mr.Q: 73.5%, Random: 25.2%, Draws: 1.3% , epsilon 0.15806721541158253
+After 200000 games - Mr.Q: 76.8%, Random: 22.0%, Draws: 1.2% , epsilon 0.15682967637925924
+After 201000 games - Mr.Q: 76.8%, Random: 21.9%, Draws: 1.3% , epsilon 0.1556086729155852
+After 202000 games - Mr.Q: 78.6%, Random: 20.6%, Draws: 0.8% , epsilon 0.15443639750442173
+After 203000 games - Mr.Q: 79.8%, Random: 19.6%, Draws: 0.6% , epsilon 0.15324551999402258
+After 204000 games - Mr.Q: 78.4%, Random: 21.0%, Draws: 0.6% , epsilon 0.15207249337178877
+After 205000 games - Mr.Q: 78.1%, Random: 21.0%, Draws: 0.9% , epsilon 0.15089229940119073
+After 206000 games - Mr.Q: 77.7%, Random: 21.5%, Draws: 0.8% , epsilon 0.1497178210493148
+After 207000 games - Mr.Q: 78.6%, Random: 19.9%, Draws: 1.5% , epsilon 0.14857878044305567
+After 208000 games - Mr.Q: 77.3%, Random: 21.7%, Draws: 1.0% , epsilon 0.1474545985282323
+After 209000 games - Mr.Q: 78.9%, Random: 20.7%, Draws: 0.4% , epsilon 0.14630263486648443
+After 210000 games - Mr.Q: 78.0%, Random: 21.1%, Draws: 0.9% , epsilon 0.1451965459802582
+After 211000 games - Mr.Q: 81.1%, Random: 17.9%, Draws: 1.0% , epsilon 0.14409363196901065
+After 212000 games - Mr.Q: 79.6%, Random: 19.1%, Draws: 1.3% , epsilon 0.14297922019769235
+After 213000 games - Mr.Q: 78.6%, Random: 20.5%, Draws: 0.9% , epsilon 0.14190237236814682
+After 214000 games - Mr.Q: 80.1%, Random: 19.0%, Draws: 0.9% , epsilon 0.14085476145701498
+After 215000 games - Mr.Q: 78.8%, Random: 20.8%, Draws: 0.4% , epsilon 0.13982215522300354
+After 216000 games - Mr.Q: 79.1%, Random: 20.2%, Draws: 0.7% , epsilon 0.13878407270260618
+After 217000 games - Mr.Q: 80.2%, Random: 19.2%, Draws: 0.6% , epsilon 0.137753559471199
+After 218000 games - Mr.Q: 78.6%, Random: 20.3%, Draws: 1.1% , epsilon 0.13670731914651493
+After 219000 games - Mr.Q: 77.2%, Random: 21.9%, Draws: 0.9% , epsilon 0.13568218557287998
+After 220000 games - Mr.Q: 79.3%, Random: 20.3%, Draws: 0.4% , epsilon 0.13464561817145848
+After 221000 games - Mr.Q: 80.1%, Random: 19.4%, Draws: 0.5% , epsilon 0.13363313844465927
+After 222000 games - Mr.Q: 79.8%, Random: 19.1%, Draws: 1.1% , epsilon 0.13265214739904183
+After 223000 games - Mr.Q: 78.7%, Random: 20.5%, Draws: 0.8% , epsilon 0.13163767538943766
+After 224000 games - Mr.Q: 81.6%, Random: 17.5%, Draws: 0.9% , epsilon 0.13062769593219004
+After 225000 games - Mr.Q: 81.8%, Random: 17.6%, Draws: 0.6% , epsilon 0.12969107257647505
+After 226000 games - Mr.Q: 81.6%, Random: 18.1%, Draws: 0.3% , epsilon 0.12873863372993044
+After 227000 games - Mr.Q: 80.2%, Random: 18.9%, Draws: 0.9% , epsilon 0.12779804573917833
+After 228000 games - Mr.Q: 80.1%, Random: 18.2%, Draws: 1.7% , epsilon 0.12682475433961982
+After 229000 games - Mr.Q: 79.7%, Random: 19.0%, Draws: 1.3% , epsilon 0.12589777180747036
+After 230000 games - Mr.Q: 79.9%, Random: 19.2%, Draws: 0.9% , epsilon 0.12496294321276472
+After 231000 games - Mr.Q: 80.7%, Random: 18.7%, Draws: 0.6% , epsilon 0.12403964538412526
+After 232000 games - Mr.Q: 81.2%, Random: 18.2%, Draws: 0.6% , epsilon 0.12316700908212634
+After 233000 games - Mr.Q: 76.9%, Random: 21.8%, Draws: 1.3% , epsilon 0.1222377877950405
+After 234000 games - Mr.Q: 80.4%, Random: 18.8%, Draws: 0.8% , epsilon 0.12133850774821502
+After 235000 games - Mr.Q: 81.3%, Random: 18.1%, Draws: 0.6% , epsilon 0.12044969786344324
+After 236000 games - Mr.Q: 82.0%, Random: 17.6%, Draws: 0.4% , epsilon 0.11956680071421667
+After 237000 games - Mr.Q: 80.5%, Random: 18.5%, Draws: 1.0% , epsilon 0.11870699303148573
+After 238000 games - Mr.Q: 80.7%, Random: 18.6%, Draws: 0.7% , epsilon 0.11782614724854053
+After 239000 games - Mr.Q: 82.4%, Random: 16.8%, Draws: 0.8% , epsilon 0.11697827175280304
+After 240000 games - Mr.Q: 81.6%, Random: 17.4%, Draws: 1.0% , epsilon 0.11611768496047824
+After 241000 games - Mr.Q: 81.3%, Random: 17.9%, Draws: 0.8% , epsilon 0.11524556488478875
+After 242000 games - Mr.Q: 80.8%, Random: 18.7%, Draws: 0.5% , epsilon 0.11443182090497439
+After 243000 games - Mr.Q: 80.8%, Random: 18.7%, Draws: 0.5% , epsilon 0.11358905914838303
+After 244000 games - Mr.Q: 79.3%, Random: 19.6%, Draws: 1.1% , epsilon 0.11275306788567611
+After 245000 games - Mr.Q: 80.0%, Random: 19.2%, Draws: 0.8% , epsilon 0.11192658708938791
+After 246000 games - Mr.Q: 80.7%, Random: 18.7%, Draws: 0.6% , epsilon 0.11109616529343498
+After 247000 games - Mr.Q: 80.9%, Random: 18.3%, Draws: 0.8% , epsilon 0.11028877758263034
+After 248000 games - Mr.Q: 82.8%, Random: 16.8%, Draws: 0.4% , epsilon 0.10952470859990915
+After 249000 games - Mr.Q: 80.4%, Random: 18.9%, Draws: 0.7% , epsilon 0.10871036778483603
+After 250000 games - Mr.Q: 81.8%, Random: 17.4%, Draws: 0.8% , epsilon 0.10790618213574309
+After 251000 games - Mr.Q: 81.5%, Random: 17.8%, Draws: 0.7% , epsilon 0.10710794545519295
+After 252000 games - Mr.Q: 80.7%, Random: 17.7%, Draws: 1.6% , epsilon 0.10633772969434781
+After 253000 games - Mr.Q: 80.1%, Random: 19.6%, Draws: 0.3% , epsilon 0.10554286298238237
+After 254000 games - Mr.Q: 83.5%, Random: 16.0%, Draws: 0.5% , epsilon 0.10480486065314819
+After 255000 games - Mr.Q: 80.0%, Random: 19.4%, Draws: 0.6% , epsilon 0.10403882506635917
+After 256000 games - Mr.Q: 81.5%, Random: 17.9%, Draws: 0.6% , epsilon 0.10329088600425304
+After 257000 games - Mr.Q: 80.4%, Random: 19.2%, Draws: 0.4% , epsilon 0.10255119529915674
+After 258000 games - Mr.Q: 81.5%, Random: 17.9%, Draws: 0.6% , epsilon 0.10180611148759225
+After 259000 games - Mr.Q: 83.6%, Random: 15.9%, Draws: 0.5% , epsilon 0.10108453358990208
+After 260000 games - Mr.Q: 80.4%, Random: 18.9%, Draws: 0.7% , epsilon 0.10037057930188782
+After 261000 games - Mr.Q: 83.6%, Random: 15.6%, Draws: 0.8% , epsilon 0.09966984022814221
+After 262000 games - Mr.Q: 82.0%, Random: 17.3%, Draws: 0.7% , epsilon 0.09894262357811462
+After 263000 games - Mr.Q: 82.8%, Random: 16.8%, Draws: 0.4% , epsilon 0.09825234506466358
+After 264000 games - Mr.Q: 80.3%, Random: 18.6%, Draws: 1.1% , epsilon 0.09753254480024959
+After 265000 games - Mr.Q: 85.3%, Random: 14.3%, Draws: 0.4% , epsilon 0.09684358116253168
+After 266000 games - Mr.Q: 83.9%, Random: 15.6%, Draws: 0.5% , epsilon 0.09617939140326011
+After 267000 games - Mr.Q: 82.8%, Random: 16.2%, Draws: 1.0% , epsilon 0.09548270241237737
+After 268000 games - Mr.Q: 82.2%, Random: 16.9%, Draws: 0.9% , epsilon 0.09479949677047973
+After 269000 games - Mr.Q: 83.0%, Random: 16.2%, Draws: 0.8% , epsilon 0.09411365026051326
+After 270000 games - Mr.Q: 81.2%, Random: 17.7%, Draws: 1.1% , epsilon 0.09340856968367675
+After 271000 games - Mr.Q: 81.3%, Random: 17.7%, Draws: 1.0% , epsilon 0.09273324978789325
+After 272000 games - Mr.Q: 81.7%, Random: 17.8%, Draws: 0.5% , epsilon 0.09205415877902651
+After 273000 games - Mr.Q: 82.2%, Random: 16.7%, Draws: 1.1% , epsilon 0.0913870773308763
+After 274000 games - Mr.Q: 80.5%, Random: 19.1%, Draws: 0.4% , epsilon 0.0907384397200616
+After 275000 games - Mr.Q: 85.2%, Random: 14.5%, Draws: 0.3% , epsilon 0.09010819144680493
+After 276000 games - Mr.Q: 83.2%, Random: 16.0%, Draws: 0.8% , epsilon 0.0894863475297341
+After 277000 games - Mr.Q: 85.6%, Random: 14.0%, Draws: 0.4% , epsilon 0.08887990430707757
+After 278000 games - Mr.Q: 83.1%, Random: 16.2%, Draws: 0.7% , epsilon 0.08826962628330118
+After 279000 games - Mr.Q: 83.0%, Random: 16.3%, Draws: 0.7% , epsilon 0.08766371395215888
+After 280000 games - Mr.Q: 82.2%, Random: 17.0%, Draws: 0.8% , epsilon 0.08702644675414609
+After 281000 games - Mr.Q: 83.9%, Random: 15.6%, Draws: 0.5% , epsilon 0.08641826506069954
+After 282000 games - Mr.Q: 85.7%, Random: 13.8%, Draws: 0.5% , epsilon 0.08581399036982033
+After 283000 games - Mr.Q: 81.5%, Random: 17.8%, Draws: 0.7% , epsilon 0.08520346035914889
+After 284000 games - Mr.Q: 80.8%, Random: 18.3%, Draws: 0.9% , epsilon 0.08459202913858359
+After 285000 games - Mr.Q: 80.5%, Random: 18.6%, Draws: 0.9% , epsilon 0.08398078648234975
+After 286000 games - Mr.Q: 83.5%, Random: 16.0%, Draws: 0.5% , epsilon 0.083384299543039
+After 287000 games - Mr.Q: 83.2%, Random: 16.1%, Draws: 0.7% , epsilon 0.08280562826372843
+After 288000 games - Mr.Q: 81.2%, Random: 17.9%, Draws: 0.9% , epsilon 0.08221551487619733
+After 289000 games - Mr.Q: 82.4%, Random: 16.8%, Draws: 0.8% , epsilon 0.0816424237859437
+After 290000 games - Mr.Q: 83.2%, Random: 16.3%, Draws: 0.5% , epsilon 0.08109084122072026
+After 291000 games - Mr.Q: 82.4%, Random: 16.8%, Draws: 0.8% , epsilon 0.08050594391864646
+After 292000 games - Mr.Q: 83.2%, Random: 16.3%, Draws: 0.5% , epsilon 0.07993901373678047
+After 293000 games - Mr.Q: 84.2%, Random: 15.2%, Draws: 0.6% , epsilon 0.07938202936075968
+After 294000 games - Mr.Q: 84.5%, Random: 14.4%, Draws: 1.1% , epsilon 0.07885281463360608
+After 295000 games - Mr.Q: 84.3%, Random: 15.4%, Draws: 0.3% , epsilon 0.0783085666736057
+After 296000 games - Mr.Q: 84.8%, Random: 14.1%, Draws: 1.1% , epsilon 0.07777095262674041
+After 297000 games - Mr.Q: 84.7%, Random: 14.8%, Draws: 0.5% , epsilon 0.07723046460522127
+After 298000 games - Mr.Q: 83.8%, Random: 15.6%, Draws: 0.6% , epsilon 0.07669879479170763
+After 299000 games - Mr.Q: 82.6%, Random: 16.8%, Draws: 0.6% , epsilon 0.07616507250097165
+After 300000 games - Mr.Q: 83.7%, Random: 15.8%, Draws: 0.5% , epsilon 0.07564701550256726
+After 301000 games - Mr.Q: 85.4%, Random: 14.0%, Draws: 0.6% , epsilon 0.07513593838202726
+After 302000 games - Mr.Q: 82.3%, Random: 16.8%, Draws: 0.9% , epsilon 0.07461950851233592
+After 303000 games - Mr.Q: 83.3%, Random: 16.0%, Draws: 0.7% , epsilon 0.07410529429852004
+After 304000 games - Mr.Q: 83.1%, Random: 16.7%, Draws: 0.2% , epsilon 0.07359028165502333
+After 305000 games - Mr.Q: 83.7%, Random: 15.6%, Draws: 0.7% , epsilon 0.07308213684010602
+After 306000 games - Mr.Q: 81.6%, Random: 17.5%, Draws: 0.9% , epsilon 0.07256646984494122
+After 307000 games - Mr.Q: 82.9%, Random: 16.8%, Draws: 0.3% , epsilon 0.07206604309690393
+After 308000 games - Mr.Q: 84.6%, Random: 14.8%, Draws: 0.6% , epsilon 0.071566777174798
+After 309000 games - Mr.Q: 83.4%, Random: 15.8%, Draws: 0.8% , epsilon 0.07107246262096852
+After 310000 games - Mr.Q: 83.8%, Random: 15.2%, Draws: 1.0% , epsilon 0.07056871763540401
+After 311000 games - Mr.Q: 82.2%, Random: 17.3%, Draws: 0.5% , epsilon 0.07006167669223477
+After 312000 games - Mr.Q: 85.6%, Random: 13.8%, Draws: 0.6% , epsilon 0.06958464646928345
+After 313000 games - Mr.Q: 85.0%, Random: 14.6%, Draws: 0.4% , epsilon 0.06911604772254595
+After 314000 games - Mr.Q: 85.5%, Random: 14.0%, Draws: 0.5% , epsilon 0.06864662300415732
+After 315000 games - Mr.Q: 82.6%, Random: 16.8%, Draws: 0.6% , epsilon 0.06816109421145725
+After 316000 games - Mr.Q: 84.5%, Random: 14.8%, Draws: 0.7% , epsilon 0.06769490594363552
+After 317000 games - Mr.Q: 82.8%, Random: 16.2%, Draws: 1.0% , epsilon 0.06723183894173862
+After 318000 games - Mr.Q: 87.2%, Random: 12.2%, Draws: 0.6% , epsilon 0.06677367564351805
+After 319000 games - Mr.Q: 84.9%, Random: 14.6%, Draws: 0.5% , epsilon 0.06632009360714482
+After 320000 games - Mr.Q: 81.9%, Random: 17.5%, Draws: 0.6% , epsilon 0.06584785928489663
+After 321000 games - Mr.Q: 84.3%, Random: 14.6%, Draws: 1.1% , epsilon 0.06538349883009559
+After 322000 games - Mr.Q: 85.1%, Random: 13.9%, Draws: 1.0% , epsilon 0.06493429494944014
+After 323000 games - Mr.Q: 84.5%, Random: 14.1%, Draws: 1.4% , epsilon 0.06448334079731267
+After 324000 games - Mr.Q: 83.9%, Random: 15.0%, Draws: 1.1% , epsilon 0.06404012914650595
+After 325000 games - Mr.Q: 87.1%, Random: 11.8%, Draws: 1.1% , epsilon 0.0636149115659477
+After 326000 games - Mr.Q: 84.8%, Random: 14.4%, Draws: 0.8% , epsilon 0.06317912197076396
+After 327000 games - Mr.Q: 82.8%, Random: 16.5%, Draws: 0.7% , epsilon 0.06274142369799844
+After 328000 games - Mr.Q: 86.8%, Random: 12.4%, Draws: 0.8% , epsilon 0.0623109947582602
+After 329000 games - Mr.Q: 86.0%, Random: 13.5%, Draws: 0.5% , epsilon 0.06189236869764162
+After 330000 games - Mr.Q: 83.6%, Random: 15.4%, Draws: 1.0% , epsilon 0.06147852238884883
+After 331000 games - Mr.Q: 84.5%, Random: 14.8%, Draws: 0.7% , epsilon 0.06104979733339243
+After 332000 games - Mr.Q: 83.7%, Random: 15.7%, Draws: 0.6% , epsilon 0.06061848486410458
+After 333000 games - Mr.Q: 83.6%, Random: 15.2%, Draws: 1.2% , epsilon 0.06019756324510357
+After 334000 games - Mr.Q: 83.2%, Random: 15.8%, Draws: 1.0% , epsilon 0.059780580676325495
+After 335000 games - Mr.Q: 86.0%, Random: 13.0%, Draws: 1.0% , epsilon 0.059376223411633795
+After 336000 games - Mr.Q: 83.5%, Random: 15.5%, Draws: 1.0% , epsilon 0.058952371983762436
+After 337000 games - Mr.Q: 85.1%, Random: 13.8%, Draws: 1.1% , epsilon 0.05853142911527981
+After 338000 games - Mr.Q: 84.6%, Random: 14.9%, Draws: 0.5% , epsilon 0.058136393181149305
+After 339000 games - Mr.Q: 84.9%, Random: 14.4%, Draws: 0.7% , epsilon 0.05772295066086719
+After 340000 games - Mr.Q: 84.2%, Random: 15.3%, Draws: 0.5% , epsilon 0.0573233387818029
+After 341000 games - Mr.Q: 83.8%, Random: 14.8%, Draws: 1.4% , epsilon 0.0569461364256053
+After 342000 games - Mr.Q: 82.6%, Random: 17.3%, Draws: 0.1% , epsilon 0.056550771348900256
+After 343000 games - Mr.Q: 85.5%, Random: 13.9%, Draws: 0.6% , epsilon 0.05617337213789819
+After 344000 games - Mr.Q: 84.0%, Random: 15.4%, Draws: 0.6% , epsilon 0.05578649615937552
+After 345000 games - Mr.Q: 84.0%, Random: 14.6%, Draws: 1.4% , epsilon 0.05540084422294933
+After 346000 games - Mr.Q: 85.1%, Random: 14.1%, Draws: 0.8% , epsilon 0.05501505245696182
+After 347000 games - Mr.Q: 83.2%, Random: 15.9%, Draws: 0.9% , epsilon 0.05463391399404216
+After 348000 games - Mr.Q: 85.8%, Random: 13.6%, Draws: 0.6% , epsilon 0.05426984988556732
+After 349000 games - Mr.Q: 85.9%, Random: 13.4%, Draws: 0.7% , epsilon 0.05389743122207416
+After 350000 games - Mr.Q: 85.1%, Random: 14.2%, Draws: 0.7% , epsilon 0.05351638212715174
+After 351000 games - Mr.Q: 82.4%, Random: 16.3%, Draws: 1.3% , epsilon 0.05313627348188722
+After 352000 games - Mr.Q: 84.8%, Random: 14.6%, Draws: 0.6% , epsilon 0.052775855717264494
+After 353000 games - Mr.Q: 85.0%, Random: 13.9%, Draws: 1.1% , epsilon 0.05242212865107903
+After 354000 games - Mr.Q: 83.9%, Random: 15.5%, Draws: 0.6% , epsilon 0.05206067166463667
+After 355000 games - Mr.Q: 85.9%, Random: 13.4%, Draws: 0.7% , epsilon 0.051711841501094584
+After 356000 games - Mr.Q: 84.1%, Random: 15.3%, Draws: 0.6% , epsilon 0.05135461441673372
+After 357000 games - Mr.Q: 86.4%, Random: 13.0%, Draws: 0.6% , epsilon 0.05101633069079516
+After 358000 games - Mr.Q: 84.4%, Random: 14.4%, Draws: 1.2% , epsilon 0.05065853812541516
+After 359000 games - Mr.Q: 85.8%, Random: 14.1%, Draws: 0.1% , epsilon 0.05031814683955436
+After 360000 games - Mr.Q: 85.0%, Random: 14.2%, Draws: 0.8% , epsilon 0.04997584460470421
+After 361000 games - Mr.Q: 87.3%, Random: 12.3%, Draws: 0.4% , epsilon 0.04965364380136229
+After 362000 games - Mr.Q: 86.6%, Random: 12.5%, Draws: 0.9% , epsilon 0.04932838984683292
+After 363000 games - Mr.Q: 83.5%, Random: 16.0%, Draws: 0.5% , epsilon 0.04897939848978617
+After 364000 games - Mr.Q: 84.6%, Random: 14.9%, Draws: 0.5% , epsilon 0.048642214610416915
+After 365000 games - Mr.Q: 84.1%, Random: 15.1%, Draws: 0.8% , epsilon 0.04829914041571209
+After 366000 games - Mr.Q: 85.1%, Random: 14.1%, Draws: 0.8% , epsilon 0.047982471178693004
+After 367000 games - Mr.Q: 84.0%, Random: 15.0%, Draws: 1.0% , epsilon 0.047653436970442886
+After 368000 games - Mr.Q: 84.6%, Random: 14.4%, Draws: 1.0% , epsilon 0.04731643761644352
+After 369000 games - Mr.Q: 83.9%, Random: 15.1%, Draws: 1.0% , epsilon 0.046984546507229975
+After 370000 games - Mr.Q: 84.5%, Random: 14.4%, Draws: 1.1% , epsilon 0.046666508587723365
+After 371000 games - Mr.Q: 85.8%, Random: 13.3%, Draws: 0.9% , epsilon 0.0463537290610345
+After 372000 games - Mr.Q: 83.5%, Random: 15.7%, Draws: 0.8% , epsilon 0.046027578048295076
+After 373000 games - Mr.Q: 85.0%, Random: 14.6%, Draws: 0.4% , epsilon 0.04572561921525232
+After 374000 games - Mr.Q: 84.3%, Random: 15.1%, Draws: 0.6% , epsilon 0.04542423317596406
+After 375000 games - Mr.Q: 87.7%, Random: 11.8%, Draws: 0.5% , epsilon 0.04512230670678167
+After 376000 games - Mr.Q: 86.0%, Random: 13.0%, Draws: 1.0% , epsilon 0.04481539533643801
+After 377000 games - Mr.Q: 86.5%, Random: 13.1%, Draws: 0.4% , epsilon 0.0445241493070175
+After 378000 games - Mr.Q: 85.8%, Random: 13.4%, Draws: 0.8% , epsilon 0.044230195843718165
+After 379000 games - Mr.Q: 88.3%, Random: 11.3%, Draws: 0.4% , epsilon 0.04393787552803072
+After 380000 games - Mr.Q: 86.9%, Random: 12.5%, Draws: 0.6% , epsilon 0.04364617777118627
+After 381000 games - Mr.Q: 86.4%, Random: 12.7%, Draws: 0.9% , epsilon 0.04335264471120343
+After 382000 games - Mr.Q: 86.3%, Random: 13.0%, Draws: 0.7% , epsilon 0.04307193851163805
+After 383000 games - Mr.Q: 85.7%, Random: 13.6%, Draws: 0.7% , epsilon 0.042780213874748195
+After 384000 games - Mr.Q: 85.2%, Random: 14.2%, Draws: 0.6% , epsilon 0.04249072002165208
+After 385000 games - Mr.Q: 82.9%, Random: 16.7%, Draws: 0.4% , epsilon 0.04219250911383768
+After 386000 games - Mr.Q: 84.1%, Random: 15.1%, Draws: 0.8% , epsilon 0.04190116759084901
+After 387000 games - Mr.Q: 86.7%, Random: 12.2%, Draws: 1.1% , epsilon 0.041613211010587785
+After 388000 games - Mr.Q: 88.4%, Random: 11.2%, Draws: 0.4% , epsilon 0.04134236189206529
+After 389000 games - Mr.Q: 86.1%, Random: 13.0%, Draws: 0.9% , epsilon 0.041072536344411895
+After 390000 games - Mr.Q: 85.2%, Random: 14.0%, Draws: 0.8% , epsilon 0.040798392426949125
+After 391000 games - Mr.Q: 86.7%, Random: 12.7%, Draws: 0.6% , epsilon 0.04053523825157716
+After 392000 games - Mr.Q: 85.7%, Random: 14.0%, Draws: 0.3% , epsilon 0.040257312833160766
+After 393000 games - Mr.Q: 84.0%, Random: 15.6%, Draws: 0.4% , epsilon 0.0399806932647186
+After 394000 games - Mr.Q: 86.8%, Random: 12.2%, Draws: 1.0% , epsilon 0.03971161308036839
+After 395000 games - Mr.Q: 85.3%, Random: 14.2%, Draws: 0.5% , epsilon 0.03944576389640944
+After 396000 games - Mr.Q: 86.8%, Random: 12.5%, Draws: 0.7% , epsilon 0.03919023698317109
+After 397000 games - Mr.Q: 85.7%, Random: 13.5%, Draws: 0.8% , epsilon 0.03892087175776486
+After 398000 games - Mr.Q: 85.9%, Random: 13.7%, Draws: 0.4% , epsilon 0.038667662349024995
+After 399000 games - Mr.Q: 85.0%, Random: 14.2%, Draws: 0.8% , epsilon 0.038405537276677316
+After 400000 games - Mr.Q: 84.7%, Random: 14.7%, Draws: 0.6% , epsilon 0.03815049168224504
+After 401000 games - Mr.Q: 84.6%, Random: 14.6%, Draws: 0.8% , epsilon 0.03789103885713811
+After 402000 games - Mr.Q: 88.1%, Random: 10.9%, Draws: 1.0% , epsilon 0.03764580921879154
+After 403000 games - Mr.Q: 86.9%, Random: 12.3%, Draws: 0.8% , epsilon 0.03740197968866413
+After 404000 games - Mr.Q: 87.4%, Random: 12.2%, Draws: 0.4% , epsilon 0.03715813159220212
+After 405000 games - Mr.Q: 86.4%, Random: 12.9%, Draws: 0.7% , epsilon 0.03690380377867486
+After 406000 games - Mr.Q: 86.1%, Random: 13.2%, Draws: 0.7% , epsilon 0.03665598167516937
+After 407000 games - Mr.Q: 88.7%, Random: 11.0%, Draws: 0.3% , epsilon 0.03642034774977488
+After 408000 games - Mr.Q: 85.8%, Random: 13.5%, Draws: 0.7% , epsilon 0.036178955834234465
+After 409000 games - Mr.Q: 87.3%, Random: 12.1%, Draws: 0.6% , epsilon 0.035939020093624895
+After 410000 games - Mr.Q: 88.2%, Random: 11.6%, Draws: 0.2% , epsilon 0.035712530184300866
+After 411000 games - Mr.Q: 86.0%, Random: 13.3%, Draws: 0.7% , epsilon 0.03547455253429491
+After 412000 games - Mr.Q: 86.0%, Random: 14.0%, Draws: 0.0% , epsilon 0.03523858355704954
+After 413000 games - Mr.Q: 87.9%, Random: 11.1%, Draws: 1.0% , epsilon 0.03501073059170137
+After 414000 games - Mr.Q: 86.0%, Random: 13.3%, Draws: 0.7% , epsilon 0.03478682070329086
+After 415000 games - Mr.Q: 85.8%, Random: 13.4%, Draws: 0.8% , epsilon 0.03455055439394071
+After 416000 games - Mr.Q: 87.1%, Random: 12.4%, Draws: 0.5% , epsilon 0.034321932897791355
+After 417000 games - Mr.Q: 87.2%, Random: 12.1%, Draws: 0.7% , epsilon 0.034102632805939774
+After 418000 games - Mr.Q: 87.9%, Random: 10.9%, Draws: 1.2% , epsilon 0.03388303973748532
+After 419000 games - Mr.Q: 88.6%, Random: 10.9%, Draws: 0.5% , epsilon 0.033668530340464894
+After 420000 games - Mr.Q: 86.4%, Random: 13.2%, Draws: 0.4% , epsilon 0.033451163862005445
+After 421000 games - Mr.Q: 86.6%, Random: 12.6%, Draws: 0.8% , epsilon 0.033225497450610424
+After 422000 games - Mr.Q: 85.5%, Random: 13.7%, Draws: 0.8% , epsilon 0.033005148793383475
+After 423000 games - Mr.Q: 87.5%, Random: 11.6%, Draws: 0.9% , epsilon 0.03278478612029624
+After 424000 games - Mr.Q: 87.0%, Random: 12.2%, Draws: 0.8% , epsilon 0.032572017690758626
+After 425000 games - Mr.Q: 88.2%, Random: 11.2%, Draws: 0.6% , epsilon 0.03236389868730255
+After 426000 games - Mr.Q: 88.1%, Random: 11.8%, Draws: 0.1% , epsilon 0.032162673124797043
+After 427000 games - Mr.Q: 88.1%, Random: 11.4%, Draws: 0.5% , epsilon 0.0319563067972938
+After 428000 games - Mr.Q: 86.9%, Random: 12.4%, Draws: 0.7% , epsilon 0.031746533995917474
+After 429000 games - Mr.Q: 87.5%, Random: 11.5%, Draws: 1.0% , epsilon 0.03153917899563362
+After 430000 games - Mr.Q: 88.6%, Random: 10.5%, Draws: 0.9% , epsilon 0.03133089111127276
+After 431000 games - Mr.Q: 86.3%, Random: 13.0%, Draws: 0.7% , epsilon 0.03112936369768248
+After 432000 games - Mr.Q: 88.0%, Random: 11.0%, Draws: 1.0% , epsilon 0.03093148325880165
+After 433000 games - Mr.Q: 85.9%, Random: 13.4%, Draws: 0.7% , epsilon 0.03072766956952673
+After 434000 games - Mr.Q: 87.3%, Random: 12.0%, Draws: 0.7% , epsilon 0.030527091471093715
+After 435000 games - Mr.Q: 87.2%, Random: 12.3%, Draws: 0.5% , epsilon 0.03032557849035318
+After 436000 games - Mr.Q: 87.9%, Random: 11.9%, Draws: 0.2% , epsilon 0.030127233426999574
+After 437000 games - Mr.Q: 86.1%, Random: 13.4%, Draws: 0.5% , epsilon 0.02992123785134987
+After 438000 games - Mr.Q: 88.0%, Random: 11.4%, Draws: 0.6% , epsilon 0.02972776688619943
+After 439000 games - Mr.Q: 86.3%, Random: 12.8%, Draws: 0.9% , epsilon 0.029526097038193568
+After 440000 games - Mr.Q: 87.9%, Random: 11.0%, Draws: 1.1% , epsilon 0.029331925030713794
+After 441000 games - Mr.Q: 87.0%, Random: 12.8%, Draws: 0.2% , epsilon 0.029141128040288126
+After 442000 games - Mr.Q: 87.9%, Random: 11.6%, Draws: 0.5% , epsilon 0.028950153544580436
+After 443000 games - Mr.Q: 87.5%, Random: 12.3%, Draws: 0.2% , epsilon 0.028764917567255452
+After 444000 games - Mr.Q: 86.3%, Random: 13.4%, Draws: 0.3% , epsilon 0.02857815175748337
+After 445000 games - Mr.Q: 85.9%, Random: 13.7%, Draws: 0.4% , epsilon 0.02838763031444809
+After 446000 games - Mr.Q: 87.9%, Random: 11.4%, Draws: 0.7% , epsilon 0.028209209279477034
+After 447000 games - Mr.Q: 86.0%, Random: 13.2%, Draws: 0.8% , epsilon 0.028023501334954917
+After 448000 games - Mr.Q: 87.1%, Random: 12.4%, Draws: 0.5% , epsilon 0.027837791059703524
+After 449000 games - Mr.Q: 86.4%, Random: 13.3%, Draws: 0.3% , epsilon 0.027652398932039232
+After 450000 games - Mr.Q: 86.9%, Random: 12.8%, Draws: 0.3% , epsilon 0.0274737906135882
+After 451000 games - Mr.Q: 85.6%, Random: 13.1%, Draws: 1.3% , epsilon 0.027289594570031044
+After 452000 games - Mr.Q: 89.3%, Random: 10.3%, Draws: 0.4% , epsilon 0.027113519418356446
+After 453000 games - Mr.Q: 88.4%, Random: 10.9%, Draws: 0.7% , epsilon 0.02693620982895033
+After 454000 games - Mr.Q: 86.9%, Random: 12.6%, Draws: 0.5% , epsilon 0.02676412760063816
+After 455000 games - Mr.Q: 87.8%, Random: 11.4%, Draws: 0.8% , epsilon 0.026584476764690623
+After 456000 games - Mr.Q: 86.6%, Random: 12.4%, Draws: 1.0% , epsilon 0.02640605821841302
+After 457000 games - Mr.Q: 87.3%, Random: 12.3%, Draws: 0.4% , epsilon 0.026230987960839027
+After 458000 games - Mr.Q: 84.8%, Random: 14.4%, Draws: 0.8% , epsilon 0.026055801640220734
+After 459000 games - Mr.Q: 85.9%, Random: 13.6%, Draws: 0.5% , epsilon 0.025883390040498114
+After 460000 games - Mr.Q: 87.0%, Random: 12.4%, Draws: 0.6% , epsilon 0.02570959962522998
+After 461000 games - Mr.Q: 87.2%, Random: 12.3%, Draws: 0.5% , epsilon 0.02553914683779445
+After 462000 games - Mr.Q: 87.2%, Random: 12.2%, Draws: 0.6% , epsilon 0.02536728728318316
+After 463000 games - Mr.Q: 86.6%, Random: 12.4%, Draws: 1.0% , epsilon 0.025201951662901758
+After 464000 games - Mr.Q: 86.9%, Random: 12.7%, Draws: 0.4% , epsilon 0.025038294557876085
+After 465000 games - Mr.Q: 85.5%, Random: 13.4%, Draws: 1.1% , epsilon 0.024871670674670315
+After 466000 games - Mr.Q: 87.5%, Random: 11.7%, Draws: 0.8% , epsilon 0.024713642736837425
+After 467000 games - Mr.Q: 88.0%, Random: 11.4%, Draws: 0.6% , epsilon 0.024558215099122056
+After 468000 games - Mr.Q: 86.6%, Random: 12.7%, Draws: 0.7% , epsilon 0.02439798195819954
+After 469000 games - Mr.Q: 87.0%, Random: 12.4%, Draws: 0.6% , epsilon 0.02423862460736184
+After 470000 games - Mr.Q: 87.5%, Random: 12.0%, Draws: 0.5% , epsilon 0.024076816718388048
+After 471000 games - Mr.Q: 86.1%, Random: 13.4%, Draws: 0.5% , epsilon 0.02391527586406387
+After 472000 games - Mr.Q: 87.2%, Random: 12.4%, Draws: 0.4% , epsilon 0.023761090954204006
+After 473000 games - Mr.Q: 86.6%, Random: 12.7%, Draws: 0.7% , epsilon 0.02360844308283204
+After 474000 games - Mr.Q: 86.6%, Random: 12.9%, Draws: 0.5% , epsilon 0.023452366402369473
+After 475000 games - Mr.Q: 87.6%, Random: 11.8%, Draws: 0.6% , epsilon 0.02329897572257259
+After 476000 games - Mr.Q: 89.7%, Random: 9.8%, Draws: 0.5% , epsilon 0.0231464957114247
+After 477000 games - Mr.Q: 86.4%, Random: 13.2%, Draws: 0.4% , epsilon 0.022990759918657504
+After 478000 games - Mr.Q: 85.4%, Random: 14.0%, Draws: 0.6% , epsilon 0.022834678999214493
+After 479000 games - Mr.Q: 85.4%, Random: 14.2%, Draws: 0.4% , epsilon 0.0226785464138375
+After 480000 games - Mr.Q: 87.4%, Random: 12.1%, Draws: 0.5% , epsilon 0.022531253333759618
+After 481000 games - Mr.Q: 85.6%, Random: 13.9%, Draws: 0.5% , epsilon 0.02238422297373025
+After 482000 games - Mr.Q: 87.4%, Random: 11.7%, Draws: 0.9% , epsilon 0.022240220323064514
+After 483000 games - Mr.Q: 85.9%, Random: 13.7%, Draws: 0.4% , epsilon 0.022093498343444026
+After 484000 games - Mr.Q: 88.4%, Random: 10.7%, Draws: 0.9% , epsilon 0.021955471279866214
+After 485000 games - Mr.Q: 88.7%, Random: 10.6%, Draws: 0.7% , epsilon 0.021816342967245016
+After 486000 games - Mr.Q: 86.4%, Random: 12.8%, Draws: 0.8% , epsilon 0.021678724962728137
+After 487000 games - Mr.Q: 87.5%, Random: 12.2%, Draws: 0.3% , epsilon 0.021534975047989634
+After 488000 games - Mr.Q: 88.0%, Random: 11.3%, Draws: 0.7% , epsilon 0.021396114852523573
+After 489000 games - Mr.Q: 87.7%, Random: 11.8%, Draws: 0.5% , epsilon 0.021258851575732818
+After 490000 games - Mr.Q: 87.7%, Random: 11.6%, Draws: 0.7% , epsilon 0.021119828744134386
+After 491000 games - Mr.Q: 86.1%, Random: 13.1%, Draws: 0.8% , epsilon 0.020980686976718312
+After 492000 games - Mr.Q: 87.9%, Random: 11.6%, Draws: 0.5% , epsilon 0.020843337306051132
+After 493000 games - Mr.Q: 86.1%, Random: 13.3%, Draws: 0.6% , epsilon 0.020705209601664748
+After 494000 games - Mr.Q: 85.4%, Random: 13.7%, Draws: 0.9% , epsilon 0.020565508683988026
+After 495000 games - Mr.Q: 88.1%, Random: 11.3%, Draws: 0.6% , epsilon 0.0204330018929271
+After 496000 games - Mr.Q: 87.5%, Random: 11.8%, Draws: 0.7% , epsilon 0.02030136916522794
+After 497000 games - Mr.Q: 88.0%, Random: 11.7%, Draws: 0.3% , epsilon 0.020169273390975392
+After 498000 games - Mr.Q: 87.7%, Random: 11.9%, Draws: 0.4% , epsilon 0.020039820595423186
+After 499000 games - Mr.Q: 84.7%, Random: 14.6%, Draws: 0.7% , epsilon 0.019904211061153306
+After 500000 games - Mr.Q: 86.7%, Random: 12.1%, Draws: 1.2% , epsilon 0.019772643029435346
+After 501000 games - Mr.Q: 85.4%, Random: 13.5%, Draws: 1.1% , epsilon 0.01963941102161107
+After 502000 games - Mr.Q: 85.6%, Random: 13.9%, Draws: 0.5% , epsilon 0.01950756444085702
+After 503000 games - Mr.Q: 84.7%, Random: 14.5%, Draws: 0.8% , epsilon 0.01937646735881932
+After 504000 games - Mr.Q: 87.4%, Random: 12.1%, Draws: 0.5% , epsilon 0.01924546221064689
+After 505000 games - Mr.Q: 89.4%, Random: 10.3%, Draws: 0.3% , epsilon 0.019124061382404807
+After 506000 games - Mr.Q: 85.0%, Random: 14.5%, Draws: 0.5% , epsilon 0.018996510361578456
+After 507000 games - Mr.Q: 86.4%, Random: 12.9%, Draws: 0.7% , epsilon 0.01886754582043527
+After 508000 games - Mr.Q: 85.2%, Random: 14.1%, Draws: 0.7% , epsilon 0.01874170567164255
+After 509000 games - Mr.Q: 86.7%, Random: 12.2%, Draws: 1.1% , epsilon 0.018615364478912634
+After 510000 games - Mr.Q: 85.5%, Random: 13.9%, Draws: 0.6% , epsilon 0.01848978252558822
+After 511000 games - Mr.Q: 88.0%, Random: 11.8%, Draws: 0.2% , epsilon 0.01836973145303326
+After 512000 games - Mr.Q: 86.9%, Random: 12.4%, Draws: 0.7% , epsilon 0.01825033209922395
+After 513000 games - Mr.Q: 87.6%, Random: 12.2%, Draws: 0.2% , epsilon 0.018128880488486893
+After 514000 games - Mr.Q: 86.8%, Random: 12.9%, Draws: 0.3% , epsilon 0.018011677012783327
+After 515000 games - Mr.Q: 87.2%, Random: 12.5%, Draws: 0.3% , epsilon 0.017892135650474726
+After 516000 games - Mr.Q: 87.5%, Random: 11.9%, Draws: 0.6% , epsilon 0.017773796462819968
+After 517000 games - Mr.Q: 88.4%, Random: 10.8%, Draws: 0.8% , epsilon 0.017655975132791293
+After 518000 games - Mr.Q: 88.0%, Random: 11.7%, Draws: 0.3% , epsilon 0.01754207458452971
+After 519000 games - Mr.Q: 87.7%, Random: 11.9%, Draws: 0.4% , epsilon 0.01742690461038459
+After 520000 games - Mr.Q: 89.3%, Random: 10.1%, Draws: 0.6% , epsilon 0.017316351886053395
+After 521000 games - Mr.Q: 86.4%, Random: 12.9%, Draws: 0.7% , epsilon 0.017202113385192314
+After 522000 games - Mr.Q: 87.4%, Random: 12.0%, Draws: 0.6% , epsilon 0.01709090147227412
+After 523000 games - Mr.Q: 86.0%, Random: 13.2%, Draws: 0.8% , epsilon 0.016977522120445364
+After 524000 games - Mr.Q: 86.2%, Random: 13.0%, Draws: 0.8% , epsilon 0.016864136012459965
+After 525000 games - Mr.Q: 85.9%, Random: 13.1%, Draws: 1.0% , epsilon 0.01675128939684079
+After 526000 games - Mr.Q: 87.3%, Random: 12.0%, Draws: 0.7% , epsilon 0.016638598895377676
+After 527000 games - Mr.Q: 89.7%, Random: 9.8%, Draws: 0.5% , epsilon 0.01653476654869678
+After 528000 games - Mr.Q: 85.5%, Random: 13.6%, Draws: 0.9% , epsilon 0.01642686697282124
+After 529000 games - Mr.Q: 87.0%, Random: 12.8%, Draws: 0.2% , epsilon 0.01632194010153469
+After 530000 games - Mr.Q: 88.6%, Random: 11.1%, Draws: 0.3% , epsilon 0.01622149505765288
+After 531000 games - Mr.Q: 90.2%, Random: 9.4%, Draws: 0.4% , epsilon 0.016118621442610222
+After 532000 games - Mr.Q: 89.3%, Random: 10.1%, Draws: 0.6% , epsilon 0.016017649560898573
+After 533000 games - Mr.Q: 89.1%, Random: 10.3%, Draws: 0.6% , epsilon 0.015911612817346776
+After 534000 games - Mr.Q: 85.6%, Random: 14.2%, Draws: 0.2% , epsilon 0.015804871339548634
+After 535000 games - Mr.Q: 87.0%, Random: 12.1%, Draws: 0.9% , epsilon 0.01569875173353631
+After 536000 games - Mr.Q: 87.2%, Random: 12.0%, Draws: 0.8% , epsilon 0.0155937656790296
+After 537000 games - Mr.Q: 87.9%, Random: 11.6%, Draws: 0.5% , epsilon 0.01549107722270665
+After 538000 games - Mr.Q: 87.1%, Random: 11.8%, Draws: 1.1% , epsilon 0.015391342744285634
+After 539000 games - Mr.Q: 86.9%, Random: 12.5%, Draws: 0.6% , epsilon 0.01528552326180184
+After 540000 games - Mr.Q: 85.6%, Random: 13.7%, Draws: 0.7% , epsilon 0.015182192348819987
+After 541000 games - Mr.Q: 87.0%, Random: 12.7%, Draws: 0.3% , epsilon 0.015084763306367183
+After 542000 games - Mr.Q: 86.3%, Random: 13.4%, Draws: 0.3% , epsilon 0.014986610641285708
+After 543000 games - Mr.Q: 88.8%, Random: 10.7%, Draws: 0.5% , epsilon 0.014890779194109926
+After 544000 games - Mr.Q: 88.3%, Random: 11.0%, Draws: 0.7% , epsilon 0.014793814764330487
+After 545000 games - Mr.Q: 86.3%, Random: 13.1%, Draws: 0.6% , epsilon 0.014698569393194185
+After 546000 games - Mr.Q: 89.7%, Random: 9.5%, Draws: 0.8% , epsilon 0.014603090225511184
+After 547000 games - Mr.Q: 87.8%, Random: 11.7%, Draws: 0.5% , epsilon 0.014508231272708791
+After 548000 games - Mr.Q: 88.0%, Random: 11.5%, Draws: 0.5% , epsilon 0.014413743470142404
+After 549000 games - Mr.Q: 89.7%, Random: 10.0%, Draws: 0.3% , epsilon 0.014321145564454494
+After 550000 games - Mr.Q: 85.4%, Random: 14.0%, Draws: 0.6% , epsilon 0.014224789079843474
+After 551000 games - Mr.Q: 87.2%, Random: 12.6%, Draws: 0.2% , epsilon 0.014131935271396084
+After 552000 games - Mr.Q: 87.1%, Random: 12.4%, Draws: 0.5% , epsilon 0.014035153486900463
+After 553000 games - Mr.Q: 87.0%, Random: 12.5%, Draws: 0.5% , epsilon 0.013940581826632473
+After 554000 games - Mr.Q: 87.2%, Random: 12.1%, Draws: 0.7% , epsilon 0.013848516833570147
+After 555000 games - Mr.Q: 88.4%, Random: 11.3%, Draws: 0.3% , epsilon 0.01375772020195741
+After 556000 games - Mr.Q: 85.7%, Random: 13.7%, Draws: 0.6% , epsilon 0.01366428005101875
+After 557000 games - Mr.Q: 86.4%, Random: 13.1%, Draws: 0.5% , epsilon 0.013569791770718325
+After 558000 games - Mr.Q: 88.3%, Random: 11.3%, Draws: 0.4% , epsilon 0.01347943412253888
+After 559000 games - Mr.Q: 88.0%, Random: 11.4%, Draws: 0.6% , epsilon 0.01338592955507158
+After 560000 games - Mr.Q: 88.5%, Random: 11.3%, Draws: 0.2% , epsilon 0.0132982589254348
+After 561000 games - Mr.Q: 89.7%, Random: 9.7%, Draws: 0.6% , epsilon 0.013208784694778042
+After 562000 games - Mr.Q: 85.8%, Random: 13.8%, Draws: 0.4% , epsilon 0.013117052639978586
+After 563000 games - Mr.Q: 86.7%, Random: 12.8%, Draws: 0.5% , epsilon 0.013026283296953066
+After 564000 games - Mr.Q: 84.2%, Random: 15.4%, Draws: 0.4% , epsilon 0.01293475797936198
+After 565000 games - Mr.Q: 86.1%, Random: 13.0%, Draws: 0.9% , epsilon 0.012846778782679784
+After 566000 games - Mr.Q: 87.3%, Random: 12.0%, Draws: 0.7% , epsilon 0.012758874875048464
+After 567000 games - Mr.Q: 86.6%, Random: 12.8%, Draws: 0.6% , epsilon 0.012672687596698384
+After 568000 games - Mr.Q: 86.5%, Random: 13.2%, Draws: 0.3% , epsilon 0.01258801399973604
+After 569000 games - Mr.Q: 88.0%, Random: 11.3%, Draws: 0.7% , epsilon 0.012502455786609381
+After 570000 games - Mr.Q: 85.4%, Random: 13.9%, Draws: 0.7% , epsilon 0.012418087567230207
+After 571000 games - Mr.Q: 85.8%, Random: 13.5%, Draws: 0.7% , epsilon 0.012331686414051005
+After 572000 games - Mr.Q: 89.4%, Random: 10.0%, Draws: 0.6% , epsilon 0.012249107506252252
+After 573000 games - Mr.Q: 87.5%, Random: 11.8%, Draws: 0.7% , epsilon 0.012165329652085449
+After 574000 games - Mr.Q: 85.7%, Random: 13.8%, Draws: 0.5% , epsilon 0.012084843582413178
+After 575000 games - Mr.Q: 86.2%, Random: 13.6%, Draws: 0.2% , epsilon 0.012002441261217587
+After 576000 games - Mr.Q: 87.3%, Random: 12.4%, Draws: 0.3% , epsilon 0.011919921357405031
+After 577000 games - Mr.Q: 87.4%, Random: 11.7%, Draws: 0.9% , epsilon 0.01183903426505293
+After 578000 games - Mr.Q: 88.9%, Random: 10.6%, Draws: 0.5% , epsilon 0.011759001792596594
+After 579000 games - Mr.Q: 87.4%, Random: 12.0%, Draws: 0.6% , epsilon 0.01167973225663125
+After 580000 games - Mr.Q: 85.7%, Random: 13.6%, Draws: 0.7% , epsilon 0.011600219849641324
+After 581000 games - Mr.Q: 86.4%, Random: 13.0%, Draws: 0.6% , epsilon 0.011522677465401409
+After 582000 games - Mr.Q: 87.5%, Random: 12.0%, Draws: 0.5% , epsilon 0.0114427809180757
+After 583000 games - Mr.Q: 85.4%, Random: 13.5%, Draws: 1.1% , epsilon 0.011364483846577457
+After 584000 games - Mr.Q: 88.2%, Random: 11.3%, Draws: 0.5% , epsilon 0.011287591633246342
+After 585000 games - Mr.Q: 87.8%, Random: 11.8%, Draws: 0.4% , epsilon 0.011214426542403412
+After 586000 games - Mr.Q: 86.9%, Random: 12.5%, Draws: 0.6% , epsilon 0.011139685808892973
+After 587000 games - Mr.Q: 85.8%, Random: 13.2%, Draws: 1.0% , epsilon 0.01106641700191729
+After 588000 games - Mr.Q: 87.5%, Random: 12.1%, Draws: 0.4% , epsilon 0.010993542155498293
+After 589000 games - Mr.Q: 87.8%, Random: 11.5%, Draws: 0.7% , epsilon 0.010921704199332465
+After 590000 games - Mr.Q: 85.5%, Random: 13.8%, Draws: 0.7% , epsilon 0.010847449865668473
+After 591000 games - Mr.Q: 86.5%, Random: 12.7%, Draws: 0.8% , epsilon 0.01077438991058974
+After 592000 games - Mr.Q: 86.3%, Random: 12.8%, Draws: 0.9% , epsilon 0.010701030124414495
+After 593000 games - Mr.Q: 88.9%, Random: 10.6%, Draws: 0.5% , epsilon 0.010628850049336702
+After 594000 games - Mr.Q: 89.0%, Random: 10.2%, Draws: 0.8% , epsilon 0.010558223167061453
+After 595000 games - Mr.Q: 86.7%, Random: 13.0%, Draws: 0.3% , epsilon 0.010488663425359179
+After 596000 games - Mr.Q: 88.3%, Random: 11.4%, Draws: 0.3% , epsilon 0.01041984328962655
+After 597000 games - Mr.Q: 87.2%, Random: 11.9%, Draws: 0.9% , epsilon 0.010348224854718572
+After 598000 games - Mr.Q: 87.1%, Random: 12.1%, Draws: 0.8% , epsilon 0.010278157269125381
+After 599000 games - Mr.Q: 87.4%, Random: 12.0%, Draws: 0.6% , epsilon 0.010207798495516018
+After 600000 games - Mr.Q: 86.8%, Random: 12.7%, Draws: 0.5% , epsilon 0.010139817329991968
+After 601000 games - Mr.Q: 87.9%, Random: 11.6%, Draws: 0.5% , epsilon 0.010071513363791989
+After 602000 games - Mr.Q: 87.6%, Random: 12.2%, Draws: 0.2% , epsilon 0.010004419811360308
+After 603000 games - Mr.Q: 87.8%, Random: 11.6%, Draws: 0.6% , epsilon 0.009938111107260965
+After 604000 games - Mr.Q: 87.8%, Random: 11.5%, Draws: 0.7% , epsilon 0.009870780908924019
+After 605000 games - Mr.Q: 87.8%, Random: 11.3%, Draws: 0.9% , epsilon 0.00980640718554208
+After 606000 games - Mr.Q: 88.6%, Random: 11.2%, Draws: 0.2% , epsilon 0.009743008620636717
+After 607000 games - Mr.Q: 87.9%, Random: 11.5%, Draws: 0.6% , epsilon 0.009680910531620323
+After 608000 games - Mr.Q: 89.9%, Random: 9.5%, Draws: 0.6% , epsilon 0.009618448343483788
+After 609000 games - Mr.Q: 87.4%, Random: 11.8%, Draws: 0.8% , epsilon 0.009556064255665856
+After 610000 games - Mr.Q: 88.3%, Random: 11.2%, Draws: 0.5% , epsilon 0.009491977329525437
+After 611000 games - Mr.Q: 87.7%, Random: 11.7%, Draws: 0.6% , epsilon 0.009427170011387664
+After 612000 games - Mr.Q: 89.9%, Random: 9.2%, Draws: 0.9% , epsilon 0.009365427124784833
+After 613000 games - Mr.Q: 88.0%, Random: 11.6%, Draws: 0.4% , epsilon 0.009305744896844813
+After 614000 games - Mr.Q: 88.7%, Random: 11.0%, Draws: 0.3% , epsilon 0.00924618410364373
+After 615000 games - Mr.Q: 85.7%, Random: 13.4%, Draws: 0.9% , epsilon 0.009185892964433886
+After 616000 games - Mr.Q: 86.7%, Random: 12.8%, Draws: 0.5% , epsilon 0.009122710194163238
+After 617000 games - Mr.Q: 87.0%, Random: 12.4%, Draws: 0.6% , epsilon 0.009061139882318428
+After 618000 games - Mr.Q: 88.8%, Random: 10.4%, Draws: 0.8% , epsilon 0.009002172379425959
+After 619000 games - Mr.Q: 86.2%, Random: 13.6%, Draws: 0.2% , epsilon 0.008941165236108597
+After 620000 games - Mr.Q: 88.8%, Random: 10.6%, Draws: 0.6% , epsilon 0.0088810866226223
+After 621000 games - Mr.Q: 88.6%, Random: 10.7%, Draws: 0.7% , epsilon 0.008823440856038393
+After 622000 games - Mr.Q: 86.1%, Random: 13.3%, Draws: 0.6% , epsilon 0.008763916642102187
+After 623000 games - Mr.Q: 88.5%, Random: 11.0%, Draws: 0.5% , epsilon 0.008706343579175373
+After 624000 games - Mr.Q: 88.4%, Random: 11.0%, Draws: 0.6% , epsilon 0.008647107773435053
+After 625000 games - Mr.Q: 85.5%, Random: 13.9%, Draws: 0.6% , epsilon 0.008589108096944088
+After 626000 games - Mr.Q: 88.8%, Random: 10.6%, Draws: 0.6% , epsilon 0.008531796055710285
+After 627000 games - Mr.Q: 88.6%, Random: 10.5%, Draws: 0.9% , epsilon 0.008475052886400965
+After 628000 games - Mr.Q: 88.1%, Random: 11.5%, Draws: 0.4% , epsilon 0.008421221511392504
+After 629000 games - Mr.Q: 87.2%, Random: 12.5%, Draws: 0.3% , epsilon 0.008365038082235918
+After 630000 games - Mr.Q: 89.0%, Random: 10.3%, Draws: 0.7% , epsilon 0.008311423416433148
+After 631000 games - Mr.Q: 88.7%, Random: 10.8%, Draws: 0.5% , epsilon 0.008257483503540415
+After 632000 games - Mr.Q: 87.1%, Random: 12.1%, Draws: 0.8% , epsilon 0.008201974165246016
+After 633000 games - Mr.Q: 86.0%, Random: 13.2%, Draws: 0.8% , epsilon 0.008144149963429149
+After 634000 games - Mr.Q: 88.7%, Random: 10.8%, Draws: 0.5% , epsilon 0.008088075934081914
+After 635000 games - Mr.Q: 86.6%, Random: 12.1%, Draws: 1.3% , epsilon 0.008031986375586185
+After 636000 games - Mr.Q: 87.5%, Random: 12.4%, Draws: 0.1% , epsilon 0.007979788149447803
+After 637000 games - Mr.Q: 88.8%, Random: 10.7%, Draws: 0.5% , epsilon 0.007927255303160918
+After 638000 games - Mr.Q: 88.6%, Random: 10.8%, Draws: 0.6% , epsilon 0.007875194295278897
+After 639000 games - Mr.Q: 88.7%, Random: 10.9%, Draws: 0.4% , epsilon 0.007823928964861122
+After 640000 games - Mr.Q: 87.6%, Random: 11.9%, Draws: 0.5% , epsilon 0.007772359997554364
+After 641000 games - Mr.Q: 86.1%, Random: 13.6%, Draws: 0.3% , epsilon 0.007719972847517975
+After 642000 games - Mr.Q: 86.2%, Random: 12.8%, Draws: 1.0% , epsilon 0.007667264047341203
+After 643000 games - Mr.Q: 86.9%, Random: 12.7%, Draws: 0.4% , epsilon 0.007618121676980434
+After 644000 games - Mr.Q: 88.0%, Random: 11.3%, Draws: 0.7% , epsilon 0.0075664487574186885
+After 645000 games - Mr.Q: 89.7%, Random: 9.5%, Draws: 0.8% , epsilon 0.007515299179825318
+After 646000 games - Mr.Q: 88.0%, Random: 11.2%, Draws: 0.8% , epsilon 0.007465659928665989
+After 647000 games - Mr.Q: 86.8%, Random: 12.8%, Draws: 0.4% , epsilon 0.007414539180185873
+After 648000 games - Mr.Q: 86.5%, Random: 13.1%, Draws: 0.4% , epsilon 0.007363716932355719
+After 649000 games - Mr.Q: 87.3%, Random: 12.0%, Draws: 0.7% , epsilon 0.007312870074679084
+After 650000 games - Mr.Q: 88.1%, Random: 11.2%, Draws: 0.7% , epsilon 0.007264219195551994
+After 651000 games - Mr.Q: 87.6%, Random: 11.7%, Draws: 0.7% , epsilon 0.007215877548000021
+After 652000 games - Mr.Q: 86.9%, Random: 12.8%, Draws: 0.3% , epsilon 0.007166775337265712
+After 653000 games - Mr.Q: 86.1%, Random: 13.6%, Draws: 0.3% , epsilon 0.007117964546645302
+After 654000 games - Mr.Q: 88.3%, Random: 10.9%, Draws: 0.8% , epsilon 0.007069846745077087
+After 655000 games - Mr.Q: 86.1%, Random: 13.1%, Draws: 0.8% , epsilon 0.007021155456421836
+After 656000 games - Mr.Q: 90.5%, Random: 9.1%, Draws: 0.4% , epsilon 0.006975024192283502
+After 657000 games - Mr.Q: 88.7%, Random: 11.0%, Draws: 0.3% , epsilon 0.0069278380354708185
+After 658000 games - Mr.Q: 86.5%, Random: 12.9%, Draws: 0.6% , epsilon 0.006879987184801112
+After 659000 games - Mr.Q: 89.3%, Random: 10.1%, Draws: 0.6% , epsilon 0.00683260349261669
+After 660000 games - Mr.Q: 89.3%, Random: 10.5%, Draws: 0.2% , epsilon 0.006787419210468889
+After 661000 games - Mr.Q: 87.5%, Random: 12.0%, Draws: 0.5% , epsilon 0.006741333669003441
+After 662000 games - Mr.Q: 89.1%, Random: 10.8%, Draws: 0.1% , epsilon 0.006695956091290043
+After 663000 games - Mr.Q: 84.6%, Random: 14.4%, Draws: 1.0% , epsilon 0.006648749369032849
+After 664000 games - Mr.Q: 86.0%, Random: 13.5%, Draws: 0.5% , epsilon 0.00660148595644559
+After 665000 games - Mr.Q: 86.3%, Random: 13.0%, Draws: 0.7% , epsilon 0.006555089462363573
+After 666000 games - Mr.Q: 86.5%, Random: 13.0%, Draws: 0.5% , epsilon 0.006509390076478275
+After 667000 games - Mr.Q: 87.3%, Random: 12.6%, Draws: 0.1% , epsilon 0.006466614809926358
+After 668000 games - Mr.Q: 85.9%, Random: 13.6%, Draws: 0.5% , epsilon 0.006422033132204206
+After 669000 games - Mr.Q: 87.1%, Random: 12.1%, Draws: 0.8% , epsilon 0.0063781733743294485
+After 670000 games - Mr.Q: 87.4%, Random: 12.1%, Draws: 0.5% , epsilon 0.006334131747420049
+After 671000 games - Mr.Q: 86.6%, Random: 13.0%, Draws: 0.4% , epsilon 0.006290935227727374
+After 672000 games - Mr.Q: 88.1%, Random: 11.3%, Draws: 0.6% , epsilon 0.006248027044861355
+After 673000 games - Mr.Q: 86.8%, Random: 12.5%, Draws: 0.7% , epsilon 0.006206280341980084
+After 674000 games - Mr.Q: 87.2%, Random: 12.0%, Draws: 0.8% , epsilon 0.006165570892064233
+After 675000 games - Mr.Q: 89.2%, Random: 10.4%, Draws: 0.4% , epsilon 0.0061253857324747064
+After 676000 games - Mr.Q: 87.1%, Random: 12.2%, Draws: 0.7% , epsilon 0.00608393522634622
+After 677000 games - Mr.Q: 88.4%, Random: 11.2%, Draws: 0.4% , epsilon 0.006043726092471428
+After 678000 games - Mr.Q: 88.1%, Random: 11.4%, Draws: 0.5% , epsilon 0.006004731376530166
+After 679000 games - Mr.Q: 90.0%, Random: 9.6%, Draws: 0.4% , epsilon 0.005965767520744157
+After 680000 games - Mr.Q: 89.3%, Random: 10.2%, Draws: 0.5% , epsilon 0.005927145402486705
+After 681000 games - Mr.Q: 87.7%, Random: 11.9%, Draws: 0.4% , epsilon 0.0058876133474720285
+After 682000 games - Mr.Q: 87.3%, Random: 12.1%, Draws: 0.6% , epsilon 0.005848935670859441
+After 683000 games - Mr.Q: 86.9%, Random: 12.3%, Draws: 0.8% , epsilon 0.005809965917940218
+After 684000 games - Mr.Q: 88.9%, Random: 10.5%, Draws: 0.6% , epsilon 0.005771659811370312
+After 685000 games - Mr.Q: 88.0%, Random: 11.7%, Draws: 0.3% , epsilon 0.005734862061467038
+After 686000 games - Mr.Q: 87.0%, Random: 12.3%, Draws: 0.7% , epsilon 0.0056966979211690106
+After 687000 games - Mr.Q: 88.7%, Random: 10.6%, Draws: 0.7% , epsilon 0.005660157347164848
+After 688000 games - Mr.Q: 88.4%, Random: 11.4%, Draws: 0.2% , epsilon 0.005623868028520212
+After 689000 games - Mr.Q: 88.7%, Random: 10.6%, Draws: 0.7% , epsilon 0.005586297281369437
+After 690000 games - Mr.Q: 87.9%, Random: 11.2%, Draws: 0.9% , epsilon 0.0055494214650952875
+After 691000 games - Mr.Q: 87.9%, Random: 11.6%, Draws: 0.5% , epsilon 0.005512893814533193
+After 692000 games - Mr.Q: 86.7%, Random: 13.0%, Draws: 0.3% , epsilon 0.005475724934781588
+After 693000 games - Mr.Q: 88.1%, Random: 11.3%, Draws: 0.6% , epsilon 0.005438012645815479
+After 694000 games - Mr.Q: 87.6%, Random: 11.3%, Draws: 1.1% , epsilon 0.005402083261537134
+After 695000 games - Mr.Q: 88.0%, Random: 11.5%, Draws: 0.5% , epsilon 0.005366208811280433
+After 696000 games - Mr.Q: 88.1%, Random: 11.6%, Draws: 0.3% , epsilon 0.005332028043743298
+After 697000 games - Mr.Q: 88.1%, Random: 11.6%, Draws: 0.3% , epsilon 0.005296994893486799
+After 698000 games - Mr.Q: 87.2%, Random: 12.4%, Draws: 0.4% , epsilon 0.005261960390901317
+After 699000 games - Mr.Q: 89.3%, Random: 10.5%, Draws: 0.2% , epsilon 0.005225730787725023
+After 700000 games - Mr.Q: 89.2%, Random: 10.4%, Draws: 0.4% , epsilon 0.0051920502022894536
+After 701000 games - Mr.Q: 88.9%, Random: 10.6%, Draws: 0.5% , epsilon 0.005158793040761966
+After 702000 games - Mr.Q: 88.3%, Random: 11.3%, Draws: 0.4% , epsilon 0.005125605385645336
+After 703000 games - Mr.Q: 89.7%, Random: 10.0%, Draws: 0.3% , epsilon 0.005092641419322366
+After 704000 games - Mr.Q: 88.7%, Random: 10.4%, Draws: 0.9% , epsilon 0.0050596212848034805
+After 705000 games - Mr.Q: 87.9%, Random: 11.1%, Draws: 1.0% , epsilon 0.005026398040694903
+After 706000 games - Mr.Q: 88.9%, Random: 10.6%, Draws: 0.5% , epsilon 0.004994266872703938
+After 707000 games - Mr.Q: 90.5%, Random: 8.8%, Draws: 0.7% , epsilon 0.004962207121215478
+After 708000 games - Mr.Q: 88.4%, Random: 11.3%, Draws: 0.3% , epsilon 0.004930422196699473
+After 709000 games - Mr.Q: 89.9%, Random: 9.7%, Draws: 0.4% , epsilon 0.004898777182809153
+After 710000 games - Mr.Q: 89.0%, Random: 10.3%, Draws: 0.7% , epsilon 0.004868367261638908
+After 711000 games - Mr.Q: 88.6%, Random: 10.9%, Draws: 0.5% , epsilon 0.0048366320112619
+After 712000 games - Mr.Q: 88.4%, Random: 10.4%, Draws: 1.2% , epsilon 0.004805295840404404
+After 713000 games - Mr.Q: 89.4%, Random: 10.0%, Draws: 0.6% , epsilon 0.004773403662310724
+After 714000 games - Mr.Q: 87.9%, Random: 11.6%, Draws: 0.5% , epsilon 0.0047415998655565735
+After 715000 games - Mr.Q: 88.6%, Random: 11.2%, Draws: 0.2% , epsilon 0.004710563782237274
+After 716000 games - Mr.Q: 88.2%, Random: 11.2%, Draws: 0.6% , epsilon 0.004679197386042403
+After 717000 games - Mr.Q: 87.2%, Random: 11.7%, Draws: 1.1% , epsilon 0.00464763084065484
+After 718000 games - Mr.Q: 88.3%, Random: 11.2%, Draws: 0.5% , epsilon 0.00461690972139127
+After 719000 games - Mr.Q: 86.8%, Random: 12.1%, Draws: 1.1% , epsilon 0.0045854286289634906
+After 720000 games - Mr.Q: 89.5%, Random: 10.1%, Draws: 0.4% , epsilon 0.00455401191014528
+After 721000 games - Mr.Q: 88.3%, Random: 10.9%, Draws: 0.8% , epsilon 0.004523760331011851
+After 722000 games - Mr.Q: 87.3%, Random: 12.4%, Draws: 0.3% , epsilon 0.004493188467968276
+After 723000 games - Mr.Q: 86.8%, Random: 12.8%, Draws: 0.4% , epsilon 0.004463180251856775
+After 724000 games - Mr.Q: 88.5%, Random: 10.8%, Draws: 0.7% , epsilon 0.004433545353651791
+After 725000 games - Mr.Q: 87.7%, Random: 11.5%, Draws: 0.8% , epsilon 0.00440383418074294
+After 726000 games - Mr.Q: 88.0%, Random: 11.2%, Draws: 0.8% , epsilon 0.004373836592658822
+After 727000 games - Mr.Q: 88.3%, Random: 11.4%, Draws: 0.3% , epsilon 0.004344264891053371
+After 728000 games - Mr.Q: 89.6%, Random: 9.8%, Draws: 0.6% , epsilon 0.004316442450517173
+After 729000 games - Mr.Q: 88.2%, Random: 11.3%, Draws: 0.5% , epsilon 0.004288112043053538
+After 730000 games - Mr.Q: 87.3%, Random: 12.2%, Draws: 0.5% , epsilon 0.004259388262041045
+After 731000 games - Mr.Q: 88.3%, Random: 10.9%, Draws: 0.8% , epsilon 0.004230975352065117
+After 732000 games - Mr.Q: 88.1%, Random: 11.7%, Draws: 0.2% , epsilon 0.004202920088336957
+After 733000 games - Mr.Q: 87.9%, Random: 11.0%, Draws: 1.1% , epsilon 0.004174549880554834
+After 734000 games - Mr.Q: 87.8%, Random: 11.3%, Draws: 0.9% , epsilon 0.00414624263945293
+After 735000 games - Mr.Q: 87.8%, Random: 11.7%, Draws: 0.5% , epsilon 0.004119305300614696
+After 736000 games - Mr.Q: 88.6%, Random: 10.7%, Draws: 0.7% , epsilon 0.004092878570922819
+After 737000 games - Mr.Q: 89.1%, Random: 10.4%, Draws: 0.5% , epsilon 0.004066458715911602
+After 738000 games - Mr.Q: 88.4%, Random: 11.0%, Draws: 0.6% , epsilon 0.004039409520484109
+After 739000 games - Mr.Q: 87.4%, Random: 12.2%, Draws: 0.4% , epsilon 0.004011693693296883
+After 740000 games - Mr.Q: 87.4%, Random: 12.3%, Draws: 0.3% , epsilon 0.003985036678014403
+After 741000 games - Mr.Q: 87.1%, Random: 12.4%, Draws: 0.5% , epsilon 0.0039587270157051095
+After 742000 games - Mr.Q: 90.0%, Random: 9.5%, Draws: 0.5% , epsilon 0.00393332258309019
+After 743000 games - Mr.Q: 87.8%, Random: 11.5%, Draws: 0.7% , epsilon 0.003906447941563157
+After 744000 games - Mr.Q: 88.1%, Random: 11.2%, Draws: 0.7% , epsilon 0.0038797802011162376
+After 745000 games - Mr.Q: 89.6%, Random: 9.7%, Draws: 0.7% , epsilon 0.00385351800822444
+After 746000 games - Mr.Q: 87.7%, Random: 11.4%, Draws: 0.9% , epsilon 0.0038272613531282217
+After 747000 games - Mr.Q: 89.1%, Random: 10.5%, Draws: 0.4% , epsilon 0.003802327931639654
+After 748000 games - Mr.Q: 87.3%, Random: 12.1%, Draws: 0.6% , epsilon 0.003776941251754763
+After 749000 games - Mr.Q: 90.3%, Random: 9.1%, Draws: 0.6% , epsilon 0.0037519004042220745
+After 750000 games - Mr.Q: 89.8%, Random: 9.7%, Draws: 0.5% , epsilon 0.003728095386084373
+After 751000 games - Mr.Q: 89.0%, Random: 10.5%, Draws: 0.5% , epsilon 0.003703393196661478
+After 752000 games - Mr.Q: 85.4%, Random: 13.7%, Draws: 0.9% , epsilon 0.003678071169823123
+After 753000 games - Mr.Q: 87.1%, Random: 12.0%, Draws: 0.9% , epsilon 0.003653890436025655
+After 754000 games - Mr.Q: 86.7%, Random: 12.1%, Draws: 1.2% , epsilon 0.003628899627516976
+After 755000 games - Mr.Q: 87.4%, Random: 12.1%, Draws: 0.5% , epsilon 0.003604948432138561
+After 756000 games - Mr.Q: 85.9%, Random: 13.4%, Draws: 0.7% , epsilon 0.0035799415111636293
+After 757000 games - Mr.Q: 86.6%, Random: 12.5%, Draws: 0.9% , epsilon 0.0035554955870858145
+After 758000 games - Mr.Q: 87.3%, Random: 12.0%, Draws: 0.7% , epsilon 0.00353108241025638
+After 759000 games - Mr.Q: 91.8%, Random: 7.7%, Draws: 0.5% , epsilon 0.0035081381406537886
+After 760000 games - Mr.Q: 88.1%, Random: 10.9%, Draws: 1.0% , epsilon 0.003485053686736034
+After 761000 games - Mr.Q: 89.4%, Random: 9.9%, Draws: 0.7% , epsilon 0.0034624985264397226
+After 762000 games - Mr.Q: 88.0%, Random: 11.2%, Draws: 0.8% , epsilon 0.003439803826738145
+After 763000 games - Mr.Q: 87.4%, Random: 11.5%, Draws: 1.1% , epsilon 0.0034166633263869933
+After 764000 games - Mr.Q: 88.0%, Random: 11.4%, Draws: 0.6% , epsilon 0.0033942724445083917
+After 765000 games - Mr.Q: 88.7%, Random: 11.1%, Draws: 0.2% , epsilon 0.003371515790218221
+After 766000 games - Mr.Q: 86.4%, Random: 12.8%, Draws: 0.8% , epsilon 0.003349162884194663
+After 767000 games - Mr.Q: 86.5%, Random: 12.9%, Draws: 0.6% , epsilon 0.0033260999314022872
+After 768000 games - Mr.Q: 89.1%, Random: 10.2%, Draws: 0.7% , epsilon 0.003304471074680366
+After 769000 games - Mr.Q: 89.0%, Random: 10.6%, Draws: 0.4% , epsilon 0.0032830222614496523
+After 770000 games - Mr.Q: 87.2%, Random: 12.2%, Draws: 0.6% , epsilon 0.003260633220390308
+After 771000 games - Mr.Q: 88.2%, Random: 11.3%, Draws: 0.5% , epsilon 0.003238218757588194
+After 772000 games - Mr.Q: 87.4%, Random: 11.2%, Draws: 1.4% , epsilon 0.003216370047008773
+After 773000 games - Mr.Q: 86.6%, Random: 12.4%, Draws: 1.0% , epsilon 0.003194135287303676
+After 774000 games - Mr.Q: 87.0%, Random: 12.2%, Draws: 0.8% , epsilon 0.0031723016664517863
+After 775000 games - Mr.Q: 88.3%, Random: 11.0%, Draws: 0.7% , epsilon 0.0031503274464583664
+After 776000 games - Mr.Q: 88.0%, Random: 11.4%, Draws: 0.6% , epsilon 0.0031290498472950337
+After 777000 games - Mr.Q: 87.3%, Random: 12.1%, Draws: 0.6% , epsilon 0.0031079035273336845
+After 778000 games - Mr.Q: 87.8%, Random: 11.0%, Draws: 1.2% , epsilon 0.003086727253908884
+After 779000 games - Mr.Q: 88.3%, Random: 11.3%, Draws: 0.4% , epsilon 0.0030650331499277993
+After 780000 games - Mr.Q: 87.6%, Random: 11.7%, Draws: 0.7% , epsilon 0.0030437684866883234
+After 781000 games - Mr.Q: 88.3%, Random: 10.7%, Draws: 1.0% , epsilon 0.003022962703237829
+After 782000 games - Mr.Q: 86.5%, Random: 13.0%, Draws: 0.5% , epsilon 0.0030019178704605324
+After 783000 games - Mr.Q: 86.7%, Random: 13.0%, Draws: 0.3% , epsilon 0.002981111957698194
+After 784000 games - Mr.Q: 87.2%, Random: 11.6%, Draws: 1.2% , epsilon 0.0029604768922689654
+After 785000 games - Mr.Q: 87.6%, Random: 12.1%, Draws: 0.3% , epsilon 0.002939755351461744
+After 786000 games - Mr.Q: 87.9%, Random: 11.7%, Draws: 0.4% , epsilon 0.0029193715211176625
+After 787000 games - Mr.Q: 89.0%, Random: 10.3%, Draws: 0.7% , epsilon 0.0028993029822962854
+After 788000 games - Mr.Q: 87.2%, Random: 12.3%, Draws: 0.5% , epsilon 0.0028787476436310444
+After 789000 games - Mr.Q: 88.4%, Random: 11.2%, Draws: 0.4% , epsilon 0.0028587982669176374
+After 790000 games - Mr.Q: 87.0%, Random: 12.1%, Draws: 0.9% , epsilon 0.002838950230386465
+After 791000 games - Mr.Q: 86.6%, Random: 12.9%, Draws: 0.5% , epsilon 0.0028188791548029017
+After 792000 games - Mr.Q: 88.4%, Random: 11.1%, Draws: 0.5% , epsilon 0.0027991067252508086
+After 793000 games - Mr.Q: 88.1%, Random: 11.1%, Draws: 0.8% , epsilon 0.0027798287806997555
+After 794000 games - Mr.Q: 88.0%, Random: 11.9%, Draws: 0.1% , epsilon 0.0027603468237483134
+After 795000 games - Mr.Q: 87.5%, Random: 11.5%, Draws: 1.0% , epsilon 0.0027409849568095068
+After 796000 games - Mr.Q: 86.5%, Random: 13.0%, Draws: 0.5% , epsilon 0.0027215847124943482
+After 797000 games - Mr.Q: 87.4%, Random: 12.0%, Draws: 0.6% , epsilon 0.002702581215416474
+After 798000 games - Mr.Q: 86.3%, Random: 13.2%, Draws: 0.5% , epsilon 0.0026840405273264784
+After 799000 games - Mr.Q: 86.8%, Random: 12.6%, Draws: 0.6% , epsilon 0.0026655683919074584
+After 800000 games - Mr.Q: 88.1%, Random: 11.3%, Draws: 0.6% , epsilon 0.0026473001562667374
+After 801000 games - Mr.Q: 89.9%, Random: 9.6%, Draws: 0.5% , epsilon 0.002629869718841089
+After 802000 games - Mr.Q: 88.6%, Random: 10.7%, Draws: 0.7% , epsilon 0.002611712940054599
+After 803000 games - Mr.Q: 90.3%, Random: 9.5%, Draws: 0.2% , epsilon 0.002594942352967378
+After 804000 games - Mr.Q: 88.0%, Random: 11.5%, Draws: 0.5% , epsilon 0.0025776323875611735
+After 805000 games - Mr.Q: 88.9%, Random: 10.5%, Draws: 0.6% , epsilon 0.002559756904719418
+After 806000 games - Mr.Q: 88.4%, Random: 10.8%, Draws: 0.8% , epsilon 0.0025420816469363373
+After 807000 games - Mr.Q: 86.3%, Random: 12.9%, Draws: 0.8% , epsilon 0.0025243138618448956
+After 808000 games - Mr.Q: 88.0%, Random: 11.6%, Draws: 0.4% , epsilon 0.0025069460130591335
+After 809000 games - Mr.Q: 87.1%, Random: 12.4%, Draws: 0.5% , epsilon 0.002489593093832663
+After 810000 games - Mr.Q: 87.6%, Random: 11.8%, Draws: 0.6% , epsilon 0.002472451769466934
+After 811000 games - Mr.Q: 88.2%, Random: 11.5%, Draws: 0.3% , epsilon 0.00245595644053572
+After 812000 games - Mr.Q: 87.9%, Random: 11.0%, Draws: 1.1% , epsilon 0.002439029637682229
+After 813000 games - Mr.Q: 85.2%, Random: 13.6%, Draws: 1.2% , epsilon 0.0024218247069744668
+After 814000 games - Mr.Q: 87.1%, Random: 12.3%, Draws: 0.6% , epsilon 0.0024049551715510167
+After 815000 games - Mr.Q: 85.7%, Random: 13.5%, Draws: 0.8% , epsilon 0.00238787120574101
+After 816000 games - Mr.Q: 87.7%, Random: 11.9%, Draws: 0.4% , epsilon 0.002371997095869421
+After 817000 games - Mr.Q: 89.0%, Random: 10.4%, Draws: 0.6% , epsilon 0.0023559528512888104
+After 818000 games - Mr.Q: 89.0%, Random: 10.1%, Draws: 0.9% , epsilon 0.002340393903634656
+After 819000 games - Mr.Q: 88.2%, Random: 11.1%, Draws: 0.7% , epsilon 0.0023245122839370418
+After 820000 games - Mr.Q: 88.3%, Random: 11.3%, Draws: 0.4% , epsilon 0.0023087130389243715
+After 821000 games - Mr.Q: 86.5%, Random: 12.7%, Draws: 0.8% , epsilon 0.0022926795433457253
+After 822000 games - Mr.Q: 87.1%, Random: 12.3%, Draws: 0.6% , epsilon 0.0022765069671420815
+After 823000 games - Mr.Q: 87.7%, Random: 11.8%, Draws: 0.5% , epsilon 0.0022609232166576976
+After 824000 games - Mr.Q: 88.8%, Random: 11.0%, Draws: 0.2% , epsilon 0.0022458773114695926
+After 825000 games - Mr.Q: 87.5%, Random: 11.6%, Draws: 0.9% , epsilon 0.002230335953691025
+After 826000 games - Mr.Q: 87.2%, Random: 12.3%, Draws: 0.5% , epsilon 0.002215070480368575
+After 827000 games - Mr.Q: 85.3%, Random: 14.5%, Draws: 0.2% , epsilon 0.002199326592090904
+After 828000 games - Mr.Q: 89.1%, Random: 10.6%, Draws: 0.3% , epsilon 0.0021847080753631294
+After 829000 games - Mr.Q: 87.9%, Random: 11.5%, Draws: 0.6% , epsilon 0.0021696876394106607
+After 830000 games - Mr.Q: 88.2%, Random: 11.3%, Draws: 0.5% , epsilon 0.0021549040728377255
+After 831000 games - Mr.Q: 89.0%, Random: 10.5%, Draws: 0.5% , epsilon 0.00214017415244721
+After 832000 games - Mr.Q: 87.9%, Random: 11.6%, Draws: 0.5% , epsilon 0.002125519412531876
+After 833000 games - Mr.Q: 87.1%, Random: 12.3%, Draws: 0.6% , epsilon 0.0021110177950572216
+After 834000 games - Mr.Q: 88.5%, Random: 11.0%, Draws: 0.5% , epsilon 0.002096631889646789
+After 835000 games - Mr.Q: 88.2%, Random: 11.4%, Draws: 0.4% , epsilon 0.0020826480641154945
+After 836000 games - Mr.Q: 87.3%, Random: 12.0%, Draws: 0.7% , epsilon 0.0020686644139308063
+After 837000 games - Mr.Q: 89.6%, Random: 10.1%, Draws: 0.3% , epsilon 0.002054795202876063
+After 838000 games - Mr.Q: 87.5%, Random: 11.8%, Draws: 0.7% , epsilon 0.0020412496252355935
+After 839000 games - Mr.Q: 88.5%, Random: 11.2%, Draws: 0.3% , epsilon 0.002027558131963753
+After 840000 games - Mr.Q: 89.1%, Random: 10.3%, Draws: 0.6% , epsilon 0.0020139463893974483
+After 841000 games - Mr.Q: 86.5%, Random: 13.0%, Draws: 0.5% , epsilon 0.0020000899839471
+After 842000 games - Mr.Q: 89.1%, Random: 10.2%, Draws: 0.7% , epsilon 0.001986642778611838
+After 843000 games - Mr.Q: 86.8%, Random: 12.4%, Draws: 0.8% , epsilon 0.001972968309245847
+After 844000 games - Mr.Q: 87.2%, Random: 12.0%, Draws: 0.8% , epsilon 0.001959480057499375
+After 845000 games - Mr.Q: 88.5%, Random: 11.2%, Draws: 0.3% , epsilon 0.0019458835821229482
+After 846000 games - Mr.Q: 89.1%, Random: 10.4%, Draws: 0.5% , epsilon 0.0019323930445430898
+After 847000 games - Mr.Q: 88.3%, Random: 11.2%, Draws: 0.5% , epsilon 0.00191902865819175
+After 848000 games - Mr.Q: 87.3%, Random: 12.1%, Draws: 0.6% , epsilon 0.0019057929093718876
+After 849000 games - Mr.Q: 87.5%, Random: 12.1%, Draws: 0.4% , epsilon 0.0018925121830965423
+After 850000 games - Mr.Q: 89.3%, Random: 10.3%, Draws: 0.4% , epsilon 0.0018800627248666962
+After 851000 games - Mr.Q: 88.0%, Random: 11.3%, Draws: 0.7% , epsilon 0.0018673309973168014
+After 852000 games - Mr.Q: 87.9%, Random: 11.7%, Draws: 0.4% , epsilon 0.0018549618575033342
+After 853000 games - Mr.Q: 89.1%, Random: 10.1%, Draws: 0.8% , epsilon 0.0018426783358246558
+After 854000 games - Mr.Q: 89.8%, Random: 9.5%, Draws: 0.7% , epsilon 0.0018302766442627085
+After 855000 games - Mr.Q: 86.5%, Random: 12.6%, Draws: 0.9% , epsilon 0.0018174512793204703
+After 856000 games - Mr.Q: 89.1%, Random: 10.4%, Draws: 0.5% , epsilon 0.0018051345288743988
+After 857000 games - Mr.Q: 89.1%, Random: 10.2%, Draws: 0.7% , epsilon 0.0017928743549235932
+After 858000 games - Mr.Q: 88.2%, Random: 11.5%, Draws: 0.3% , epsilon 0.0017806867658802929
+After 859000 games - Mr.Q: 87.3%, Random: 12.4%, Draws: 0.3% , epsilon 0.0017686563075886609
+After 860000 games - Mr.Q: 88.0%, Random: 11.4%, Draws: 0.6% , epsilon 0.0017565244398762563
+After 861000 games - Mr.Q: 87.8%, Random: 11.5%, Draws: 0.7% , epsilon 0.0017448125056189702
+After 862000 games - Mr.Q: 86.3%, Random: 13.1%, Draws: 0.6% , epsilon 0.0017329793585483476
+After 863000 games - Mr.Q: 89.0%, Random: 11.0%, Draws: 0.0% , epsilon 0.0017217687347293965
+After 864000 games - Mr.Q: 88.9%, Random: 10.2%, Draws: 0.9% , epsilon 0.001710341560014701
+After 865000 games - Mr.Q: 87.8%, Random: 11.6%, Draws: 0.6% , epsilon 0.001698974935251277
+After 866000 games - Mr.Q: 87.1%, Random: 12.2%, Draws: 0.7% , epsilon 0.0016873058520132662
+After 867000 games - Mr.Q: 89.2%, Random: 10.4%, Draws: 0.4% , epsilon 0.001676350456676299
+After 868000 games - Mr.Q: 87.5%, Random: 11.4%, Draws: 1.1% , epsilon 0.0016645670834807803
+After 869000 games - Mr.Q: 88.9%, Random: 10.1%, Draws: 1.0% , epsilon 0.001653622070776921
+After 870000 games - Mr.Q: 88.7%, Random: 10.6%, Draws: 0.7% , epsilon 0.0016424894907429287
+After 871000 games - Mr.Q: 87.4%, Random: 11.7%, Draws: 0.9% , epsilon 0.0016312051045234872
+After 872000 games - Mr.Q: 89.1%, Random: 10.6%, Draws: 0.3% , epsilon 0.001620453529057564
+After 873000 games - Mr.Q: 86.7%, Random: 12.3%, Draws: 1.0% , epsilon 0.0016096086306842704
+After 874000 games - Mr.Q: 89.1%, Random: 10.6%, Draws: 0.3% , epsilon 0.0015988411083997466
+After 875000 games - Mr.Q: 86.3%, Random: 12.9%, Draws: 0.8% , epsilon 0.0015878200791135432
+After 876000 games - Mr.Q: 89.0%, Random: 10.4%, Draws: 0.6% , epsilon 0.0015770405999343058
+After 877000 games - Mr.Q: 87.9%, Random: 11.4%, Draws: 0.7% , epsilon 0.0015661635798489841
+After 878000 games - Mr.Q: 89.3%, Random: 10.2%, Draws: 0.5% , epsilon 0.0015554580152066957
+After 879000 games - Mr.Q: 88.6%, Random: 10.6%, Draws: 0.8% , epsilon 0.0015450326494250227
+After 880000 games - Mr.Q: 87.4%, Random: 12.1%, Draws: 0.5% , epsilon 0.0015344086139050623
+After 881000 games - Mr.Q: 86.2%, Random: 13.5%, Draws: 0.3% , epsilon 0.001523356364993481
+After 882000 games - Mr.Q: 87.9%, Random: 11.7%, Draws: 0.4% , epsilon 0.0015129978775008347
+After 883000 games - Mr.Q: 89.8%, Random: 9.8%, Draws: 0.4% , epsilon 0.001502676766170801
+After 884000 games - Mr.Q: 87.5%, Random: 12.0%, Draws: 0.5% , epsilon 0.001492302195356309
+After 885000 games - Mr.Q: 86.5%, Random: 12.9%, Draws: 0.6% , epsilon 0.0014818821778280857
+After 886000 games - Mr.Q: 86.2%, Random: 13.6%, Draws: 0.2% , epsilon 0.0014715069592822654
+After 887000 games - Mr.Q: 87.1%, Random: 12.4%, Draws: 0.5% , epsilon 0.001461389966405848
+After 888000 games - Mr.Q: 89.0%, Random: 10.5%, Draws: 0.5% , epsilon 0.001451519605164048
+After 889000 games - Mr.Q: 87.7%, Random: 11.7%, Draws: 0.6% , epsilon 0.001441194102275823
+After 890000 games - Mr.Q: 88.3%, Random: 10.8%, Draws: 0.9% , epsilon 0.001431338476741796
+After 891000 games - Mr.Q: 86.9%, Random: 12.3%, Draws: 0.8% , epsilon 0.0014213867800767406
+After 892000 games - Mr.Q: 87.7%, Random: 12.0%, Draws: 0.3% , epsilon 0.001411564970798271
+After 893000 games - Mr.Q: 87.8%, Random: 11.8%, Draws: 0.4% , epsilon 0.0014020549668690347
+After 894000 games - Mr.Q: 89.0%, Random: 10.3%, Draws: 0.7% , epsilon 0.001392135626970424
+After 895000 games - Mr.Q: 87.4%, Random: 11.9%, Draws: 0.7% , epsilon 0.0013826873863998722
+After 896000 games - Mr.Q: 87.2%, Random: 12.2%, Draws: 0.6% , epsilon 0.0013733691899617526
+After 897000 games - Mr.Q: 87.7%, Random: 11.9%, Draws: 0.4% , epsilon 0.0013641833622551765
+After 898000 games - Mr.Q: 88.3%, Random: 11.0%, Draws: 0.7% , epsilon 0.0013547148328337303
+After 899000 games - Mr.Q: 88.0%, Random: 11.4%, Draws: 0.6% , epsilon 0.0013455663107486467
+After 900000 games - Mr.Q: 85.6%, Random: 13.5%, Draws: 0.9% , epsilon 0.001335922373454483
+After 901000 games - Mr.Q: 87.4%, Random: 11.8%, Draws: 0.8% , epsilon 0.001326508053992258
+After 902000 games - Mr.Q: 87.3%, Random: 12.3%, Draws: 0.4% , epsilon 0.0013172641375727553
+After 903000 games - Mr.Q: 87.0%, Random: 12.7%, Draws: 0.3% , epsilon 0.001307959068234985
+After 904000 games - Mr.Q: 87.8%, Random: 11.7%, Draws: 0.5% , epsilon 0.0012988768839833872
+After 905000 games - Mr.Q: 86.3%, Random: 13.1%, Draws: 0.6% , epsilon 0.001289621741958339
+After 906000 games - Mr.Q: 87.6%, Random: 12.2%, Draws: 0.2% , epsilon 0.001281144666213788
+After 907000 games - Mr.Q: 87.0%, Random: 12.4%, Draws: 0.6% , epsilon 0.0012720972866971708
+After 908000 games - Mr.Q: 85.7%, Random: 14.0%, Draws: 0.3% , epsilon 0.001263278014871726
+After 909000 games - Mr.Q: 86.1%, Random: 13.3%, Draws: 0.6% , epsilon 0.0012543894224700393
+After 910000 games - Mr.Q: 87.0%, Random: 12.2%, Draws: 0.8% , epsilon 0.0012456530552247538
+After 911000 games - Mr.Q: 87.6%, Random: 12.0%, Draws: 0.4% , epsilon 0.001236961452996399
+After 912000 games - Mr.Q: 87.6%, Random: 11.8%, Draws: 0.6% , epsilon 0.001228237147210441
+After 913000 games - Mr.Q: 87.6%, Random: 12.2%, Draws: 0.2% , epsilon 0.0012198183134605916
+After 914000 games - Mr.Q: 87.0%, Random: 12.4%, Draws: 0.6% , epsilon 0.0012110465712111972
+After 915000 games - Mr.Q: 86.7%, Random: 12.5%, Draws: 0.8% , epsilon 0.001202365560870824
+After 916000 games - Mr.Q: 86.0%, Random: 13.7%, Draws: 0.3% , epsilon 0.0011936560562976106
+After 917000 games - Mr.Q: 87.7%, Random: 11.4%, Draws: 0.9% , epsilon 0.0011853106710779783
+After 918000 games - Mr.Q: 85.4%, Random: 13.8%, Draws: 0.8% , epsilon 0.0011769871450066653
+After 919000 games - Mr.Q: 85.9%, Random: 13.5%, Draws: 0.6% , epsilon 0.0011684871790172396
+After 920000 games - Mr.Q: 85.7%, Random: 13.3%, Draws: 1.0% , epsilon 0.0011602388617502428
+After 921000 games - Mr.Q: 86.6%, Random: 13.1%, Draws: 0.3% , epsilon 0.0011522135239528048
+After 922000 games - Mr.Q: 89.0%, Random: 10.5%, Draws: 0.5% , epsilon 0.001143946232340998
+After 923000 games - Mr.Q: 84.8%, Random: 14.3%, Draws: 0.9% , epsilon 0.001135954070570124
+After 924000 games - Mr.Q: 87.8%, Random: 11.6%, Draws: 0.6% , epsilon 0.0011280425625834474
+After 925000 games - Mr.Q: 87.6%, Random: 11.7%, Draws: 0.7% , epsilon 0.0011202768941784996
+After 926000 games - Mr.Q: 85.6%, Random: 13.2%, Draws: 1.2% , epsilon 0.0011120863859605062
+After 927000 games - Mr.Q: 85.0%, Random: 14.0%, Draws: 1.0% , epsilon 0.0011039392005255024
+After 928000 games - Mr.Q: 86.6%, Random: 12.9%, Draws: 0.5% , epsilon 0.0010961355641595056
+After 929000 games - Mr.Q: 87.0%, Random: 12.4%, Draws: 0.6% , epsilon 0.0010883196129809706
+After 930000 games - Mr.Q: 86.0%, Random: 13.5%, Draws: 0.5% , epsilon 0.0010805258962936796
+After 931000 games - Mr.Q: 85.5%, Random: 13.3%, Draws: 1.2% , epsilon 0.001072874891663271
+After 932000 games - Mr.Q: 85.7%, Random: 13.9%, Draws: 0.4% , epsilon 0.0010654101651218612
+After 933000 games - Mr.Q: 88.8%, Random: 10.6%, Draws: 0.6% , epsilon 0.0010580195939925933
+After 934000 games - Mr.Q: 86.3%, Random: 13.2%, Draws: 0.5% , epsilon 0.001050249599175658
+After 935000 games - Mr.Q: 85.7%, Random: 13.6%, Draws: 0.7% , epsilon 0.001042602348370107
+After 936000 games - Mr.Q: 87.6%, Random: 12.2%, Draws: 0.2% , epsilon 0.0010349973249304766
+After 937000 games - Mr.Q: 87.4%, Random: 12.0%, Draws: 0.6% , epsilon 0.0010277714717786342
+After 938000 games - Mr.Q: 88.4%, Random: 10.9%, Draws: 0.7% , epsilon 0.001020677717047614
+After 939000 games - Mr.Q: 86.0%, Random: 13.4%, Draws: 0.6% , epsilon 0.0010135021736575448
+After 940000 games - Mr.Q: 86.5%, Random: 13.0%, Draws: 0.5% , epsilon 0.001006223111605172
+After 941000 games - Mr.Q: 84.4%, Random: 15.0%, Draws: 0.6% , epsilon 0.0009987815671884948
+After 942000 games - Mr.Q: 87.3%, Random: 12.2%, Draws: 0.5% , epsilon 0.000991439670675446
+After 943000 games - Mr.Q: 86.1%, Random: 12.7%, Draws: 1.2% , epsilon 0.0009844362044633785
+After 944000 games - Mr.Q: 86.8%, Random: 12.7%, Draws: 0.5% , epsilon 0.0009772300522806461
+After 945000 games - Mr.Q: 87.3%, Random: 12.0%, Draws: 0.7% , epsilon 0.0009701300054210745
+After 946000 games - Mr.Q: 87.8%, Random: 11.8%, Draws: 0.4% , epsilon 0.0009633830356755527
+After 947000 games - Mr.Q: 87.1%, Random: 12.2%, Draws: 0.7% , epsilon 0.0009566160236274977
+After 948000 games - Mr.Q: 87.8%, Random: 11.8%, Draws: 0.4% , epsilon 0.0009499202922667164
+After 949000 games - Mr.Q: 86.9%, Random: 12.1%, Draws: 1.0% , epsilon 0.0009432959523483737
+After 950000 games - Mr.Q: 87.4%, Random: 11.7%, Draws: 0.9% , epsilon 0.0009366831498228626
+After 951000 games - Mr.Q: 88.2%, Random: 11.0%, Draws: 0.8% , epsilon 0.0009301287967332338
+After 952000 games - Mr.Q: 86.0%, Random: 13.5%, Draws: 0.5% , epsilon 0.0009237302245302798
+After 953000 games - Mr.Q: 86.9%, Random: 12.4%, Draws: 0.7% , epsilon 0.0009172435769412992
+After 954000 games - Mr.Q: 84.2%, Random: 15.3%, Draws: 0.5% , epsilon 0.0009105775395503532
+After 955000 games - Mr.Q: 87.9%, Random: 11.7%, Draws: 0.4% , epsilon 0.0009042049538310259
+After 956000 games - Mr.Q: 87.1%, Random: 12.4%, Draws: 0.5% , epsilon 0.0008979775339168473
+After 957000 games - Mr.Q: 85.8%, Random: 13.3%, Draws: 0.9% , epsilon 0.0008916628110089837
+After 958000 games - Mr.Q: 86.6%, Random: 12.2%, Draws: 1.2% , epsilon 0.0008853721304481234
+After 959000 games - Mr.Q: 85.0%, Random: 14.3%, Draws: 0.7% , epsilon 0.0008791275888888939
+After 960000 games - Mr.Q: 87.6%, Random: 11.7%, Draws: 0.7% , epsilon 0.0008730047841725826
+After 961000 games - Mr.Q: 87.3%, Random: 12.1%, Draws: 0.6% , epsilon 0.0008666793174912754
+After 962000 games - Mr.Q: 84.9%, Random: 13.5%, Draws: 1.6% , epsilon 0.0008603644070981041
+After 963000 games - Mr.Q: 85.5%, Random: 13.3%, Draws: 1.2% , epsilon 0.0008539947318433283
+After 964000 games - Mr.Q: 83.9%, Random: 15.3%, Draws: 0.8% , epsilon 0.0008474213402680242
+After 965000 games - Mr.Q: 85.1%, Random: 14.5%, Draws: 0.4% , epsilon 0.0008410793582962736
+After 966000 games - Mr.Q: 84.7%, Random: 14.5%, Draws: 0.8% , epsilon 0.000834768143286321
+After 967000 games - Mr.Q: 84.7%, Random: 14.7%, Draws: 0.6% , epsilon 0.0008284951722976106
+After 968000 games - Mr.Q: 85.0%, Random: 14.2%, Draws: 0.8% , epsilon 0.0008223145664242965
+After 969000 games - Mr.Q: 86.7%, Random: 12.5%, Draws: 0.8% , epsilon 0.0008161612961736125
+After 970000 games - Mr.Q: 83.9%, Random: 15.2%, Draws: 0.9% , epsilon 0.000809974688574914
+After 971000 games - Mr.Q: 86.0%, Random: 13.2%, Draws: 0.8% , epsilon 0.000803996563407515
+After 972000 games - Mr.Q: 83.3%, Random: 16.3%, Draws: 0.4% , epsilon 0.0007979125388485633
+After 973000 games - Mr.Q: 85.7%, Random: 13.4%, Draws: 0.9% , epsilon 0.0007921462131796061
+After 974000 games - Mr.Q: 86.9%, Random: 12.2%, Draws: 0.9% , epsilon 0.0007863256217599238
+After 975000 games - Mr.Q: 86.4%, Random: 13.2%, Draws: 0.4% , epsilon 0.0007804955043420836
+After 976000 games - Mr.Q: 83.7%, Random: 15.2%, Draws: 1.1% , epsilon 0.000774631146606912
+After 977000 games - Mr.Q: 84.9%, Random: 14.5%, Draws: 0.6% , epsilon 0.0007687808684572058
+After 978000 games - Mr.Q: 84.2%, Random: 14.8%, Draws: 1.0% , epsilon 0.0007630922808215849
+After 979000 games - Mr.Q: 85.6%, Random: 13.6%, Draws: 0.8% , epsilon 0.00075747381186938
+After 980000 games - Mr.Q: 84.2%, Random: 14.9%, Draws: 0.9% , epsilon 0.0007516350957199419
+After 981000 games - Mr.Q: 83.9%, Random: 15.3%, Draws: 0.8% , epsilon 0.0007460703937979104
+After 982000 games - Mr.Q: 83.6%, Random: 15.4%, Draws: 1.0% , epsilon 0.0007405742906910308
+After 983000 games - Mr.Q: 84.6%, Random: 14.9%, Draws: 0.5% , epsilon 0.000734985631414946
+After 984000 games - Mr.Q: 85.3%, Random: 14.2%, Draws: 0.5% , epsilon 0.0007293647472818917
+After 985000 games - Mr.Q: 84.6%, Random: 14.0%, Draws: 1.4% , epsilon 0.0007238918062384933
+After 986000 games - Mr.Q: 85.5%, Random: 13.8%, Draws: 0.7% , epsilon 0.0007183528899451415
+After 987000 games - Mr.Q: 86.7%, Random: 12.5%, Draws: 0.8% , epsilon 0.0007127608387150516
+After 988000 games - Mr.Q: 85.1%, Random: 14.3%, Draws: 0.6% , epsilon 0.0007074308815479256
+After 989000 games - Mr.Q: 85.8%, Random: 13.3%, Draws: 0.9% , epsilon 0.0007019835192894744
+After 990000 games - Mr.Q: 85.1%, Random: 13.8%, Draws: 1.1% , epsilon 0.0006966428876412711
+After 991000 games - Mr.Q: 86.0%, Random: 13.0%, Draws: 1.0% , epsilon 0.0006913338996664338
+After 992000 games - Mr.Q: 86.6%, Random: 12.7%, Draws: 0.7% , epsilon 0.0006859267992395499
+After 993000 games - Mr.Q: 84.0%, Random: 15.0%, Draws: 1.0% , epsilon 0.0006806205200143888
+After 994000 games - Mr.Q: 85.0%, Random: 14.3%, Draws: 0.7% , epsilon 0.0006753897337900121
+After 995000 games - Mr.Q: 88.2%, Random: 11.1%, Draws: 0.7% , epsilon 0.0006705155566521452
+After 996000 games - Mr.Q: 86.0%, Random: 13.2%, Draws: 0.8% , epsilon 0.0006656692332472096
+After 997000 games - Mr.Q: 88.7%, Random: 10.4%, Draws: 0.9% , epsilon 0.0006607964809282797
+After 998000 games - Mr.Q: 86.3%, Random: 13.1%, Draws: 0.6% , epsilon 0.0006560282769354656
+After 999000 games - Mr.Q: 85.5%, Random: 14.1%, Draws: 0.4% , epsilon 0.0006511297228133442
