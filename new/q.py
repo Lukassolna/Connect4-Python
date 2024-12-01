@@ -19,19 +19,49 @@ class Qlearning:
     def decay_epsilon(self):
         """Apply decay to epsilon after each iteration"""
         self.epsilon *= self.epsilon_decay
-    def save(self, filename='C:/Users/lukas/Downloads/q_agent.pkl'):
-        print("saving the trained model please wait")
-        print(f"Number of states in Q-table: {len(self.q_table)}")
-        print(f"Q-table size: {sys.getsizeof(self.q_table)/(1024*1024):.2f} MB")
-        with open(filename, 'wb') as f:
-            pickle.dump(self.q_table, f)
 
-    # loads a trained model
-    def load(self, filename='C:/Users/lukas/Downloads/q_agent.pkl'):
-        print("loading the model please wait")
-        with open(filename, 'rb') as f:
-            self.q_table = pickle.load(f)
-            print("Model loaded succesfully")
+    def save(self, filename):
+        print("Saving the trained model, please wait...")
+        try:
+            # Convert all dictionary keys to strings before saving
+            serializable_q_table = {}
+            for state, actions in self.q_table.items():
+                if isinstance(state, tuple):
+                    # If we still have any tuple states, convert them ( should never happen but checking just in case)
+                    grid, is_my_turn = state
+                    state_key = self.grid_to_key(grid, is_my_turn)
+                else:
+                    # If it already is a string, use it as is
+                    state_key = state
+                serializable_q_table[state_key] = actions
+            
+            with open(filename, 'wb') as f:
+                pickle.dump({
+                    'q_table': serializable_q_table,
+                    'epsilon': self.epsilon,
+                    'total_states': len(serializable_q_table)
+                }, f)
+            
+            print(f"Model saved successfully!")
+            print(f"Number of states in Q-table: {len(serializable_q_table)}")
+            print(f"Q-table size: {sys.getsizeof(serializable_q_table)/(1024*1024):.2f} MB")
+        except Exception as e:
+            print(f"Error saving model: {e}")
+
+    def load(self, filename):
+        print("Loading the model, please wait...")
+        try:
+            with open(filename, 'rb') as f:
+                data = pickle.load(f)
+                self.q_table = data['q_table']
+                self.epsilon = data['epsilon']
+            print("Model loaded successfully!")
+            print(f"Loaded {len(self.q_table)} states")
+            print(f"Current epsilon: {self.epsilon}")
+        except Exception as e:
+            print(f"Error loading model: {e}")
+            self.q_table = {}  # Reset to empty if load fails
+
 
      # find a open_row to place the piece vertically
     def get_next_open_row(self, board, col):
@@ -135,8 +165,10 @@ class Qlearning:
     
 
     def grid_to_key(self, grid, is_my_turn):
-        # Include whose turn it is in the state representation
-        return (tuple(map(tuple, grid)), is_my_turn)
+        # Convert numpy array to a string representation
+        # Each cell is converted to a character: '0' for empty, '1' for player 1, '2' for player 2
+        state_str = ''.join(str(int(cell)) for row in grid for cell in row)
+        return f"{state_str}_{int(is_my_turn)}"
     
     def find_move(self, board, piece):
         grid = board

@@ -199,11 +199,11 @@ if __name__ == "__main__":
     mr_q_wins = 0
     random_wins = 0
     draws = 0
-    num_games = 1000000
-
+    num_games = 1000009
+    q_learner.load('trained_model_vs_random.pkl')
     for i in range(num_games):
         #print(i)
-        winner = start_game(random_player,q_learner, False)
+        winner = start_game(minimax_player1,q_learner, True)
         #print(winner)
         if winner == 'Mr.Q':
             mr_q_wins += 1
@@ -211,10 +211,12 @@ if __name__ == "__main__":
             draws += 1
         else:
             random_wins += 1
-    
+       
         if i % 1000  == 0 and i !=0:
+            
         
             print(f"After {i} games - Mr.Q: {mr_q_wins/(1000):.1%}, Random: {random_wins/(1000):.1%}, Draws: {draws/(1000):.1%} , epsilon {q_learner.epsilon}")
             random_wins=0
             mr_q_wins=0
             draws=0 
+    #q_learner.save('trained_model_vs_random.pkl')
