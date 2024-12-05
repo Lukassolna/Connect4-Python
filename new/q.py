@@ -19,6 +19,24 @@ class Qlearning:
     def decay_epsilon(self):
         """Apply decay to epsilon after each iteration"""
         self.epsilon *= self.epsilon_decay
+    def print_qtable_state(self, num_states=5):
+        """Print grid and Q-values for first n states"""
+        for i, (key, actions) in enumerate(list(self.q_table.items())[:num_states]):
+            print(f"\nState {i}:")
+            print(self.key_to_grid(key))
+            print("Q-values:", actions)
+    def key_to_grid(self, key):
+        # Split turn information if present
+        if '_' in key:
+            grid_str = key.split('_')[0]
+        else:
+            grid_str = key
+            
+        # Convert string to integers
+        cells = [int(char) for char in grid_str]
+        
+        # Reshape into 6x7 grid
+        return np.array(cells).reshape(self.ROW_COUNT, self.COLUMN_COUNT)
 
     def save(self, filename):
         print("Saving the trained model, please wait...")
@@ -173,6 +191,10 @@ class Qlearning:
     def find_move(self, board, piece):
         grid = board
         state = self.grid_to_key(grid, True)
+
+        #print("\nCurrent state:")
+        #print(np.flip(self.key_to_grid(state), axis=0))
+        #print("Q-values:", self.q_table.get(state, "State not in Q-table"))
         
         if state not in self.q_table:
             self.q_table[state] = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0}
@@ -201,17 +223,11 @@ class Qlearning:
         self.last_state = state
         self.last_action = column_to_place
 
-        next_state = self.grid_to_key(b_copy, False)
-        
-        if next_state not in self.q_table:
-            self.q_table[next_state] = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0}
-
-        next_max_q = min(self.q_table[next_state].values())
         reward = self.score_position(b_copy, piece)
         if self.winning_move(b_copy, piece):
             reward = 1000
             
-        self.q_table[state][column_to_place] += self.alpha * (reward + self.gamma * next_max_q - self.q_table[state][column_to_place])
+        self.q_table[state][column_to_place] += self.alpha * (reward - self.q_table[state][column_to_place])
         
         return column_to_place
     
@@ -222,6 +238,7 @@ class Qlearning:
             next_state = self.grid_to_key(board, True)  # True because it will be our turn again
             if next_state not in self.q_table:
                 self.q_table[next_state] = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0}
+            
             
             self.q_table[self.last_state][self.last_action] += self.alpha * (
                 reward + self.gamma * max(self.q_table[next_state].values()) 

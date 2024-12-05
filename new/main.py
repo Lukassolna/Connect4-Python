@@ -200,10 +200,11 @@ if __name__ == "__main__":
     random_wins = 0
     draws = 0
     num_games = 1000009
-    q_learner.load('trained_model_vs_random.pkl')
+    q_learner.load('Connect4-Python/trained_model_vs_random.pkl')
+    #q_learner.print_qtable_state(10)
     for i in range(num_games):
         #print(i)
-        winner = start_game(minimax_player1,q_learner, True)
+        winner = start_game(random_player,q_learner, False)
         #print(winner)
         if winner == 'Mr.Q':
             mr_q_wins += 1
