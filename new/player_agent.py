@@ -1,14 +1,14 @@
 import math
-
+from game import SQUARESIZE
 #Player controlled class
 class PlayerAgent:
-    def __init__(self, squaresize):
+    def __init__(self, color):
         self.name="Player"
-        self.SQUARESIZE = squaresize
+        self.color = color
     
     def get_move(self, board, event):
         posx = event.pos[0]
-        col = int(math.floor(posx/self.SQUARESIZE))
+        col = int(math.floor(posx/SQUARESIZE))
         return col
     def find_move(self, board):
         return None  # Wait for mouse input

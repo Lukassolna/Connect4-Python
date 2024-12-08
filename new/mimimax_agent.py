@@ -1,20 +1,18 @@
-import numpy as np
 import random
-import pygame
-import sys
-import math
+from game import winning_move
 
 
 # minimax class with alpha beta pruning
 
 class MinimaxAgent:
     # default depth of 5, but can be changed
-    def __init__(self,rows,cols,win_len, depth=5, name="Minimax"):
-        self.name= name
+    def __init__(self,game_setting, color, depth=5, name="Minimax"):
+        self.ROW_COUNT = game_setting[0]
+        self.COLUMN_COUNT = game_setting[1]
         self.depth = depth
-        self.ROW_COUNT = rows
-        self.COLUMN_COUNT = cols
-        self.WINDOW_LENGTH = win_len
+        self.color = color
+        self.WINDOW_LENGTH = game_setting[2]
+        self.name= name + str(depth)
     
     # evaluate a window. A window is a all straight lines ( horizantal, vertical and diagonal)
     def evaluate_window(self, window, piece):
@@ -80,36 +78,7 @@ class MinimaxAgent:
     
     # Check if its a winning move or if the board is full ( in that case we can stop the search)
     def is_terminal_node(self, board):
-        def winning_move(piece):
-            # Horizontal
-            for c in range(self.COLUMN_COUNT-3):
-                for r in range(self.ROW_COUNT):
-                    if board[r][c] == piece and board[r][c+1] == piece and \
-                       board[r][c+2] == piece and board[r][c+3] == piece:
-                        return True
-
-            # Vertical
-            for c in range(self.COLUMN_COUNT):
-                for r in range(self.ROW_COUNT-3):
-                    if board[r][c] == piece and board[r+1][c] == piece and \
-                       board[r+2][c] == piece and board[r+3][c] == piece:
-                        return True
-
-            # Diagonals
-            for c in range(self.COLUMN_COUNT-3):
-                for r in range(self.ROW_COUNT-3):
-                    if board[r][c] == piece and board[r+1][c+1] == piece and \
-                       board[r+2][c+2] == piece and board[r+3][c+3] == piece:
-                        return True
-
-            for c in range(self.COLUMN_COUNT-3):
-                for r in range(3, self.ROW_COUNT):
-                    if board[r][c] == piece and board[r-1][c+1] == piece and \
-                       board[r-2][c+2] == piece and board[r-3][c+3] == piece:
-                        return True
-            return False
-
-        return winning_move(1) or winning_move(2) or len(self.get_valid_locations(board)) == 0
+        return winning_move(board,1) or winning_move(board,2) or len(self.get_valid_locations(board)) == 0
 
     # the main minimax logic. Lets look through it
     # I think it alternates between maximizingPlayer and else, until alpha and beta are equal.
@@ -121,9 +90,9 @@ class MinimaxAgent:
 
             # if its a end node, check who won
             if is_terminal:
-                if self.winning_move(board, piece):
+                if winning_move(board, piece):
                     return (None, 1000000 * pow(10,depth))
-                elif self.winning_move(board, opp_piece):
+                elif winning_move(board, opp_piece):
                     return (None, -1000000 * pow(10,depth))
                 else:
                     return (None, 0)
@@ -173,35 +142,6 @@ class MinimaxAgent:
 
     # this winning move is used by the main minimax algorrithm with self.winning_move()
     # I think this is duplicated in is_terminal_node but its not a big issue since this one uses self
-
-    def winning_move(self, board, piece):
-        # Horizontal
-        for c in range(self.COLUMN_COUNT-3):
-            for r in range(self.ROW_COUNT):
-                if board[r][c] == piece and board[r][c+1] == piece and \
-                   board[r][c+2] == piece and board[r][c+3] == piece:
-                    return True
-
-        # Vertical
-        for c in range(self.COLUMN_COUNT):
-            for r in range(self.ROW_COUNT-3):
-                if board[r][c] == piece and board[r+1][c] == piece and \
-                   board[r+2][c] == piece and board[r+3][c] == piece:
-                    return True
-
-        # Diagonals
-        for c in range(self.COLUMN_COUNT-3):
-            for r in range(self.ROW_COUNT-3):
-                if board[r][c] == piece and board[r+1][c+1] == piece and \
-                   board[r+2][c+2] == piece and board[r+3][c+3] == piece:
-                    return True
-
-        for c in range(self.COLUMN_COUNT-3):
-            for r in range(3, self.ROW_COUNT):
-                if board[r][c] == piece and board[r-1][c+1] == piece and \
-                   board[r-2][c+2] == piece and board[r-3][c+3] == piece:
-                    return True
-        return False
 
     # find_move
     #the main function
