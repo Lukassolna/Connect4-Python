@@ -1,0 +1,891 @@
+pygame 2.5.2 (SDL 2.28.3, Python 3.12.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+After 1000 games - Mr.Q: 0.0%, Random: 100.1%, Draws: 0.0% , epsilon 0.9934406040860736
+After 2000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.9868452830267941
+After 3000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.9801996437038387
+After 4000 games - Mr.Q: 0.1%, Random: 99.8%, Draws: 0.1% , epsilon 0.9737379922660789
+After 5000 games - Mr.Q: 0.2%, Random: 99.8%, Draws: 0.0% , epsilon 0.9671167885570953
+After 6000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.9605482919332737
+After 7000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.9540453962260601
+After 8000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.9474406078510054
+After 9000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.9408636673673458
+After 10000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.934260441810516
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 48220
+Q-table size: 1.83 MB
+After 11000 games - Mr.Q: 0.3%, Random: 99.7%, Draws: 0.0% , epsilon 0.9275523559731057
+After 12000 games - Mr.Q: 0.2%, Random: 99.8%, Draws: 0.0% , epsilon 0.9208896722057874
+After 13000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.9143982825338769
+After 14000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.9078246385755483
+After 15000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.9012054238074524
+After 16000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.8947015718039645
+After 17000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.8881069897144286
+After 18000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.8815213449766137
+After 19000 games - Mr.Q: 0.2%, Random: 99.7%, Draws: 0.1% , epsilon 0.874917164002979
+After 20000 games - Mr.Q: 0.2%, Random: 99.8%, Draws: 0.0% , epsilon 0.8683893798945658
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 91434
+Q-table size: 3.67 MB
+After 21000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.8618741002954304
+After 22000 games - Mr.Q: 0.0%, Random: 100.0%, Draws: 0.0% , epsilon 0.855385462671796
+After 23000 games - Mr.Q: 0.3%, Random: 99.7%, Draws: 0.0% , epsilon 0.8488938907628606
+After 24000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.8424675905251424
+After 25000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.8360297423549448
+After 26000 games - Mr.Q: 0.2%, Random: 99.8%, Draws: 0.0% , epsilon 0.8295008924435378
+After 27000 games - Mr.Q: 0.3%, Random: 99.7%, Draws: 0.0% , epsilon 0.823082288435349
+After 28000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.8166512831260697
+After 29000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.8102510790502361
+After 30000 games - Mr.Q: 0.3%, Random: 99.7%, Draws: 0.0% , epsilon 0.8037748316016174
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 135949
+Q-table size: 3.67 MB
+After 31000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.7974093542225439
+After 32000 games - Mr.Q: 0.5%, Random: 99.4%, Draws: 0.1% , epsilon 0.7910286299698782
+After 33000 games - Mr.Q: 0.3%, Random: 99.7%, Draws: 0.0% , epsilon 0.7845789132918806
+After 34000 games - Mr.Q: 0.4%, Random: 99.6%, Draws: 0.0% , epsilon 0.7782393725183053
+After 35000 games - Mr.Q: 0.6%, Random: 99.4%, Draws: 0.0% , epsilon 0.7719695834478316
+After 36000 games - Mr.Q: 0.2%, Random: 99.8%, Draws: 0.0% , epsilon 0.7657357570312203
+After 37000 games - Mr.Q: 0.2%, Random: 99.8%, Draws: 0.0% , epsilon 0.7594391052382625
+After 38000 games - Mr.Q: 0.5%, Random: 99.3%, Draws: 0.2% , epsilon 0.7531309651779571
+After 39000 games - Mr.Q: 0.6%, Random: 99.4%, Draws: 0.0% , epsilon 0.746849082324574
+After 40000 games - Mr.Q: 0.1%, Random: 99.9%, Draws: 0.0% , epsilon 0.7405403547048584
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 182769
+Q-table size: 7.33 MB
+After 41000 games - Mr.Q: 0.5%, Random: 99.5%, Draws: 0.0% , epsilon 0.7343135553810255
+After 42000 games - Mr.Q: 0.5%, Random: 99.4%, Draws: 0.1% , epsilon 0.7281944545145661
+After 43000 games - Mr.Q: 0.5%, Random: 99.4%, Draws: 0.1% , epsilon 0.7218931354050772
+After 44000 games - Mr.Q: 0.4%, Random: 99.6%, Draws: 0.0% , epsilon 0.7157121863200294
+After 45000 games - Mr.Q: 0.8%, Random: 99.0%, Draws: 0.2% , epsilon 0.7095742252641175
+After 46000 games - Mr.Q: 0.8%, Random: 99.2%, Draws: 0.0% , epsilon 0.7033327461961183
+After 47000 games - Mr.Q: 0.6%, Random: 99.4%, Draws: 0.0% , epsilon 0.6972089137525539
+After 48000 games - Mr.Q: 0.7%, Random: 99.3%, Draws: 0.0% , epsilon 0.6909863669713644
+After 49000 games - Mr.Q: 0.4%, Random: 99.5%, Draws: 0.1% , epsilon 0.684950854043961
+After 50000 games - Mr.Q: 1.1%, Random: 98.9%, Draws: 0.0% , epsilon 0.6788825144834186
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 232283
+Q-table size: 7.33 MB
+After 51000 games - Mr.Q: 0.3%, Random: 99.6%, Draws: 0.1% , epsilon 0.6727649965612525
+After 52000 games - Mr.Q: 1.2%, Random: 98.7%, Draws: 0.1% , epsilon 0.6666926040934652
+After 53000 games - Mr.Q: 1.3%, Random: 98.6%, Draws: 0.1% , epsilon 0.6605059099381622
+After 54000 games - Mr.Q: 0.6%, Random: 99.4%, Draws: 0.0% , epsilon 0.6544950792743582
+After 55000 games - Mr.Q: 1.0%, Random: 99.0%, Draws: 0.0% , epsilon 0.6485947260102041
+After 56000 games - Mr.Q: 1.1%, Random: 98.9%, Draws: 0.0% , epsilon 0.6427379240070638
+After 57000 games - Mr.Q: 0.6%, Random: 99.3%, Draws: 0.1% , epsilon 0.6367932619171848
+After 58000 games - Mr.Q: 1.0%, Random: 98.7%, Draws: 0.3% , epsilon 0.6310020104982504
+After 59000 games - Mr.Q: 0.9%, Random: 98.7%, Draws: 0.4% , epsilon 0.6250840020805369
+After 60000 games - Mr.Q: 1.6%, Random: 98.3%, Draws: 0.1% , epsilon 0.6194141050993532
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 283067
+Q-table size: 7.33 MB
+After 61000 games - Mr.Q: 1.7%, Random: 98.1%, Draws: 0.2% , epsilon 0.6136053903237916
+After 62000 games - Mr.Q: 1.1%, Random: 98.8%, Draws: 0.1% , epsilon 0.607800698685301
+After 63000 games - Mr.Q: 1.1%, Random: 98.8%, Draws: 0.1% , epsilon 0.6021129337538517
+After 64000 games - Mr.Q: 1.5%, Random: 98.4%, Draws: 0.1% , epsilon 0.5964300817909703
+After 65000 games - Mr.Q: 1.7%, Random: 98.1%, Draws: 0.2% , epsilon 0.5907624647965778
+After 66000 games - Mr.Q: 1.8%, Random: 98.1%, Draws: 0.1% , epsilon 0.5851399275449954
+After 67000 games - Mr.Q: 2.0%, Random: 97.8%, Draws: 0.2% , epsilon 0.5795048350181129
+After 68000 games - Mr.Q: 1.9%, Random: 98.1%, Draws: 0.0% , epsilon 0.5738821153658997
+After 69000 games - Mr.Q: 2.7%, Random: 96.7%, Draws: 0.6% , epsilon 0.5682378018636205
+After 70000 games - Mr.Q: 1.7%, Random: 98.3%, Draws: 0.0% , epsilon 0.5627857423726339
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 334901
+Q-table size: 7.33 MB
+After 71000 games - Mr.Q: 2.2%, Random: 97.6%, Draws: 0.2% , epsilon 0.5572204745020751
+After 72000 games - Mr.Q: 2.2%, Random: 97.6%, Draws: 0.2% , epsilon 0.5517869334673164
+After 73000 games - Mr.Q: 2.6%, Random: 97.2%, Draws: 0.2% , epsilon 0.5464003652720436
+After 74000 games - Mr.Q: 2.8%, Random: 96.9%, Draws: 0.3% , epsilon 0.5408954309409091
+After 75000 games - Mr.Q: 2.7%, Random: 97.3%, Draws: 0.0% , epsilon 0.5355626983274562
+After 76000 games - Mr.Q: 3.5%, Random: 96.2%, Draws: 0.3% , epsilon 0.5303228445889693
+After 77000 games - Mr.Q: 3.9%, Random: 95.9%, Draws: 0.2% , epsilon 0.525084896357422
+After 78000 games - Mr.Q: 3.2%, Random: 96.5%, Draws: 0.3% , epsilon 0.5198425367878496
+After 79000 games - Mr.Q: 5.0%, Random: 95.0%, Draws: 0.0% , epsilon 0.5146108308709215
+After 80000 games - Mr.Q: 4.3%, Random: 95.4%, Draws: 0.3% , epsilon 0.509478646852181
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 385361
+Q-table size: 14.67 MB
+After 81000 games - Mr.Q: 4.4%, Random: 95.4%, Draws: 0.2% , epsilon 0.5043270350446369
+After 82000 games - Mr.Q: 4.4%, Random: 95.1%, Draws: 0.5% , epsilon 0.49913666276138974
+After 83000 games - Mr.Q: 4.5%, Random: 95.2%, Draws: 0.3% , epsilon 0.4941024708045635
+After 84000 games - Mr.Q: 5.6%, Random: 94.1%, Draws: 0.3% , epsilon 0.4890799247163195
+After 85000 games - Mr.Q: 4.3%, Random: 95.5%, Draws: 0.2% , epsilon 0.48402226907755397
+After 86000 games - Mr.Q: 4.9%, Random: 94.5%, Draws: 0.6% , epsilon 0.47905811273125276
+After 87000 games - Mr.Q: 5.2%, Random: 94.6%, Draws: 0.2% , epsilon 0.47415577448097124
+After 88000 games - Mr.Q: 5.8%, Random: 94.1%, Draws: 0.1% , epsilon 0.4692407207546393
+After 89000 games - Mr.Q: 6.1%, Random: 93.2%, Draws: 0.7% , epsilon 0.46436500673234427
+After 90000 games - Mr.Q: 7.2%, Random: 92.5%, Draws: 0.3% , epsilon 0.45960337544780056
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 433764
+Q-table size: 14.67 MB
+After 91000 games - Mr.Q: 7.3%, Random: 92.2%, Draws: 0.5% , epsilon 0.4547936888420891
+After 92000 games - Mr.Q: 5.8%, Random: 93.6%, Draws: 0.6% , epsilon 0.45005863747276925
+After 93000 games - Mr.Q: 7.1%, Random: 92.5%, Draws: 0.4% , epsilon 0.445294505976561
+After 94000 games - Mr.Q: 7.6%, Random: 92.4%, Draws: 0.0% , epsilon 0.44056450437677275
+After 95000 games - Mr.Q: 7.7%, Random: 91.6%, Draws: 0.7% , epsilon 0.4359000019801241
+After 96000 games - Mr.Q: 8.1%, Random: 91.8%, Draws: 0.1% , epsilon 0.43131507628851
+After 97000 games - Mr.Q: 7.0%, Random: 92.6%, Draws: 0.4% , epsilon 0.42674551552088696
+After 98000 games - Mr.Q: 10.1%, Random: 89.5%, Draws: 0.4% , epsilon 0.4221829909114995
+After 99000 games - Mr.Q: 9.3%, Random: 90.3%, Draws: 0.4% , epsilon 0.41753185561722067
+After 100000 games - Mr.Q: 10.1%, Random: 89.5%, Draws: 0.4% , epsilon 0.4130480115211172
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 480153
+Q-table size: 14.67 MB
+After 101000 games - Mr.Q: 8.0%, Random: 90.9%, Draws: 1.1% , epsilon 0.40856247141212426
+After 102000 games - Mr.Q: 10.0%, Random: 89.7%, Draws: 0.3% , epsilon 0.4041458493144951
+After 103000 games - Mr.Q: 9.0%, Random: 90.2%, Draws: 0.8% , epsilon 0.3997353969056989
+After 104000 games - Mr.Q: 10.1%, Random: 89.4%, Draws: 0.5% , epsilon 0.39533788920407215
+After 105000 games - Mr.Q: 12.6%, Random: 86.8%, Draws: 0.6% , epsilon 0.3910200390568268
+After 106000 games - Mr.Q: 10.4%, Random: 88.8%, Draws: 0.8% , epsilon 0.3865993184237387
+After 107000 games - Mr.Q: 12.5%, Random: 87.0%, Draws: 0.5% , epsilon 0.382360850776263
+After 108000 games - Mr.Q: 12.9%, Random: 86.6%, Draws: 0.5% , epsilon 0.37815939730773757
+After 109000 games - Mr.Q: 12.8%, Random: 86.5%, Draws: 0.7% , epsilon 0.3739551188519783
+After 110000 games - Mr.Q: 12.6%, Random: 86.9%, Draws: 0.5% , epsilon 0.36984861809090297
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 524228
+Q-table size: 14.67 MB
+After 111000 games - Mr.Q: 14.6%, Random: 84.8%, Draws: 0.6% , epsilon 0.3657667283878659
+After 112000 games - Mr.Q: 13.1%, Random: 86.1%, Draws: 0.8% , epsilon 0.3616528487724819
+After 113000 games - Mr.Q: 13.1%, Random: 86.3%, Draws: 0.6% , epsilon 0.35753768340153663
+After 114000 games - Mr.Q: 14.6%, Random: 84.7%, Draws: 0.7% , epsilon 0.35349974324570727
+After 115000 games - Mr.Q: 14.9%, Random: 84.5%, Draws: 0.6% , epsilon 0.3494906306033068
+After 116000 games - Mr.Q: 15.5%, Random: 84.0%, Draws: 0.5% , epsilon 0.3455615405681482
+After 117000 games - Mr.Q: 17.9%, Random: 81.4%, Draws: 0.7% , epsilon 0.34177298911420106
+After 118000 games - Mr.Q: 16.7%, Random: 82.6%, Draws: 0.7% , epsilon 0.3379424911604374
+After 119000 games - Mr.Q: 16.4%, Random: 83.2%, Draws: 0.4% , epsilon 0.334169961694936
+After 120000 games - Mr.Q: 16.9%, Random: 82.5%, Draws: 0.6% , epsilon 0.3303698304165075
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 563885
+Q-table size: 14.67 MB
+After 121000 games - Mr.Q: 16.0%, Random: 83.4%, Draws: 0.6% , epsilon 0.32665962267740073
+After 122000 games - Mr.Q: 15.8%, Random: 83.4%, Draws: 0.8% , epsilon 0.32293908490244955
+After 123000 games - Mr.Q: 19.9%, Random: 78.6%, Draws: 1.5% , epsilon 0.31927624763896606
+After 124000 games - Mr.Q: 20.4%, Random: 78.6%, Draws: 1.0% , epsilon 0.3156720008171101
+After 125000 games - Mr.Q: 19.4%, Random: 79.7%, Draws: 0.9% , epsilon 0.31205101893046977
+After 126000 games - Mr.Q: 22.2%, Random: 77.1%, Draws: 0.7% , epsilon 0.3084789756862124
+After 127000 games - Mr.Q: 21.6%, Random: 77.8%, Draws: 0.6% , epsilon 0.30497435319422966
+After 128000 games - Mr.Q: 21.4%, Random: 77.5%, Draws: 1.1% , epsilon 0.3014803016148992
+After 129000 games - Mr.Q: 21.1%, Random: 78.3%, Draws: 0.6% , epsilon 0.2980033337793577
+After 130000 games - Mr.Q: 22.3%, Random: 76.7%, Draws: 1.0% , epsilon 0.2945803107183336
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 599509
+Q-table size: 14.67 MB
+After 131000 games - Mr.Q: 23.6%, Random: 75.1%, Draws: 1.3% , epsilon 0.29121087529135437
+After 132000 games - Mr.Q: 22.1%, Random: 76.9%, Draws: 1.0% , epsilon 0.2878468754515743
+After 133000 games - Mr.Q: 25.1%, Random: 73.6%, Draws: 1.3% , epsilon 0.2844964144298805
+After 134000 games - Mr.Q: 26.0%, Random: 71.8%, Draws: 2.2% , epsilon 0.2812119469473986
+After 135000 games - Mr.Q: 25.5%, Random: 73.5%, Draws: 1.0% , epsilon 0.2779770729361177
+After 136000 games - Mr.Q: 27.5%, Random: 71.7%, Draws: 0.8% , epsilon 0.2747692440950345
+After 137000 games - Mr.Q: 27.3%, Random: 71.3%, Draws: 1.4% , epsilon 0.2716060381584497
+After 138000 games - Mr.Q: 26.4%, Random: 72.4%, Draws: 1.2% , epsilon 0.26845642798933156
+After 139000 games - Mr.Q: 28.2%, Random: 70.3%, Draws: 1.5% , epsilon 0.2653425454422425
+After 140000 games - Mr.Q: 29.0%, Random: 69.3%, Draws: 1.7% , epsilon 0.2622653060038165
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 630038
+Q-table size: 14.67 MB
+After 141000 games - Mr.Q: 31.2%, Random: 67.4%, Draws: 1.4% , epsilon 0.25930827479168855
+After 142000 games - Mr.Q: 28.7%, Random: 69.6%, Draws: 1.7% , epsilon 0.2562618051232174
+After 143000 games - Mr.Q: 31.8%, Random: 66.5%, Draws: 1.7% , epsilon 0.25332230034551123
+After 144000 games - Mr.Q: 32.9%, Random: 65.2%, Draws: 1.9% , epsilon 0.2503656843554688
+After 145000 games - Mr.Q: 34.9%, Random: 63.2%, Draws: 1.9% , epsilon 0.24744184399783753
+After 146000 games - Mr.Q: 32.4%, Random: 64.7%, Draws: 2.9% , epsilon 0.2445056885464997
+After 147000 games - Mr.Q: 30.5%, Random: 68.2%, Draws: 1.3% , epsilon 0.24164182523976727
+After 148000 games - Mr.Q: 33.2%, Random: 64.9%, Draws: 1.9% , epsilon 0.2388229692243413
+After 149000 games - Mr.Q: 33.2%, Random: 64.5%, Draws: 2.3% , epsilon 0.23602023833878177
+After 150000 games - Mr.Q: 35.1%, Random: 63.3%, Draws: 1.6% , epsilon 0.23323360574979748
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 656116
+Q-table size: 14.67 MB
+After 151000 games - Mr.Q: 34.5%, Random: 62.9%, Draws: 2.6% , epsilon 0.23045890151792014
+After 152000 games - Mr.Q: 36.6%, Random: 61.5%, Draws: 1.9% , epsilon 0.22777733234734476
+After 153000 games - Mr.Q: 35.3%, Random: 62.2%, Draws: 2.5% , epsilon 0.2250745168281209
+After 154000 games - Mr.Q: 33.0%, Random: 64.5%, Draws: 2.5% , epsilon 0.2224186745923125
+After 155000 games - Mr.Q: 37.1%, Random: 60.1%, Draws: 2.8% , epsilon 0.21975658924886504
+After 156000 games - Mr.Q: 39.9%, Random: 58.2%, Draws: 1.9% , epsilon 0.21716957834890047
+After 157000 games - Mr.Q: 37.9%, Random: 59.4%, Draws: 2.7% , epsilon 0.21460036036783492
+After 158000 games - Mr.Q: 43.2%, Random: 55.3%, Draws: 1.5% , epsilon 0.21208847097961367
+After 159000 games - Mr.Q: 38.5%, Random: 58.4%, Draws: 3.1% , epsilon 0.20957098187103224
+After 160000 games - Mr.Q: 41.3%, Random: 55.3%, Draws: 3.4% , epsilon 0.20707405679891996
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 679218
+Q-table size: 14.67 MB
+After 161000 games - Mr.Q: 41.4%, Random: 56.1%, Draws: 2.5% , epsilon 0.20461936264727526
+After 162000 games - Mr.Q: 41.7%, Random: 55.4%, Draws: 2.9% , epsilon 0.20218325308613538
+After 163000 games - Mr.Q: 45.8%, Random: 50.3%, Draws: 3.9% , epsilon 0.19981930312095153
+After 164000 games - Mr.Q: 44.6%, Random: 53.8%, Draws: 1.6% , epsilon 0.19747943806835058
+After 165000 games - Mr.Q: 42.8%, Random: 55.5%, Draws: 1.7% , epsilon 0.19512189422672135
+After 166000 games - Mr.Q: 46.6%, Random: 50.7%, Draws: 2.7% , epsilon 0.19281910236656133
+After 167000 games - Mr.Q: 42.3%, Random: 54.9%, Draws: 2.8% , epsilon 0.19050100114082458
+After 168000 games - Mr.Q: 43.2%, Random: 53.1%, Draws: 3.7% , epsilon 0.18822206147895656
+After 169000 games - Mr.Q: 47.0%, Random: 50.7%, Draws: 2.3% , epsilon 0.18600497821329914
+After 170000 games - Mr.Q: 46.1%, Random: 50.5%, Draws: 3.4% , epsilon 0.18378644010771908
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 698024
+Q-table size: 14.67 MB
+After 171000 games - Mr.Q: 49.7%, Random: 47.5%, Draws: 2.8% , epsilon 0.18164212880507016
+After 172000 games - Mr.Q: 47.2%, Random: 49.1%, Draws: 3.7% , epsilon 0.17946001402681105
+After 173000 games - Mr.Q: 47.5%, Random: 49.7%, Draws: 2.8% , epsilon 0.1773301792021439
+After 174000 games - Mr.Q: 48.1%, Random: 49.2%, Draws: 2.7% , epsilon 0.17525190712499544
+After 175000 games - Mr.Q: 50.6%, Random: 46.1%, Draws: 3.3% , epsilon 0.17321496619907786
+After 176000 games - Mr.Q: 50.0%, Random: 47.2%, Draws: 2.8% , epsilon 0.17118423880655592
+After 177000 games - Mr.Q: 51.3%, Random: 46.2%, Draws: 2.5% , epsilon 0.16918425555167524
+After 178000 games - Mr.Q: 53.1%, Random: 43.9%, Draws: 3.0% , epsilon 0.1671658418369727
+After 179000 games - Mr.Q: 53.5%, Random: 43.5%, Draws: 3.0% , epsilon 0.16518488778198914
+After 180000 games - Mr.Q: 51.1%, Random: 45.2%, Draws: 3.7% , epsilon 0.16324324232716225
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 713627
+Q-table size: 29.33 MB
+After 181000 games - Mr.Q: 54.3%, Random: 42.7%, Draws: 3.0% , epsilon 0.16134394115068662
+After 182000 games - Mr.Q: 57.6%, Random: 39.7%, Draws: 2.7% , epsilon 0.15946195401565247
+After 183000 games - Mr.Q: 54.2%, Random: 42.4%, Draws: 3.4% , epsilon 0.15760696255609577
+After 184000 games - Mr.Q: 53.7%, Random: 43.6%, Draws: 2.7% , epsilon 0.15579551549963994
+After 185000 games - Mr.Q: 55.1%, Random: 40.5%, Draws: 4.4% , epsilon 0.15398363699262374
+After 186000 games - Mr.Q: 56.9%, Random: 39.2%, Draws: 3.9% , epsilon 0.15219237378318784
+After 187000 games - Mr.Q: 56.6%, Random: 40.5%, Draws: 2.9% , epsilon 0.15044511478320743
+After 188000 games - Mr.Q: 57.4%, Random: 38.8%, Draws: 3.8% , epsilon 0.14867330665083095
+After 189000 games - Mr.Q: 58.7%, Random: 38.2%, Draws: 3.1% , epsilon 0.1469685061809611
+After 190000 games - Mr.Q: 61.7%, Random: 34.4%, Draws: 3.9% , epsilon 0.14524475926059355
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 725986
+Q-table size: 29.33 MB
+After 191000 games - Mr.Q: 56.7%, Random: 39.3%, Draws: 4.0% , epsilon 0.1435416602448072
+After 192000 games - Mr.Q: 58.6%, Random: 38.1%, Draws: 3.3% , epsilon 0.14185002002616665
+After 193000 games - Mr.Q: 58.9%, Random: 36.9%, Draws: 4.2% , epsilon 0.1402020079573065
+After 194000 games - Mr.Q: 58.5%, Random: 37.8%, Draws: 3.7% , epsilon 0.13854750880266853
+After 195000 games - Mr.Q: 59.3%, Random: 36.4%, Draws: 4.3% , epsilon 0.13691801071422002
+After 196000 games - Mr.Q: 62.8%, Random: 33.5%, Draws: 3.7% , epsilon 0.1353513890938449
+After 197000 games - Mr.Q: 61.6%, Random: 34.7%, Draws: 3.7% , epsilon 0.13378636988278117
+After 198000 games - Mr.Q: 61.2%, Random: 34.9%, Draws: 3.9% , epsilon 0.13226060643819273
+After 199000 games - Mr.Q: 61.5%, Random: 34.5%, Draws: 4.0% , epsilon 0.13071263157811092
+After 200000 games - Mr.Q: 62.7%, Random: 32.3%, Draws: 5.0% , epsilon 0.1291973726630102
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 736557
+Q-table size: 29.33 MB
+After 201000 games - Mr.Q: 63.7%, Random: 33.2%, Draws: 3.1% , epsilon 0.12768180235819088
+After 202000 games - Mr.Q: 63.7%, Random: 32.8%, Draws: 3.5% , epsilon 0.1262266681172466
+After 203000 games - Mr.Q: 64.3%, Random: 31.6%, Draws: 4.1% , epsilon 0.12475916991179016
+After 204000 games - Mr.Q: 64.1%, Random: 31.1%, Draws: 4.8% , epsilon 0.12331736460660932
+After 205000 games - Mr.Q: 66.9%, Random: 29.8%, Draws: 3.3% , epsilon 0.12190855648471768
+After 206000 games - Mr.Q: 65.9%, Random: 29.8%, Draws: 4.3% , epsilon 0.12049873089253603
+After 207000 games - Mr.Q: 67.2%, Random: 28.8%, Draws: 4.0% , epsilon 0.11912533988280062
+After 208000 games - Mr.Q: 64.1%, Random: 31.1%, Draws: 4.8% , epsilon 0.11774228484832337
+After 209000 games - Mr.Q: 64.9%, Random: 30.0%, Draws: 5.1% , epsilon 0.11635806492038404
+After 210000 games - Mr.Q: 67.5%, Random: 28.4%, Draws: 4.1% , epsilon 0.11504095526316843
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 744413
+Q-table size: 29.33 MB
+After 211000 games - Mr.Q: 65.2%, Random: 30.0%, Draws: 4.8% , epsilon 0.11373704849755327
+After 212000 games - Mr.Q: 69.5%, Random: 28.0%, Draws: 2.5% , epsilon 0.11244825792491127
+After 213000 games - Mr.Q: 68.4%, Random: 26.7%, Draws: 4.9% , epsilon 0.11114917083160007
+After 214000 games - Mr.Q: 72.3%, Random: 24.3%, Draws: 3.4% , epsilon 0.10991871904786085
+After 215000 games - Mr.Q: 70.7%, Random: 23.8%, Draws: 5.5% , epsilon 0.10868069389026384
+After 216000 games - Mr.Q: 70.3%, Random: 26.3%, Draws: 3.4% , epsilon 0.10744404103517002
+After 217000 games - Mr.Q: 70.8%, Random: 26.0%, Draws: 3.2% , epsilon 0.10622422156640629
+After 218000 games - Mr.Q: 71.1%, Random: 25.0%, Draws: 3.9% , epsilon 0.10500365426094242
+After 219000 games - Mr.Q: 70.6%, Random: 25.7%, Draws: 3.7% , epsilon 0.10384154655426935
+After 220000 games - Mr.Q: 70.0%, Random: 25.2%, Draws: 4.8% , epsilon 0.10264989706632617
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 751068
+Q-table size: 29.33 MB
+After 221000 games - Mr.Q: 74.7%, Random: 21.5%, Draws: 3.8% , epsilon 0.10148805786010749
+After 222000 games - Mr.Q: 73.3%, Random: 23.7%, Draws: 3.0% , epsilon 0.1003474967117061
+After 223000 games - Mr.Q: 72.3%, Random: 24.6%, Draws: 3.1% , epsilon 0.09921489196928257
+After 224000 games - Mr.Q: 72.0%, Random: 23.6%, Draws: 4.4% , epsilon 0.09807211916700789
+After 225000 games - Mr.Q: 73.2%, Random: 22.3%, Draws: 4.5% , epsilon 0.09697082036247628
+After 226000 games - Mr.Q: 74.8%, Random: 22.2%, Draws: 3.0% , epsilon 0.09588294327686764
+After 227000 games - Mr.Q: 76.9%, Random: 19.2%, Draws: 3.9% , epsilon 0.09481513998579873
+After 228000 games - Mr.Q: 74.1%, Random: 21.7%, Draws: 4.2% , epsilon 0.09374582170054478
+After 229000 games - Mr.Q: 74.8%, Random: 22.6%, Draws: 2.6% , epsilon 0.09269162188408721
+After 230000 games - Mr.Q: 72.8%, Random: 24.0%, Draws: 3.2% , epsilon 0.09164808542656176
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 756004
+Q-table size: 29.33 MB
+After 231000 games - Mr.Q: 73.5%, Random: 22.9%, Draws: 3.6% , epsilon 0.09062544997490177
+After 232000 games - Mr.Q: 76.0%, Random: 20.8%, Draws: 3.2% , epsilon 0.08963421159163772
+After 233000 games - Mr.Q: 74.1%, Random: 22.4%, Draws: 3.5% , epsilon 0.08864849605256084
+After 234000 games - Mr.Q: 76.5%, Random: 20.5%, Draws: 3.0% , epsilon 0.08767642611864819
+After 235000 games - Mr.Q: 77.3%, Random: 18.6%, Draws: 4.1% , epsilon 0.08669862776370815
+After 236000 games - Mr.Q: 75.0%, Random: 21.1%, Draws: 3.9% , epsilon 0.08573456335540557
+After 237000 games - Mr.Q: 75.7%, Random: 20.8%, Draws: 3.5% , epsilon 0.0847823212363158
+After 238000 games - Mr.Q: 77.4%, Random: 18.7%, Draws: 3.9% , epsilon 0.08383461922785151
+After 239000 games - Mr.Q: 79.4%, Random: 17.7%, Draws: 2.9% , epsilon 0.08292652991212558
+After 240000 games - Mr.Q: 79.5%, Random: 18.0%, Draws: 2.5% , epsilon 0.08201113481397541
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 759826
+Q-table size: 29.33 MB
+After 241000 games - Mr.Q: 77.2%, Random: 18.7%, Draws: 4.1% , epsilon 0.08108759765032142
+After 242000 games - Mr.Q: 77.5%, Random: 18.5%, Draws: 4.0% , epsilon 0.08017710635091628
+After 243000 games - Mr.Q: 78.3%, Random: 18.0%, Draws: 3.7% , epsilon 0.07929555004530338
+After 244000 games - Mr.Q: 77.8%, Random: 18.3%, Draws: 3.9% , epsilon 0.07840980677939632
+After 245000 games - Mr.Q: 78.7%, Random: 17.9%, Draws: 3.4% , epsilon 0.07755435152220126
+After 246000 games - Mr.Q: 79.6%, Random: 17.1%, Draws: 3.3% , epsilon 0.07671122100917377
+After 247000 games - Mr.Q: 79.4%, Random: 18.0%, Draws: 2.6% , epsilon 0.07587589079290254
+After 248000 games - Mr.Q: 79.1%, Random: 17.3%, Draws: 3.6% , epsilon 0.07503637410365264
+After 249000 games - Mr.Q: 80.8%, Random: 15.3%, Draws: 3.9% , epsilon 0.07421712944074685
+After 250000 games - Mr.Q: 81.2%, Random: 16.0%, Draws: 2.8% , epsilon 0.07341607911194786
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 763001
+Q-table size: 29.33 MB
+After 251000 games - Mr.Q: 79.0%, Random: 16.8%, Draws: 4.2% , epsilon 0.07260958715416188
+After 252000 games - Mr.Q: 81.9%, Random: 14.7%, Draws: 3.4% , epsilon 0.07183730879732776
+After 253000 games - Mr.Q: 82.2%, Random: 15.2%, Draws: 2.6% , epsilon 0.07106365017757983
+After 254000 games - Mr.Q: 81.5%, Random: 15.3%, Draws: 3.2% , epsilon 0.07029298107449307
+After 255000 games - Mr.Q: 82.2%, Random: 15.6%, Draws: 2.2% , epsilon 0.06954269955475352
+After 256000 games - Mr.Q: 82.8%, Random: 14.8%, Draws: 2.4% , epsilon 0.06880276552042988
+After 257000 games - Mr.Q: 80.1%, Random: 16.4%, Draws: 3.5% , epsilon 0.06805096672911562
+After 258000 games - Mr.Q: 83.0%, Random: 13.9%, Draws: 3.1% , epsilon 0.0673145177088353
+After 259000 games - Mr.Q: 83.8%, Random: 13.4%, Draws: 2.8% , epsilon 0.06659123247179916
+After 260000 games - Mr.Q: 83.3%, Random: 12.9%, Draws: 3.8% , epsilon 0.06587163466518468
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 765412
+Q-table size: 29.33 MB
+After 261000 games - Mr.Q: 82.9%, Random: 13.6%, Draws: 3.5% , epsilon 0.06517434523823946
+After 262000 games - Mr.Q: 83.8%, Random: 12.5%, Draws: 3.7% , epsilon 0.0644705098827965
+After 263000 games - Mr.Q: 87.4%, Random: 10.8%, Draws: 1.8% , epsilon 0.06380208709593568
+After 264000 games - Mr.Q: 85.6%, Random: 12.5%, Draws: 1.9% , epsilon 0.06314097328408139
+After 265000 games - Mr.Q: 83.4%, Random: 14.3%, Draws: 2.3% , epsilon 0.06246934099851499
+After 266000 games - Mr.Q: 84.4%, Random: 13.2%, Draws: 2.4% , epsilon 0.06180633621922515
+After 267000 games - Mr.Q: 81.8%, Random: 13.3%, Draws: 4.9% , epsilon 0.061134043120160034
+After 268000 games - Mr.Q: 83.7%, Random: 13.3%, Draws: 3.0% , epsilon 0.06048575460442414
+After 269000 games - Mr.Q: 83.2%, Random: 14.1%, Draws: 2.7% , epsilon 0.05983051833223042
+After 270000 games - Mr.Q: 87.2%, Random: 10.3%, Draws: 2.5% , epsilon 0.05919640806393312
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 767340
+Q-table size: 29.33 MB
+After 271000 games - Mr.Q: 86.0%, Random: 11.7%, Draws: 2.3% , epsilon 0.058569955488688825
+After 272000 games - Mr.Q: 83.6%, Random: 12.6%, Draws: 3.8% , epsilon 0.05794201996281829
+After 273000 games - Mr.Q: 82.3%, Random: 14.2%, Draws: 3.5% , epsilon 0.057310270543861924
+After 274000 games - Mr.Q: 84.5%, Random: 12.5%, Draws: 3.0% , epsilon 0.05670400504447795
+After 275000 games - Mr.Q: 84.9%, Random: 12.5%, Draws: 2.6% , epsilon 0.05609556973473175
+After 276000 games - Mr.Q: 85.0%, Random: 11.8%, Draws: 3.2% , epsilon 0.055501599115382445
+After 277000 games - Mr.Q: 86.0%, Random: 11.0%, Draws: 3.0% , epsilon 0.05491891517869995
+After 278000 games - Mr.Q: 86.3%, Random: 10.4%, Draws: 3.3% , epsilon 0.05434598961465736
+After 279000 games - Mr.Q: 87.9%, Random: 9.5%, Draws: 2.6% , epsilon 0.05378770005641275
+After 280000 games - Mr.Q: 86.4%, Random: 10.6%, Draws: 3.0% , epsilon 0.05324483542011965
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 768863
+Q-table size: 29.33 MB
+After 281000 games - Mr.Q: 87.0%, Random: 10.2%, Draws: 2.8% , epsilon 0.052687898922307
+After 282000 games - Mr.Q: 88.3%, Random: 9.3%, Draws: 2.4% , epsilon 0.052144817621020884
+After 283000 games - Mr.Q: 86.8%, Random: 10.4%, Draws: 2.8% , epsilon 0.05160950169295624
+After 284000 games - Mr.Q: 84.9%, Random: 11.5%, Draws: 3.6% , epsilon 0.051063951162637
+After 285000 games - Mr.Q: 87.4%, Random: 9.2%, Draws: 3.4% , epsilon 0.050528917001484604
+After 286000 games - Mr.Q: 89.2%, Random: 7.9%, Draws: 2.9% , epsilon 0.050014040758154125
+After 287000 games - Mr.Q: 87.7%, Random: 10.1%, Draws: 2.2% , epsilon 0.04950045077053955
+After 288000 games - Mr.Q: 87.6%, Random: 10.0%, Draws: 2.4% , epsilon 0.04899252673425211
+After 289000 games - Mr.Q: 87.4%, Random: 10.1%, Draws: 2.5% , epsilon 0.04848482030940121
+After 290000 games - Mr.Q: 87.0%, Random: 9.8%, Draws: 3.2% , epsilon 0.04798429454815334
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 770065
+Q-table size: 29.33 MB
+After 291000 games - Mr.Q: 88.3%, Random: 9.3%, Draws: 2.4% , epsilon 0.04749819713950689
+After 292000 games - Mr.Q: 88.7%, Random: 9.3%, Draws: 2.0% , epsilon 0.04701058317050382
+After 293000 games - Mr.Q: 88.0%, Random: 8.9%, Draws: 3.1% , epsilon 0.046523043314174096
+After 294000 games - Mr.Q: 88.6%, Random: 8.8%, Draws: 2.6% , epsilon 0.04604949240160612
+After 295000 games - Mr.Q: 89.4%, Random: 8.3%, Draws: 2.3% , epsilon 0.04558158215255098
+After 296000 games - Mr.Q: 87.1%, Random: 9.7%, Draws: 3.2% , epsilon 0.04510606559182229
+After 297000 games - Mr.Q: 89.6%, Random: 8.0%, Draws: 2.4% , epsilon 0.04464269661810513
+After 298000 games - Mr.Q: 88.7%, Random: 9.1%, Draws: 2.2% , epsilon 0.044198405746919966
+After 299000 games - Mr.Q: 89.3%, Random: 8.0%, Draws: 2.7% , epsilon 0.0437431362237608
+After 300000 games - Mr.Q: 89.6%, Random: 8.4%, Draws: 2.0% , epsilon 0.04330026300867487
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 771029
+Q-table size: 29.33 MB
+After 301000 games - Mr.Q: 89.4%, Random: 7.4%, Draws: 3.2% , epsilon 0.04285891625253229
+After 302000 games - Mr.Q: 87.9%, Random: 9.2%, Draws: 2.9% , epsilon 0.042417741180727934
+After 303000 games - Mr.Q: 89.9%, Random: 8.2%, Draws: 1.9% , epsilon 0.04198585155024941
+After 304000 games - Mr.Q: 90.3%, Random: 7.6%, Draws: 2.1% , epsilon 0.04155865025014526
+After 305000 games - Mr.Q: 89.9%, Random: 7.6%, Draws: 2.5% , epsilon 0.0411410202554634
+After 306000 games - Mr.Q: 90.9%, Random: 7.3%, Draws: 1.8% , epsilon 0.0407261616548156
+After 307000 games - Mr.Q: 88.5%, Random: 8.1%, Draws: 3.4% , epsilon 0.040308028734337725
+After 308000 games - Mr.Q: 89.5%, Random: 7.4%, Draws: 3.1% , epsilon 0.039890877676142446
+After 309000 games - Mr.Q: 89.6%, Random: 7.1%, Draws: 3.3% , epsilon 0.03947788583613889
+After 310000 games - Mr.Q: 91.7%, Random: 6.4%, Draws: 1.9% , epsilon 0.039082611830063604
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 771733
+Q-table size: 29.33 MB
+After 311000 games - Mr.Q: 89.6%, Random: 7.4%, Draws: 3.0% , epsilon 0.03868653678267628
+After 312000 games - Mr.Q: 89.8%, Random: 7.4%, Draws: 2.8% , epsilon 0.038291412242956215
+After 313000 games - Mr.Q: 90.4%, Random: 6.9%, Draws: 2.7% , epsilon 0.037904151431483846
+After 314000 games - Mr.Q: 89.7%, Random: 7.6%, Draws: 2.7% , epsilon 0.037515179486631585
+After 315000 games - Mr.Q: 91.7%, Random: 5.6%, Draws: 2.7% , epsilon 0.03713695748180169
+After 316000 games - Mr.Q: 91.0%, Random: 6.2%, Draws: 2.8% , epsilon 0.036764313295951805
+After 317000 games - Mr.Q: 89.2%, Random: 7.9%, Draws: 2.9% , epsilon 0.03638936720244119
+After 318000 games - Mr.Q: 90.1%, Random: 7.4%, Draws: 2.5% , epsilon 0.03602638609750647
+After 319000 games - Mr.Q: 91.6%, Random: 6.4%, Draws: 2.0% , epsilon 0.03566752504293992
+After 320000 games - Mr.Q: 93.1%, Random: 4.9%, Draws: 2.0% , epsilon 0.03531139114149704
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 772368
+Q-table size: 29.33 MB
+After 321000 games - Mr.Q: 91.3%, Random: 6.5%, Draws: 2.2% , epsilon 0.03495594666720991
+After 322000 games - Mr.Q: 91.8%, Random: 6.6%, Draws: 1.6% , epsilon 0.03460681392879203
+After 323000 games - Mr.Q: 92.2%, Random: 5.2%, Draws: 2.6% , epsilon 0.03425770805070477
+After 324000 games - Mr.Q: 90.8%, Random: 6.5%, Draws: 2.7% , epsilon 0.03391829644675279
+After 325000 games - Mr.Q: 92.7%, Random: 4.4%, Draws: 2.9% , epsilon 0.03357976260095218
+After 326000 games - Mr.Q: 93.2%, Random: 5.4%, Draws: 1.4% , epsilon 0.03323859088238973
+After 327000 games - Mr.Q: 92.5%, Random: 5.1%, Draws: 2.4% , epsilon 0.03291141545533138
+After 328000 games - Mr.Q: 91.0%, Random: 6.4%, Draws: 2.6% , epsilon 0.03257983591706335
+After 329000 games - Mr.Q: 90.4%, Random: 7.3%, Draws: 2.3% , epsilon 0.03225379019695751
+After 330000 games - Mr.Q: 91.7%, Random: 6.0%, Draws: 2.3% , epsilon 0.03193228467602015
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 772743
+Q-table size: 29.33 MB
+After 331000 games - Mr.Q: 92.2%, Random: 4.9%, Draws: 2.9% , epsilon 0.03161569112160563
+After 332000 games - Mr.Q: 92.6%, Random: 5.0%, Draws: 2.4% , epsilon 0.03130674429194682
+After 333000 games - Mr.Q: 92.1%, Random: 5.8%, Draws: 2.1% , epsilon 0.030995949725486357
+After 334000 games - Mr.Q: 90.9%, Random: 6.8%, Draws: 2.3% , epsilon 0.030685540093240746
+After 335000 games - Mr.Q: 91.4%, Random: 5.7%, Draws: 2.9% , epsilon 0.030382887293686062
+After 336000 games - Mr.Q: 92.7%, Random: 5.1%, Draws: 2.2% , epsilon 0.03008171544756179
+After 337000 games - Mr.Q: 91.1%, Random: 6.2%, Draws: 2.7% , epsilon 0.02977650089498439
+After 338000 games - Mr.Q: 93.3%, Random: 4.8%, Draws: 1.9% , epsilon 0.02948027857382914
+After 339000 games - Mr.Q: 95.0%, Random: 3.9%, Draws: 1.1% , epsilon 0.029197307964886194
+After 340000 games - Mr.Q: 92.2%, Random: 5.9%, Draws: 1.9% , epsilon 0.028908726572781016
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 773166
+Q-table size: 29.33 MB
+After 341000 games - Mr.Q: 94.1%, Random: 4.4%, Draws: 1.5% , epsilon 0.02862694771990212
+After 342000 games - Mr.Q: 93.7%, Random: 4.6%, Draws: 1.7% , epsilon 0.028346979952821472
+After 343000 games - Mr.Q: 93.0%, Random: 5.3%, Draws: 1.7% , epsilon 0.028067729283246686
+After 344000 games - Mr.Q: 94.9%, Random: 4.4%, Draws: 0.7% , epsilon 0.02779570430744231
+After 345000 games - Mr.Q: 93.2%, Random: 5.3%, Draws: 1.5% , epsilon 0.02752163664715784
+After 346000 games - Mr.Q: 94.5%, Random: 4.3%, Draws: 1.2% , epsilon 0.02725375957359613
+After 347000 games - Mr.Q: 94.6%, Random: 3.9%, Draws: 1.5% , epsilon 0.02699016317411573
+After 348000 games - Mr.Q: 93.0%, Random: 5.1%, Draws: 1.9% , epsilon 0.026725534796617698
+After 349000 games - Mr.Q: 93.6%, Random: 5.0%, Draws: 1.4% , epsilon 0.026468423672066078
+After 350000 games - Mr.Q: 93.2%, Random: 4.9%, Draws: 1.9% , epsilon 0.02620636861142691
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 773532
+Q-table size: 29.33 MB
+After 351000 games - Mr.Q: 93.6%, Random: 4.7%, Draws: 1.7% , epsilon 0.02594872441884083
+After 352000 games - Mr.Q: 94.2%, Random: 3.6%, Draws: 2.2% , epsilon 0.025699394934841198
+After 353000 games - Mr.Q: 94.9%, Random: 4.2%, Draws: 0.9% , epsilon 0.02545302110497141
+After 354000 games - Mr.Q: 94.6%, Random: 4.1%, Draws: 1.3% , epsilon 0.025206135536221745
+After 355000 games - Mr.Q: 93.6%, Random: 4.8%, Draws: 1.6% , epsilon 0.02495897391832539
+After 356000 games - Mr.Q: 93.5%, Random: 5.2%, Draws: 1.3% , epsilon 0.024718017440939218
+After 357000 games - Mr.Q: 95.0%, Random: 3.2%, Draws: 1.8% , epsilon 0.024478456982433495
+After 358000 games - Mr.Q: 95.8%, Random: 2.7%, Draws: 1.5% , epsilon 0.024241775834961846
+After 359000 games - Mr.Q: 95.0%, Random: 3.6%, Draws: 1.4% , epsilon 0.024005246584232674
+After 360000 games - Mr.Q: 94.6%, Random: 3.9%, Draws: 1.5% , epsilon 0.023770003038679523
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 773795
+Q-table size: 29.33 MB
+After 361000 games - Mr.Q: 94.9%, Random: 3.6%, Draws: 1.5% , epsilon 0.023538947844186243
+After 362000 games - Mr.Q: 95.0%, Random: 3.3%, Draws: 1.7% , epsilon 0.023311537261798885
+After 363000 games - Mr.Q: 93.9%, Random: 4.8%, Draws: 1.3% , epsilon 0.023085077072403207
+After 364000 games - Mr.Q: 93.7%, Random: 5.0%, Draws: 1.3% , epsilon 0.02285530803727479
+After 365000 games - Mr.Q: 95.8%, Random: 3.1%, Draws: 1.1% , epsilon 0.02263194456699348
+After 366000 games - Mr.Q: 95.3%, Random: 3.2%, Draws: 1.5% , epsilon 0.022413946569723214
+After 367000 games - Mr.Q: 96.4%, Random: 2.5%, Draws: 1.1% , epsilon 0.022197715429226213
+After 368000 games - Mr.Q: 94.7%, Random: 3.2%, Draws: 2.1% , epsilon 0.021981965564319948
+After 369000 games - Mr.Q: 95.8%, Random: 2.8%, Draws: 1.4% , epsilon 0.021770054207701714
+After 370000 games - Mr.Q: 93.8%, Random: 4.5%, Draws: 1.7% , epsilon 0.02156059537439831
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 773998
+Q-table size: 29.33 MB
+After 371000 games - Mr.Q: 94.9%, Random: 4.2%, Draws: 0.9% , epsilon 0.021353194538854727
+After 372000 games - Mr.Q: 95.6%, Random: 2.7%, Draws: 1.7% , epsilon 0.021146816006634716
+After 373000 games - Mr.Q: 95.2%, Random: 3.3%, Draws: 1.5% , epsilon 0.020942097045629042
+After 374000 games - Mr.Q: 96.1%, Random: 2.8%, Draws: 1.1% , epsilon 0.020738696287079788
+After 375000 games - Mr.Q: 95.8%, Random: 2.6%, Draws: 1.6% , epsilon 0.02054059837370456
+After 376000 games - Mr.Q: 95.9%, Random: 2.4%, Draws: 1.7% , epsilon 0.020344718222667552
+After 377000 games - Mr.Q: 95.9%, Random: 3.3%, Draws: 0.8% , epsilon 0.020149819420475966
+After 378000 games - Mr.Q: 95.6%, Random: 3.4%, Draws: 1.0% , epsilon 0.019954353133531635
+After 379000 games - Mr.Q: 96.3%, Random: 2.3%, Draws: 1.4% , epsilon 0.01976459719713713
+After 380000 games - Mr.Q: 96.2%, Random: 2.9%, Draws: 0.9% , epsilon 0.019576939397000392
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774180
+Q-table size: 29.33 MB
+After 381000 games - Mr.Q: 96.0%, Random: 3.3%, Draws: 0.7% , epsilon 0.019389415169576603
+After 382000 games - Mr.Q: 95.9%, Random: 2.8%, Draws: 1.3% , epsilon 0.019204109691332953
+After 383000 games - Mr.Q: 96.1%, Random: 3.3%, Draws: 0.6% , epsilon 0.01902019477765892
+After 384000 games - Mr.Q: 96.7%, Random: 2.6%, Draws: 0.7% , epsilon 0.01883824840956492
+After 385000 games - Mr.Q: 97.0%, Random: 2.2%, Draws: 0.8% , epsilon 0.01865877021084271
+After 386000 games - Mr.Q: 97.1%, Random: 1.9%, Draws: 1.0% , epsilon 0.01848151943560568
+After 387000 games - Mr.Q: 94.9%, Random: 4.0%, Draws: 1.1% , epsilon 0.01830472601274764
+After 388000 games - Mr.Q: 95.9%, Random: 2.7%, Draws: 1.4% , epsilon 0.018129986384479154
+After 389000 games - Mr.Q: 96.9%, Random: 2.0%, Draws: 1.1% , epsilon 0.017957166245301033
+After 390000 games - Mr.Q: 95.9%, Random: 2.4%, Draws: 1.7% , epsilon 0.017784108260056733
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774319
+Q-table size: 29.33 MB
+After 391000 games - Mr.Q: 95.8%, Random: 2.9%, Draws: 1.3% , epsilon 0.01761373964841048
+After 392000 games - Mr.Q: 95.1%, Random: 3.1%, Draws: 1.8% , epsilon 0.017442717991057444
+After 393000 games - Mr.Q: 97.5%, Random: 2.1%, Draws: 0.4% , epsilon 0.01727530887929249
+After 394000 games - Mr.Q: 97.1%, Random: 2.1%, Draws: 0.8% , epsilon 0.01711200467324016
+After 395000 games - Mr.Q: 97.3%, Random: 2.0%, Draws: 0.7% , epsilon 0.01695092221223778
+After 396000 games - Mr.Q: 96.3%, Random: 2.6%, Draws: 1.1% , epsilon 0.016789458770864348
+After 397000 games - Mr.Q: 97.1%, Random: 2.2%, Draws: 0.7% , epsilon 0.01663029830154877
+After 398000 games - Mr.Q: 95.8%, Random: 3.1%, Draws: 1.1% , epsilon 0.016473437345767342
+After 399000 games - Mr.Q: 97.4%, Random: 1.7%, Draws: 0.9% , epsilon 0.01631833334952952
+After 400000 games - Mr.Q: 96.8%, Random: 2.6%, Draws: 0.6% , epsilon 0.016165934449056132
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774458
+Q-table size: 29.33 MB
+After 401000 games - Mr.Q: 97.1%, Random: 1.8%, Draws: 1.1% , epsilon 0.016012989100675844
+After 402000 games - Mr.Q: 97.5%, Random: 1.8%, Draws: 0.7% , epsilon 0.015862918362086302
+After 403000 games - Mr.Q: 96.6%, Random: 2.4%, Draws: 1.0% , epsilon 0.015713201238109306
+After 404000 games - Mr.Q: 96.7%, Random: 2.8%, Draws: 0.5% , epsilon 0.01556506838661973
+After 405000 games - Mr.Q: 97.6%, Random: 1.9%, Draws: 0.5% , epsilon 0.015421277210121907
+After 406000 games - Mr.Q: 96.7%, Random: 2.6%, Draws: 0.7% , epsilon 0.015276553288106768
+After 407000 games - Mr.Q: 96.8%, Random: 2.3%, Draws: 0.9% , epsilon 0.015131704574930658
+After 408000 games - Mr.Q: 97.6%, Random: 1.6%, Draws: 0.8% , epsilon 0.014989728182070958
+After 409000 games - Mr.Q: 96.8%, Random: 2.6%, Draws: 0.6% , epsilon 0.014848994818223679
+After 410000 games - Mr.Q: 97.3%, Random: 2.2%, Draws: 0.5% , epsilon 0.014710950806657859
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774529
+Q-table size: 29.33 MB
+After 411000 games - Mr.Q: 97.1%, Random: 2.5%, Draws: 0.4% , epsilon 0.01457184386742054
+After 412000 games - Mr.Q: 96.7%, Random: 2.7%, Draws: 0.6% , epsilon 0.014435726773205279
+After 413000 games - Mr.Q: 95.1%, Random: 4.2%, Draws: 0.7% , epsilon 0.01429799267509263
+After 414000 games - Mr.Q: 97.0%, Random: 2.5%, Draws: 0.5% , epsilon 0.014165014407042445
+After 415000 games - Mr.Q: 97.5%, Random: 1.9%, Draws: 0.6% , epsilon 0.014033750041023474
+After 416000 games - Mr.Q: 97.2%, Random: 2.1%, Draws: 0.7% , epsilon 0.013902270067448748
+After 417000 games - Mr.Q: 96.3%, Random: 2.8%, Draws: 0.9% , epsilon 0.013771870417365105
+After 418000 games - Mr.Q: 97.4%, Random: 2.1%, Draws: 0.5% , epsilon 0.013642393745713506
+After 419000 games - Mr.Q: 96.9%, Random: 2.5%, Draws: 0.6% , epsilon 0.01351417489553535
+After 420000 games - Mr.Q: 97.3%, Random: 1.8%, Draws: 0.9% , epsilon 0.013387241441105322
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774645
+Q-table size: 29.33 MB
+After 421000 games - Mr.Q: 97.1%, Random: 2.0%, Draws: 0.9% , epsilon 0.013260916730397004
+After 422000 games - Mr.Q: 95.8%, Random: 3.0%, Draws: 1.2% , epsilon 0.0131337087541765
+After 423000 games - Mr.Q: 96.7%, Random: 2.2%, Draws: 1.1% , epsilon 0.013008436490410386
+After 424000 games - Mr.Q: 97.6%, Random: 1.9%, Draws: 0.5% , epsilon 0.012888585866681106
+After 425000 games - Mr.Q: 97.0%, Random: 2.1%, Draws: 0.9% , epsilon 0.012767477259693662
+After 426000 games - Mr.Q: 96.9%, Random: 2.1%, Draws: 1.0% , epsilon 0.012646684597594679
+After 427000 games - Mr.Q: 97.7%, Random: 1.9%, Draws: 0.4% , epsilon 0.012527072331885939
+After 428000 games - Mr.Q: 96.0%, Random: 2.5%, Draws: 1.5% , epsilon 0.01240830596379407
+After 429000 games - Mr.Q: 96.5%, Random: 2.2%, Draws: 1.3% , epsilon 0.012292312653411073
+After 430000 games - Mr.Q: 97.0%, Random: 1.7%, Draws: 1.3% , epsilon 0.012174493599688994
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774706
+Q-table size: 29.33 MB
+After 431000 games - Mr.Q: 96.9%, Random: 2.8%, Draws: 0.3% , epsilon 0.012059021715410791
+After 432000 games - Mr.Q: 96.4%, Random: 3.1%, Draws: 0.5% , epsilon 0.011945469261077785
+After 433000 games - Mr.Q: 97.8%, Random: 1.8%, Draws: 0.4% , epsilon 0.01183422859035633
+After 434000 games - Mr.Q: 97.9%, Random: 1.2%, Draws: 0.9% , epsilon 0.01172411762691555
+After 435000 games - Mr.Q: 97.9%, Random: 1.4%, Draws: 0.7% , epsilon 0.011614253003788865
+After 436000 games - Mr.Q: 98.1%, Random: 1.6%, Draws: 0.3% , epsilon 0.011507868818776818
+After 437000 games - Mr.Q: 98.1%, Random: 1.4%, Draws: 0.5% , epsilon 0.011401683749923784
+After 438000 games - Mr.Q: 97.6%, Random: 2.0%, Draws: 0.4% , epsilon 0.01129827475259201
+After 439000 games - Mr.Q: 97.8%, Random: 1.6%, Draws: 0.6% , epsilon 0.011193699021803795
+After 440000 games - Mr.Q: 97.9%, Random: 1.6%, Draws: 0.5% , epsilon 0.011089647638796142
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774732
+Q-table size: 29.33 MB
+After 441000 games - Mr.Q: 97.8%, Random: 1.4%, Draws: 0.8% , epsilon 0.01098503644175271
+After 442000 games - Mr.Q: 98.3%, Random: 0.9%, Draws: 0.8% , epsilon 0.010882881156718746
+After 443000 games - Mr.Q: 98.1%, Random: 1.3%, Draws: 0.6% , epsilon 0.010781255386817753
+After 444000 games - Mr.Q: 98.0%, Random: 1.5%, Draws: 0.5% , epsilon 0.010680567931090458
+After 445000 games - Mr.Q: 97.4%, Random: 1.8%, Draws: 0.8% , epsilon 0.01058087371202487
+After 446000 games - Mr.Q: 96.9%, Random: 2.3%, Draws: 0.8% , epsilon 0.010482529348580545
+After 447000 games - Mr.Q: 97.2%, Random: 1.8%, Draws: 1.0% , epsilon 0.010384372118990147
+After 448000 games - Mr.Q: 98.0%, Random: 1.6%, Draws: 0.4% , epsilon 0.010288769807861819
+After 449000 games - Mr.Q: 97.5%, Random: 1.7%, Draws: 0.8% , epsilon 0.01019407822862685
+After 450000 games - Mr.Q: 97.3%, Random: 1.9%, Draws: 0.8% , epsilon 0.01009805651570273
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774754
+Q-table size: 29.33 MB
+After 451000 games - Mr.Q: 98.2%, Random: 1.0%, Draws: 0.8% , epsilon 0.010003819563879086
+After 452000 games - Mr.Q: 97.9%, Random: 1.6%, Draws: 0.5% , epsilon 0.009909807979675197
+After 453000 games - Mr.Q: 97.9%, Random: 1.6%, Draws: 0.5% , epsilon 0.009817769588305925
+After 454000 games - Mr.Q: 97.5%, Random: 1.8%, Draws: 0.7% , epsilon 0.009726381756982436
+After 455000 games - Mr.Q: 97.8%, Random: 1.5%, Draws: 0.7% , epsilon 0.00963660586329787
+After 456000 games - Mr.Q: 97.8%, Random: 1.5%, Draws: 0.7% , epsilon 0.009546255210577276
+After 457000 games - Mr.Q: 98.3%, Random: 1.3%, Draws: 0.4% , epsilon 0.00945827432563918
+After 458000 games - Mr.Q: 98.0%, Random: 1.5%, Draws: 0.5% , epsilon 0.009371807156001099
+After 459000 games - Mr.Q: 98.2%, Random: 1.3%, Draws: 0.5% , epsilon 0.009284839782730935
+After 460000 games - Mr.Q: 97.4%, Random: 1.8%, Draws: 0.8% , epsilon 0.009198072345760032
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774819
+Q-table size: 29.33 MB
+After 461000 games - Mr.Q: 98.3%, Random: 1.1%, Draws: 0.6% , epsilon 0.009112489360772339
+After 462000 games - Mr.Q: 98.2%, Random: 1.1%, Draws: 0.7% , epsilon 0.009028181159371007
+After 463000 games - Mr.Q: 98.5%, Random: 1.2%, Draws: 0.3% , epsilon 0.008944536692568054
+After 464000 games - Mr.Q: 98.0%, Random: 1.3%, Draws: 0.7% , epsilon 0.008861294994241478
+After 465000 games - Mr.Q: 97.8%, Random: 1.4%, Draws: 0.8% , epsilon 0.008779345945284603
+After 466000 games - Mr.Q: 98.2%, Random: 1.2%, Draws: 0.6% , epsilon 0.00869802428780867
+After 467000 games - Mr.Q: 98.2%, Random: 1.4%, Draws: 0.4% , epsilon 0.00861825736072222
+After 468000 games - Mr.Q: 98.2%, Random: 1.5%, Draws: 0.3% , epsilon 0.008538829156416473
+After 469000 games - Mr.Q: 98.4%, Random: 1.2%, Draws: 0.4% , epsilon 0.008460234506304504
+After 470000 games - Mr.Q: 98.0%, Random: 1.5%, Draws: 0.5% , epsilon 0.008381667563791788
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774847
+Q-table size: 29.33 MB
+After 471000 games - Mr.Q: 97.9%, Random: 1.2%, Draws: 0.9% , epsilon 0.008302676089477642
+After 472000 games - Mr.Q: 98.1%, Random: 1.4%, Draws: 0.5% , epsilon 0.00822567103886588
+After 473000 games - Mr.Q: 98.5%, Random: 1.2%, Draws: 0.3% , epsilon 0.008149787668443837
+After 474000 games - Mr.Q: 98.5%, Random: 0.9%, Draws: 0.6% , epsilon 0.008075064602254687
+After 475000 games - Mr.Q: 98.3%, Random: 1.4%, Draws: 0.3% , epsilon 0.008000074584434214
+After 476000 games - Mr.Q: 98.3%, Random: 1.1%, Draws: 0.6% , epsilon 0.007926208973996951
+After 477000 games - Mr.Q: 98.3%, Random: 1.2%, Draws: 0.5% , epsilon 0.007853339500706423
+After 478000 games - Mr.Q: 97.7%, Random: 1.3%, Draws: 1.0% , epsilon 0.007779825049536407
+After 479000 games - Mr.Q: 98.6%, Random: 1.2%, Draws: 0.2% , epsilon 0.007707584515423718
+After 480000 games - Mr.Q: 98.5%, Random: 1.1%, Draws: 0.4% , epsilon 0.007636343135644033
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774865
+Q-table size: 29.33 MB
+After 481000 games - Mr.Q: 99.1%, Random: 0.5%, Draws: 0.4% , epsilon 0.007565608927798083
+After 482000 games - Mr.Q: 98.4%, Random: 1.5%, Draws: 0.1% , epsilon 0.0074963244881263704
+After 483000 games - Mr.Q: 98.7%, Random: 0.7%, Draws: 0.6% , epsilon 0.007427637404170731
+After 484000 games - Mr.Q: 99.0%, Random: 0.9%, Draws: 0.1% , epsilon 0.007360197915014586
+After 485000 games - Mr.Q: 98.8%, Random: 1.0%, Draws: 0.2% , epsilon 0.007293071722798543
+After 486000 games - Mr.Q: 98.0%, Random: 1.7%, Draws: 0.3% , epsilon 0.007225784531586321
+After 487000 games - Mr.Q: 98.6%, Random: 1.2%, Draws: 0.2% , epsilon 0.00716012765143199
+After 488000 games - Mr.Q: 99.0%, Random: 0.9%, Draws: 0.1% , epsilon 0.0070946061959809795
+After 489000 games - Mr.Q: 98.4%, Random: 0.6%, Draws: 1.0% , epsilon 0.007029086821311053
+After 490000 games - Mr.Q: 98.4%, Random: 1.0%, Draws: 0.6% , epsilon 0.006964862011959414
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774885
+Q-table size: 29.33 MB
+After 491000 games - Mr.Q: 98.3%, Random: 1.2%, Draws: 0.5% , epsilon 0.0069012999390040694
+After 492000 games - Mr.Q: 98.3%, Random: 1.0%, Draws: 0.7% , epsilon 0.006837627304720609
+After 493000 games - Mr.Q: 98.5%, Random: 1.0%, Draws: 0.5% , epsilon 0.00677505023557853
+After 494000 games - Mr.Q: 98.7%, Random: 0.9%, Draws: 0.4% , epsilon 0.00671393875849616
+After 495000 games - Mr.Q: 98.5%, Random: 1.3%, Draws: 0.2% , epsilon 0.006653232138872837
+After 496000 games - Mr.Q: 97.8%, Random: 1.6%, Draws: 0.6% , epsilon 0.00659218441572321
+After 497000 games - Mr.Q: 98.7%, Random: 0.9%, Draws: 0.4% , epsilon 0.006531605401894997
+After 498000 games - Mr.Q: 98.4%, Random: 1.0%, Draws: 0.6% , epsilon 0.006472528000735952
+After 499000 games - Mr.Q: 98.9%, Random: 0.9%, Draws: 0.2% , epsilon 0.006413337165809571
+After 500000 games - Mr.Q: 98.1%, Random: 1.3%, Draws: 0.6% , epsilon 0.006353880632616098
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774889
+Q-table size: 29.33 MB
+After 501000 games - Mr.Q: 98.6%, Random: 1.2%, Draws: 0.2% , epsilon 0.006295579653830225
+After 502000 games - Mr.Q: 98.4%, Random: 1.4%, Draws: 0.2% , epsilon 0.00623795709579995
+After 503000 games - Mr.Q: 99.1%, Random: 0.5%, Draws: 0.4% , epsilon 0.006180756875153048
+After 504000 games - Mr.Q: 99.5%, Random: 0.3%, Draws: 0.2% , epsilon 0.006124840597130813
+After 505000 games - Mr.Q: 98.7%, Random: 0.8%, Draws: 0.5% , epsilon 0.0060690538911684425
+After 506000 games - Mr.Q: 99.1%, Random: 0.6%, Draws: 0.3% , epsilon 0.006013125852636993
+After 507000 games - Mr.Q: 98.6%, Random: 1.0%, Draws: 0.4% , epsilon 0.005958040890111877
+After 508000 games - Mr.Q: 98.1%, Random: 1.6%, Draws: 0.3% , epsilon 0.0059031653833755485
+After 509000 games - Mr.Q: 98.9%, Random: 0.8%, Draws: 0.3% , epsilon 0.005849134538152415
+After 510000 games - Mr.Q: 98.2%, Random: 1.4%, Draws: 0.4% , epsilon 0.005794995518505671
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774893
+Q-table size: 29.33 MB
+After 511000 games - Mr.Q: 99.1%, Random: 0.8%, Draws: 0.1% , epsilon 0.005742086803435753
+After 512000 games - Mr.Q: 99.0%, Random: 0.8%, Draws: 0.2% , epsilon 0.005689513219300361
+After 513000 games - Mr.Q: 98.6%, Random: 1.0%, Draws: 0.4% , epsilon 0.0056373984404374244
+After 514000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.005586274936213829
+After 515000 games - Mr.Q: 98.9%, Random: 0.5%, Draws: 0.6% , epsilon 0.00553476816761025
+After 516000 games - Mr.Q: 99.3%, Random: 0.7%, Draws: 0.0% , epsilon 0.00548378017361355
+After 517000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.00543332166300673
+After 518000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.005383892721192797
+After 519000 games - Mr.Q: 98.4%, Random: 0.9%, Draws: 0.7% , epsilon 0.005334726733993898
+After 520000 games - Mr.Q: 98.3%, Random: 1.2%, Draws: 0.5% , epsilon 0.0052862106054236266
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774903
+Q-table size: 29.33 MB
+After 521000 games - Mr.Q: 98.3%, Random: 1.2%, Draws: 0.5% , epsilon 0.005238397615303727
+After 522000 games - Mr.Q: 98.6%, Random: 0.9%, Draws: 0.5% , epsilon 0.00519018658987342
+After 523000 games - Mr.Q: 98.6%, Random: 1.0%, Draws: 0.4% , epsilon 0.005142383272570205
+After 524000 games - Mr.Q: 98.1%, Random: 1.2%, Draws: 0.7% , epsilon 0.005095142521480208
+After 525000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.005048886048683274
+After 526000 games - Mr.Q: 98.5%, Random: 0.7%, Draws: 0.8% , epsilon 0.005001998986670394
+After 527000 games - Mr.Q: 98.7%, Random: 0.9%, Draws: 0.4% , epsilon 0.0049561222238830496
+After 528000 games - Mr.Q: 99.0%, Random: 0.7%, Draws: 0.3% , epsilon 0.004910975610219407
+After 529000 games - Mr.Q: 98.9%, Random: 1.0%, Draws: 0.1% , epsilon 0.00486632784202476
+After 530000 games - Mr.Q: 99.4%, Random: 0.4%, Draws: 0.2% , epsilon 0.004822452478326759
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774911
+Q-table size: 29.33 MB
+After 531000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.00477842792777602
+After 532000 games - Mr.Q: 99.3%, Random: 0.5%, Draws: 0.2% , epsilon 0.004734966267030256
+After 533000 games - Mr.Q: 98.6%, Random: 0.7%, Draws: 0.7% , epsilon 0.004691787302692134
+After 534000 games - Mr.Q: 98.7%, Random: 1.2%, Draws: 0.1% , epsilon 0.004649057883076283
+After 535000 games - Mr.Q: 98.9%, Random: 0.8%, Draws: 0.3% , epsilon 0.004606998630725397
+After 536000 games - Mr.Q: 99.0%, Random: 1.0%, Draws: 0.0% , epsilon 0.004564799464363053
+After 537000 games - Mr.Q: 99.0%, Random: 0.7%, Draws: 0.3% , epsilon 0.004523136094847325
+After 538000 games - Mr.Q: 98.9%, Random: 0.7%, Draws: 0.4% , epsilon 0.004481610977316836
+After 539000 games - Mr.Q: 99.2%, Random: 0.7%, Draws: 0.1% , epsilon 0.004441106559032638
+After 540000 games - Mr.Q: 98.8%, Random: 0.8%, Draws: 0.4% , epsilon 0.004400765776247866
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774912
+Q-table size: 29.33 MB
+After 541000 games - Mr.Q: 98.9%, Random: 0.8%, Draws: 0.3% , epsilon 0.004360765264201792
+After 542000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.004321063518080155
+After 543000 games - Mr.Q: 99.0%, Random: 0.5%, Draws: 0.5% , epsilon 0.0042812051714206985
+After 544000 games - Mr.Q: 99.0%, Random: 0.5%, Draws: 0.5% , epsilon 0.004242011416608726
+After 545000 games - Mr.Q: 99.2%, Random: 0.6%, Draws: 0.2% , epsilon 0.0042033656217019535
+After 546000 games - Mr.Q: 98.9%, Random: 0.9%, Draws: 0.2% , epsilon 0.004165180193074307
+After 547000 games - Mr.Q: 99.0%, Random: 0.8%, Draws: 0.2% , epsilon 0.0041266194375965855
+After 548000 games - Mr.Q: 99.0%, Random: 0.4%, Draws: 0.6% , epsilon 0.0040890289817784335
+After 549000 games - Mr.Q: 99.5%, Random: 0.2%, Draws: 0.3% , epsilon 0.004052404969880939
+After 550000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.0040154062286024295
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774914
+Q-table size: 29.33 MB
+After 551000 games - Mr.Q: 99.1%, Random: 0.5%, Draws: 0.4% , epsilon 0.003979031768541033
+After 552000 games - Mr.Q: 98.9%, Random: 0.6%, Draws: 0.5% , epsilon 0.003942833041139689
+After 553000 games - Mr.Q: 98.4%, Random: 0.9%, Draws: 0.7% , epsilon 0.003906479193287323
+After 554000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.003870820506209515
+After 555000 games - Mr.Q: 98.9%, Random: 0.8%, Draws: 0.3% , epsilon 0.0038352495218157987
+After 556000 games - Mr.Q: 99.0%, Random: 0.5%, Draws: 0.5% , epsilon 0.0038003626351891997
+After 557000 games - Mr.Q: 99.5%, Random: 0.4%, Draws: 0.1% , epsilon 0.003765695183540027
+After 558000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.003731235765884095
+After 559000 games - Mr.Q: 99.4%, Random: 0.4%, Draws: 0.2% , epsilon 0.0036977054506267077
+After 560000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.0036641979618718765
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774914
+Q-table size: 29.33 MB
+After 561000 games - Mr.Q: 98.6%, Random: 0.9%, Draws: 0.5% , epsilon 0.003630714531926529
+After 562000 games - Mr.Q: 99.2%, Random: 0.8%, Draws: 0.0% , epsilon 0.0035976737825378275
+After 563000 games - Mr.Q: 99.1%, Random: 0.4%, Draws: 0.5% , epsilon 0.003564987189751572
+After 564000 games - Mr.Q: 98.9%, Random: 0.7%, Draws: 0.4% , epsilon 0.0035326011029477066
+After 565000 games - Mr.Q: 98.9%, Random: 0.7%, Draws: 0.4% , epsilon 0.003500582738694606
+After 566000 games - Mr.Q: 99.2%, Random: 0.7%, Draws: 0.1% , epsilon 0.0034685701440780076
+After 567000 games - Mr.Q: 98.9%, Random: 0.9%, Draws: 0.2% , epsilon 0.0034368159341460446
+After 568000 games - Mr.Q: 99.5%, Random: 0.4%, Draws: 0.1% , epsilon 0.003406312874254897
+After 569000 games - Mr.Q: 99.5%, Random: 0.5%, Draws: 0.0% , epsilon 0.0033753513857124355
+After 570000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.0033448954204696848
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774922
+Q-table size: 29.33 MB
+After 571000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.0033149164647706415
+After 572000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.003284703600074188
+After 573000 games - Mr.Q: 99.0%, Random: 0.8%, Draws: 0.2% , epsilon 0.003254668460385446
+After 574000 games - Mr.Q: 99.1%, Random: 0.6%, Draws: 0.3% , epsilon 0.003225156287874013
+After 575000 games - Mr.Q: 99.2%, Random: 0.6%, Draws: 0.2% , epsilon 0.0031957742998964004
+After 576000 games - Mr.Q: 99.1%, Random: 0.8%, Draws: 0.1% , epsilon 0.00316706851493904
+After 577000 games - Mr.Q: 99.5%, Random: 0.2%, Draws: 0.3% , epsilon 0.003138247103567044
+After 578000 games - Mr.Q: 99.5%, Random: 0.4%, Draws: 0.1% , epsilon 0.003109753281104551
+After 579000 games - Mr.Q: 99.7%, Random: 0.1%, Draws: 0.2% , epsilon 0.0030813918295645114
+After 580000 games - Mr.Q: 99.0%, Random: 0.7%, Draws: 0.3% , epsilon 0.003053734852003527
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774924
+Q-table size: 29.33 MB
+After 581000 games - Mr.Q: 99.3%, Random: 0.4%, Draws: 0.3% , epsilon 0.0030261233519944713
+After 582000 games - Mr.Q: 99.4%, Random: 0.4%, Draws: 0.2% , epsilon 0.0029986685516058234
+After 583000 games - Mr.Q: 99.3%, Random: 0.7%, Draws: 0.0% , epsilon 0.0029716381591487003
+After 584000 games - Mr.Q: 99.3%, Random: 0.3%, Draws: 0.4% , epsilon 0.0029448573119136533
+After 585000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.0029185542111118106
+After 586000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.00289208401852891
+After 587000 games - Mr.Q: 99.3%, Random: 0.5%, Draws: 0.2% , epsilon 0.002865578791762981
+After 588000 games - Mr.Q: 99.5%, Random: 0.2%, Draws: 0.3% , epsilon 0.002839662896686526
+After 589000 games - Mr.Q: 99.6%, Random: 0.2%, Draws: 0.2% , epsilon 0.0028136493509731257
+After 590000 games - Mr.Q: 99.6%, Random: 0.3%, Draws: 0.1% , epsilon 0.0027880413873483017
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774930
+Q-table size: 29.33 MB
+After 591000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.0027629040900173604
+After 592000 games - Mr.Q: 99.6%, Random: 0.2%, Draws: 0.2% , epsilon 0.002737946887893869
+After 593000 games - Mr.Q: 99.6%, Random: 0.2%, Draws: 0.2% , epsilon 0.002713071326516028
+After 594000 games - Mr.Q: 99.4%, Random: 0.4%, Draws: 0.2% , epsilon 0.002688456721278411
+After 595000 games - Mr.Q: 99.6%, Random: 0.2%, Draws: 0.2% , epsilon 0.0026639295705162126
+After 596000 games - Mr.Q: 99.8%, Random: 0.2%, Draws: 0.0% , epsilon 0.0026400828792968135
+After 597000 games - Mr.Q: 99.4%, Random: 0.3%, Draws: 0.3% , epsilon 0.0026160075135885927
+After 598000 games - Mr.Q: 99.3%, Random: 0.5%, Draws: 0.2% , epsilon 0.002592369445239937
+After 599000 games - Mr.Q: 99.8%, Random: 0.1%, Draws: 0.1% , epsilon 0.002568891021585803
+After 600000 games - Mr.Q: 99.5%, Random: 0.3%, Draws: 0.2% , epsilon 0.002545668511997668
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774930
+Q-table size: 29.33 MB
+After 601000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.002522438992308336
+After 602000 games - Mr.Q: 99.7%, Random: 0.0%, Draws: 0.3% , epsilon 0.0024996389039074495
+After 603000 games - Mr.Q: 99.8%, Random: 0.2%, Draws: 0.0% , epsilon 0.0024772430749756243
+After 604000 games - Mr.Q: 99.3%, Random: 0.5%, Draws: 0.2% , epsilon 0.0024550258089452394
+After 605000 games - Mr.Q: 99.4%, Random: 0.3%, Draws: 0.3% , epsilon 0.002433019964540825
+After 606000 games - Mr.Q: 99.6%, Random: 0.2%, Draws: 0.2% , epsilon 0.002411254773716819
+After 607000 games - Mr.Q: 99.7%, Random: 0.1%, Draws: 0.2% , epsilon 0.002389390375632306
+After 608000 games - Mr.Q: 99.3%, Random: 0.7%, Draws: 0.0% , epsilon 0.0023680959981831314
+After 609000 games - Mr.Q: 99.3%, Random: 0.4%, Draws: 0.3% , epsilon 0.0023467637501498025
+After 610000 games - Mr.Q: 99.7%, Random: 0.1%, Draws: 0.2% , epsilon 0.0023254399498592406
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774944
+Q-table size: 29.33 MB
+After 611000 games - Mr.Q: 99.5%, Random: 0.2%, Draws: 0.3% , epsilon 0.0023040725758409824
+After 612000 games - Mr.Q: 100.0%, Random: 0.0%, Draws: 0.0% , epsilon 0.0022835522565597746
+After 613000 games - Mr.Q: 99.9%, Random: 0.1%, Draws: 0.0% , epsilon 0.0022629182316046144
+After 614000 games - Mr.Q: 99.7%, Random: 0.3%, Draws: 0.0% , epsilon 0.002242466169375234
+After 615000 games - Mr.Q: 99.5%, Random: 0.3%, Draws: 0.2% , epsilon 0.0022220456246277672
+After 616000 games - Mr.Q: 99.8%, Random: 0.2%, Draws: 0.0% , epsilon 0.0022021545447462407
+After 617000 games - Mr.Q: 99.5%, Random: 0.4%, Draws: 0.1% , epsilon 0.002182218925997281
+After 618000 games - Mr.Q: 99.5%, Random: 0.5%, Draws: 0.0% , epsilon 0.0021627081523382078
+After 619000 games - Mr.Q: 99.5%, Random: 0.4%, Draws: 0.1% , epsilon 0.0021432282193478945
+After 620000 games - Mr.Q: 99.6%, Random: 0.3%, Draws: 0.1% , epsilon 0.002123938613428701
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774948
+Q-table size: 29.33 MB
+After 621000 games - Mr.Q: 99.6%, Random: 0.1%, Draws: 0.3% , epsilon 0.0021047384276674215
+After 622000 games - Mr.Q: 99.8%, Random: 0.2%, Draws: 0.0% , epsilon 0.0020858432136518306
+After 623000 games - Mr.Q: 100.0%, Random: 0.0%, Draws: 0.0% , epsilon 0.002066867524518129
+After 624000 games - Mr.Q: 99.6%, Random: 0.3%, Draws: 0.1% , epsilon 0.0020481771109641966
+After 625000 games - Mr.Q: 99.7%, Random: 0.2%, Draws: 0.1% , epsilon 0.002029633386282039
+After 626000 games - Mr.Q: 99.3%, Random: 0.6%, Draws: 0.1% , epsilon 0.002011311856934068
+After 627000 games - Mr.Q: 99.5%, Random: 0.4%, Draws: 0.1% , epsilon 0.0019931278122925907
+After 628000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.001974709235800866
+After 629000 games - Mr.Q: 99.5%, Random: 0.5%, Draws: 0.0% , epsilon 0.0019569578705612187
+After 630000 games - Mr.Q: 99.2%, Random: 0.5%, Draws: 0.3% , epsilon 0.0019394902021344737
+Saving the trained model, please wait...
+Model saved successfully!
+Number of states in Q-table: 774948
+Q-table size: 29.33 MB
+After 631000 games - Mr.Q: 99.4%, Random: 0.5%, Draws: 0.1% , epsilon 0.0019220688877847213
+After 632000 games - Mr.Q: 99.4%, Random: 0.4%, Draws: 0.2% , epsilon 0.0019046954881949906
+After 633000 games - Mr.Q: 99.5%, Random: 0.3%, Draws: 0.2% , epsilon 0.001887596152519408
+After 634000 games - Mr.Q: 99.6%, Random: 0.4%, Draws: 0.0% , epsilon 0.0018707008337846666
+After 635000 games - Mr.Q: 99.8%, Random: 0.1%, Draws: 0.1% , epsilon 0.0018537676460473225
+After 636000 games - Mr.Q: 99.9%, Random: 0.1%, Draws: 0.0% , epsilon 0.0018370557037765468
+After 637000 games - Mr.Q: 99.9%, Random: 0.1%, Draws: 0.0% , epsilon 0.0018205909105207757
