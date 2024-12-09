@@ -2,17 +2,20 @@ import numpy as np
 import pickle
 import sys
 from game import winning_move
+from mimimax_agent import MinimaxAgent
+
 class Qlearning:
-    def __init__(self, game_settings,color):
-        
+    def __init__(self, game_settings,color, helper = False):
+        self.helper = MinimaxAgent(game_settings, color, 2)
+        self.helper = helper
         self.total_states_in_q_table = 0
         self.name = "Mr.Q"
         self.ROW_COUNT = game_settings[0] 
         self.COLUMN_COUNT = game_settings[1]
         self.WINDOW_LENGTH = game_settings[2]
         self.color = color
-        self.alpha = 0.5  
-        self.gamma = 0.5  
+        self.alpha = 0.2
+        self.gamma = 0.9 
         self.initial_epsilon = 1  # Starting epsilon value
         self.epsilon = self.initial_epsilon  # Current epsilon value
         self.epsilon_decay = 0.999999  # Decay rate
@@ -92,20 +95,19 @@ class Qlearning:
         board[row][col] = piece
 
     def evaluate_window(self, window, piece):
-        score = 0
         opp_piece = 1 if piece == 2 else 2
 
         if window.count(piece) == 4:
-            score += 100
+            return 2  # Winning move
         elif window.count(piece) == 3 and window.count(0) == 1:
-            score += 5
-        elif window.count(piece) == 2 and window.count(0) == 2:
-            score += 2
+            return 0.7  # Strong potential setup (open-ended)
+        elif window.count(piece) == 3:
+            return 0.9  # Blocked 3-in-a-row
+        elif window.count(piece) == 2 and window.count(0) >= 2:
+            return 0.3  # Open-ended 2-in-a-row
+        else:
+            return -0.05  
 
-        if window.count(opp_piece) == 3 and window.count(0) == 1:
-            score -= 10 #prev value 4
-
-        return score
 
     # give a score for the current position by looking through all possible directions
     def score_position(self, board, piece):
@@ -114,7 +116,7 @@ class Qlearning:
         # Center column gets extra reward
         center_array = [int(i) for i in list(board[:, self.COLUMN_COUNT//2])]
         center_count = center_array.count(piece)
-        score += center_count * 3
+        score += min(center_count * 0.3, 0.9)
 
         # Horizontal
         for r in range(self.ROW_COUNT):
@@ -155,6 +157,7 @@ class Qlearning:
 
 
     
+    
 
     def grid_to_key(self, grid, is_my_turn):
         # Convert numpy array to a string representation
@@ -176,8 +179,7 @@ class Qlearning:
 #                #print(f"Error: Action {self.last_action} not in Q-table for state {self.last_state}.")
   #              self.q_table[self.last_state][self.last_action] = 0.0 
     
-
-            reward = -1000 if opponent_won else self.score_position(board, piece)
+            reward = -1 if opponent_won else self.score_position(board, piece)
             
             next_state = self.grid_to_key(board, True)  # True because it will be our turn again
             #print(next_state)
@@ -204,20 +206,23 @@ class Qlearning:
         if state not in self.q_table:
                 self.q_table[state] = {col: 0.0 for col in range(self.COLUMN_COUNT)}
 
+     
         valid_moves = self.get_valid_locations(grid)
-        
-        # Epsilon-greedy strategy with decaying epsilon
+            # Epsilon-greedy strategy with decaying epsilon
         if np.random.random() < self.epsilon:
-            # Exploration: choose random move
+        # Exploration: choose random move
             column_to_place = np.random.choice(valid_moves)
         else:
-            # Exploitation: choose best move
+        # Exploitation: choose best move
             q_values = {move: self.q_table[state][move] for move in valid_moves}
             if all(value == 0 for value in q_values.values()):
-                column_to_place = np.random.choice(valid_moves)
+                if self.helper:
+                    column_to_place = self.helper.find_move(board, piece)
+                else:
+                    column_to_place = np.random.choice(valid_moves)
             else:
                 column_to_place = max(q_values, key=q_values.get)
-
+      
         # Apply epsilon decay after making a move
         self.decay_epsilon()
         
