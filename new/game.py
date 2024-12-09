@@ -140,6 +140,9 @@ def start_game(agent1, agent2, use_gui=True):
 
             # if its a winning move
             if winning_move(board, current_piece):
+                other_agent = agent1 if current_agent == agent2 else agent2
+                if other_agent.__class__.__name__ == 'Mr.Q':
+                    other_agent.update_after_loss(board)
                 #print winner
    ###############             #print(f"{current_agent.name} wins!")#
 

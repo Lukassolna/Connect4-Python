@@ -10,5 +10,5 @@ class PlayerAgent:
         posx = event.pos[0]
         col = int(math.floor(posx/SQUARESIZE))
         return col
-    def find_move(self, board):
+    def find_move(self, board, piece):
         return None  # Wait for mouse input
