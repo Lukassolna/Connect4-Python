@@ -14,8 +14,8 @@ class Qlearning:
         self.COLUMN_COUNT = game_settings[1]
         self.WINDOW_LENGTH = game_settings[2]
         self.color = color
-        self.alpha = 0.4
-        self.gamma = 0.9
+        self.alpha = 0.5
+        self.gamma = 0.5
         self.initial_epsilon = 1  # Starting epsilon value
         self.epsilon = self.initial_epsilon  # Current epsilon value
         self.epsilon_decay = 0.999999  # Decay rate
@@ -93,21 +93,21 @@ class Qlearning:
 
     def drop_piece(self, board, row, col, piece):
         board[row][col] = piece
-
     def evaluate_window(self, window, piece):
+        score = 0
         opp_piece = 1 if piece == 2 else 2
 
         if window.count(piece) == 4:
-            return 2  # Winning move
+            score += 100
         elif window.count(piece) == 3 and window.count(0) == 1:
-            return 0.7  # Strong potential setup (open-ended)
-        elif window.count(piece) == 3:
-            return 0.9  # Blocked 3-in-a-row
-        elif window.count(piece) == 2 and window.count(0) >= 2:
-            return 0.3  # Open-ended 2-in-a-row
-        else:
-            return -0.05  
+            score += 5
+        elif window.count(piece) == 2 and window.count(0) == 2:
+            score += 2
 
+        if window.count(opp_piece) == 3 and window.count(0) == 1:
+            score -= 10 #prev value 4
+
+        return score
 
     # give a score for the current position by looking through all possible directions
     def score_position(self, board, piece):
@@ -116,7 +116,7 @@ class Qlearning:
         # Center column gets extra reward
         center_array = [int(i) for i in list(board[:, self.COLUMN_COUNT//2])]
         center_count = center_array.count(piece)
-        score += min(center_count * 0.3, 0.9)
+        score += center_count * 3
 
         # Horizontal
         for r in range(self.ROW_COUNT):
@@ -145,8 +145,6 @@ class Qlearning:
                 score += self.evaluate_window(window, piece)
 
         return score
-        
-
     def get_valid_locations(self, board):
         valid_locations = []
         for col in range(self.COLUMN_COUNT):
@@ -184,7 +182,7 @@ class Qlearning:
             )
     
     def find_move(self, board, piece):
-        opp_piece = 1 if piece == 0 else 0
+        opp_piece = 1 if piece == 2 else 2  # This is correct
         self.update_after_opponent_move(board, winning_move(board,opp_piece), piece)
         #if winning_move(board,opp_piece):
          #   return
@@ -229,7 +227,7 @@ class Qlearning:
         ## intermediate
         reward = self.score_position(b_copy, piece)
         if winning_move(b_copy, piece):
-            reward = 2
+            reward = 1000
         self.q_table[state][column_to_place] += self.alpha*(reward - self.q_table[state][column_to_place])
             
         
@@ -238,7 +236,7 @@ class Qlearning:
 
     def update_after_loss(self, board):
         next_state = self.grid_to_key(board, True)  # True because it will be our turn again
-        reward = -2
+        reward = -1000
             #print(next_state)
         if next_state not in self.q_table:
             self.q_table[next_state] = {col: 0.0 for col in range(self.COLUMN_COUNT)}
