@@ -10,14 +10,15 @@ ROW_COUNT = None
 COLUMN_COUNT= None
 SQUARESIZE = 100
 RADIUS = int(SQUARESIZE/2 - 5)
-
+WAIT_TIME = None
 
 
 def set_game_setting(game_settings):
-    global ROW_COUNT, COLUMN_COUNT, WIN_COUNT
+    global ROW_COUNT, COLUMN_COUNT, WIN_COUNT, WAIT_TIME
     ROW_COUNT = game_settings[0]
     COLUMN_COUNT = game_settings[1]
     WIN_COUNT = game_settings[2]
+    WAIT_TIME = game_settings[3]
 
 def winning_move(board, piece):
     # Horizontal
@@ -84,7 +85,7 @@ def draw_board(board, screen,  height,agent1_color,agent2_color):
     pygame.display.update()
 
 def start_game(agent1, agent2, use_gui=True):
-    if (COLUMN_COUNT == None or ROW_COUNT == None or WIN_COUNT == None):
+    if (COLUMN_COUNT == None or ROW_COUNT == None or WIN_COUNT == None or WAIT_TIME == None):
         raise RuntimeError("Set game settings before starting")
 
     board = create_board(ROW_COUNT, COLUMN_COUNT)
@@ -102,7 +103,7 @@ def start_game(agent1, agent2, use_gui=True):
         myfont = pygame.font.SysFont("monospace", 75)
     while not game_over:
         if count == max_count:
-            print("DRAW")
+            #print("DRAW")
             return 10
         count += 1
         # check if game is over
@@ -140,7 +141,8 @@ def start_game(agent1, agent2, use_gui=True):
             # if its a winning move
             if winning_move(board, current_piece):
                 #print winner
-                print(f"{current_agent.name} wins!")
+   ###############             #print(f"{current_agent.name} wins!")#
+
                 # show it visually
                 if use_gui:
                     label = myfont.render(f"{current_agent.name} wins!", 1, current_agent.color)
@@ -158,6 +160,8 @@ def start_game(agent1, agent2, use_gui=True):
             turn = (turn + 1) % 2
 
         # if the game is over, we want to wait a while in order for the user to have time to see who won
-        if game_over and use_gui:
-            pygame.time.wait(5000)
+        if game_over:
+            if use_gui:
+                pygame.time.wait(WAIT_TIME)
             return current_piece
+        
