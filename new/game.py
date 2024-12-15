@@ -78,7 +78,7 @@ def evaluate_window(window, piece):
             score += 100
         elif window.count(piece) == WIN_COUNT-1 and window.count(0) == 1:
             score += 5
-        elif window.count(piece) == WIN_COUNT-2 and window.count(0) == 2:
+        elif WIN_COUNT>3 and window.count(piece) == WIN_COUNT-2 and window.count(0) == 2:
             score += 2
 
         if window.count(opp_piece) == WIN_COUNT-1 and window.count(0) == 1:
