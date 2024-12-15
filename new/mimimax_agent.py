@@ -1,5 +1,5 @@
 import random
-from game import winning_move
+from game import winning_move, score_position
 
 
 # minimax class with alpha beta pruning
@@ -14,59 +14,6 @@ class MinimaxAgent:
         self.WINDOW_LENGTH = game_setting[2]
         self.name= name + str(depth)
     
-    # evaluate a window. A window is a all straight lines ( horizantal, vertical and diagonal)
-    def evaluate_window(self, window, piece):
-        score = 0
-        opp_piece = 1 if piece == 2 else 2
-
-        if window.count(piece) == 4:
-            score += 100
-        elif window.count(piece) == 3 and window.count(0) == 1:
-            score += 5
-        elif window.count(piece) == 2 and window.count(0) == 2:
-            score += 2
-
-        if window.count(opp_piece) == 3 and window.count(0) == 1:
-            score -= 10 #prev value 4
-
-        return score
-
-    # give a score for the current position by looking through all possible directions
-    def score_position(self, board, piece):
-        score = 0
-
-        # Center column gets extra reward
-        center_array = [int(i) for i in list(board[:, self.COLUMN_COUNT//2])]
-        center_count = center_array.count(piece)
-        score += center_count * 3
-
-        # Horizontal
-        for r in range(self.ROW_COUNT):
-            row_array = [int(i) for i in list(board[r,:])]
-            for c in range(self.COLUMN_COUNT-3):
-                window = row_array[c:c+self.WINDOW_LENGTH]
-                score += self.evaluate_window(window, piece)
-
-        # Vertical
-        for c in range(self.COLUMN_COUNT):
-            col_array = [int(i) for i in list(board[:,c])]
-            for r in range(self.ROW_COUNT-3):
-                window = col_array[r:r+self.WINDOW_LENGTH]
-                score += self.evaluate_window(window, piece)
-
-        # Positive diagonal
-        for r in range(self.ROW_COUNT-3):
-            for c in range(self.COLUMN_COUNT-3):
-                window = [board[r+i][c+i] for i in range(self.WINDOW_LENGTH)]
-                score += self.evaluate_window(window, piece)
-
-        # Negative diagonal
-        for r in range(self.ROW_COUNT-3):
-            for c in range(self.COLUMN_COUNT-3):
-                window = [board[r+3-i][c+i] for i in range(self.WINDOW_LENGTH)]
-                score += self.evaluate_window(window, piece)
-
-        return score
 
     # find all valid locations
     def get_valid_locations(self, board):
@@ -78,8 +25,12 @@ class MinimaxAgent:
     
     # Check if its a winning move or if the board is full ( in that case we can stop the search)
     def is_terminal_node(self, board):
-        return winning_move(board,1) or winning_move(board,2) or len(self.get_valid_locations(board)) == 0
-
+        p1 = winning_move(board,1)
+        p2 = winning_move(board,2)
+        d = len(self.get_valid_locations(board)) == 0
+        if p1 or p2 or d:
+            return True
+        return False
     # the main minimax logic. Lets look through it
     # I think it alternates between maximizingPlayer and else, until alpha and beta are equal.
     def minimax(self, board, depth, alpha, beta, maximizingPlayer, piece):
@@ -87,7 +38,6 @@ class MinimaxAgent:
         valid_locations = self.get_valid_locations(board)
         is_terminal = self.is_terminal_node(board)
         if depth == 0 or is_terminal:
-
             # if its a end node, check who won
             if is_terminal:
                 if winning_move(board, piece):
@@ -97,7 +47,7 @@ class MinimaxAgent:
                 else:
                     return (None, 0)
             else:
-                return (None, self.score_position(board, piece))
+                return (None, score_position(board, piece))
 
         if maximizingPlayer:
             value = float('-inf')

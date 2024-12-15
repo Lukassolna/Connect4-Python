@@ -10,8 +10,8 @@ YELLOW = (255,255,0)
 GREEN = (0,255,0)
 ORANGE = (255,100,50)
 WHITE = (255,255,255)
-ROW_COUNT = 5
-COLUMN_COUNT = 6
+ROW_COUNT = 6
+COLUMN_COUNT = 7
 WIN_COUNT = 4
 WAIT_TIME = 1000
 game_setting =(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, WAIT_TIME)
@@ -20,7 +20,7 @@ game_setting =(ROW_COUNT, COLUMN_COUNT, WIN_COUNT, WAIT_TIME)
 # main program
 if __name__ == "__main__":
     set_game_setting(game_setting)
-    mini1 = MinimaxAgent(game_setting, ORANGE, 1, "Mini")
+    mini1 = MinimaxAgent(game_setting, ORANGE, 1, "Mini") #should not use, too stupid
     mini2 = MinimaxAgent(game_setting, YELLOW, 2, "Mini")
     mini3 = MinimaxAgent(game_setting, YELLOW, 3, "Mini")
     mini4 = MinimaxAgent(game_setting, YELLOW, 4, "Mini")
@@ -28,7 +28,8 @@ if __name__ == "__main__":
     qlrn2 = Qlearning(game_setting,GREEN)
     rnd = RandomAgent(game_setting, RED)
     user = PlayerAgent(GREEN)
-    qlrn.load("new/rnd.pkl")
+    user2 = PlayerAgent(WHITE)
+    #qlrn.load("new/rnd.pkl")
     #qlrn2.load("vs_multi.pkl")
     #qlrn.epsilon = 0.9
     #qlrn.epsilon = 0
@@ -40,7 +41,7 @@ if __name__ == "__main__":
     #    file.write(f"Testing qlrn a={qlrn.alpha}, g={qlrn.gamma} against qlrn2 a={qlrn2.alpha}, g={qlrn2.gamma}")
     for i in range(num_games):
         #print(i)
-        winner = start_game(qlrn,rnd, True)
+        winner = start_game(user,mini4, True)
         if winner == 1:
             mr_q_wins += 1
         elif winner == 10:

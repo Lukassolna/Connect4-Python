@@ -22,35 +22,100 @@ def set_game_setting(game_settings):
 
 def winning_move(board, piece):
     # Horizontal
-    for c in range(COLUMN_COUNT-3):
+    def check_horizontal_count(col, row):
+        for i in range(WIN_COUNT):
+            if board[row][col+i] != piece:
+                return False
+        return True        
+
+    for c in range(COLUMN_COUNT-(WIN_COUNT-1)):
         for r in range(ROW_COUNT):
-            if board[r][c] == piece and board[r][c+1] == piece and \
-               board[r][c+2] == piece and board[r][c+3] == piece:
+            if check_horizontal_count(c,r) == True:
                 return True
+    
 
     # Vertical
+    def check_vertical_count(col, row):
+        for i in range(WIN_COUNT):
+            if board[row+i][col] != piece:
+                return False
+        return True        
     for c in range(COLUMN_COUNT):
-        for r in range(ROW_COUNT-3):
-            if board[r][c] == piece and board[r+1][c] == piece and \
-               board[r+2][c] == piece and board[r+3][c] == piece:
+        for r in range(ROW_COUNT-(WIN_COUNT-1)):
+            if check_vertical_count(c,r) == True:
                 return True
 
     # Positive diagonal
-    for c in range(COLUMN_COUNT-3):
-        for r in range(ROW_COUNT-3):
-            if board[r][c] == piece and board[r+1][c+1] == piece and \
-               board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+    def check_pos_diagonal_count(col, row):
+        for i in range(WIN_COUNT):
+            if board[row+i][col+i] != piece:
+                return False
+        return True        
+    for c in range(COLUMN_COUNT-(WIN_COUNT-1)):
+        for r in range(ROW_COUNT-(WIN_COUNT-1)):
+            if check_pos_diagonal_count(c,r) == True:
                 return True
 
     # Negative diagonal
-    for c in range(COLUMN_COUNT-3):
-        for r in range(3, ROW_COUNT):
-            if board[r][c] == piece and board[r-1][c+1] == piece and \
-               board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+    def check_neg_diagonal_count(col, row):
+        for i in range(WIN_COUNT):
+            if board[row-i][col+i] != piece:
+                return False
+        return True        
+    for c in range(COLUMN_COUNT-(WIN_COUNT-1)):
+        for r in range(WIN_COUNT-1, ROW_COUNT):
+            if check_neg_diagonal_count(c,r) == True:
                 return True
 
     return False
 
+
+def evaluate_window(window, piece):
+        score = 0
+        opp_piece = 1 if piece == 2 else 2
+
+        if window.count(piece) == WIN_COUNT:
+            score += 100
+        elif window.count(piece) == WIN_COUNT-1:
+            score += 5
+        elif window.count(piece) == WIN_COUNT-2:
+            score += 2
+
+        if window.count(opp_piece) == WIN_COUNT-1:
+            score -= 10 #prev value 4
+
+        return score
+
+# give a score for the current position by looking through all possible directions
+def score_position(board, piece):
+    score = 0
+    # Center column gets extra reward
+    center_array = [int(i) for i in list(board[:, COLUMN_COUNT//2])]
+    center_count = center_array.count(piece)
+    score += center_count * 3
+    # Horizontal
+    for r in range(ROW_COUNT):
+        row_array = [int(i) for i in list(board[r,:])]
+        for c in range(COLUMN_COUNT-(WIN_COUNT-1)):
+            window = row_array[c:c+WIN_COUNT]
+            score += evaluate_window(window, piece)
+    # Vertical
+    for c in range(COLUMN_COUNT):
+        col_array = [int(i) for i in list(board[:,c])]
+        for r in range(ROW_COUNT-(WIN_COUNT-1)):
+            window = col_array[r:r+WIN_COUNT]
+            score += evaluate_window(window, piece)
+    # Positive diagonal
+    for r in range(ROW_COUNT-(WIN_COUNT-1)):
+        for c in range(COLUMN_COUNT-(WIN_COUNT-1)):
+            window = [board[r+i][c+i] for i in range(WIN_COUNT)]
+            score += evaluate_window(window, piece)
+    # Negative diagonal
+    for r in range(ROW_COUNT-(WIN_COUNT-1)):
+        for c in range(COLUMN_COUNT-(WIN_COUNT-1)):
+            window = [board[r+(WIN_COUNT-1)-i][c+i] for i in range(WIN_COUNT)]
+            score += evaluate_window(window, piece)
+    return score
 
 
 def create_board(ROW_COUNT, COLUMN_COUNT):
@@ -87,7 +152,6 @@ def draw_board(board, screen,  height,agent1_color,agent2_color):
 def start_game(agent1, agent2, use_gui=True):
     if (COLUMN_COUNT == None or ROW_COUNT == None or WIN_COUNT == None or WAIT_TIME == None):
         raise RuntimeError("Set game settings before starting")
-
     board = create_board(ROW_COUNT, COLUMN_COUNT)
     game_over = False
     turn = random.randint(0, 1)
@@ -107,10 +171,6 @@ def start_game(agent1, agent2, use_gui=True):
             return 10
         count += 1
         # check if game is over
-        if use_gui:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    sys.exit()
 
         # set current agent and current piece 
         current_agent = agent1 if turn == 0 else agent2
@@ -122,6 +182,8 @@ def start_game(agent1, agent2, use_gui=True):
             col = None
             while col is None:
                 for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                        sys.exit()
                     if event.type == pygame.MOUSEMOTION:
                         pygame.draw.rect(screen, BLACK, (0,0, width, SQUARESIZE))
                         posx = event.pos[0]
