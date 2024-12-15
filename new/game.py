@@ -166,6 +166,10 @@ def start_game(agent1, agent2, use_gui=True):
         draw_board(board, screen, height, agent1.color,agent2.color)
         myfont = pygame.font.SysFont("monospace", 75)
     while not game_over:
+        if use_gui:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    sys.exit()
         if count == max_count:
             #print("DRAW")
             return 10
