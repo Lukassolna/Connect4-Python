@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import sys
-from game import winning_move
+from game import winning_move, score_position
 from mimimax_agent import MinimaxAgent
 
 class Qlearning:
@@ -93,58 +93,6 @@ class Qlearning:
 
     def drop_piece(self, board, row, col, piece):
         board[row][col] = piece
-    def evaluate_window(self, window, piece):
-        score = 0
-        opp_piece = 1 if piece == 2 else 2
-
-        if window.count(piece) == 4:
-            score += 100
-        elif window.count(piece) == 3 and window.count(0) == 1:
-            score += 5
-        elif window.count(piece) == 2 and window.count(0) == 2:
-            score += 2
-
-        if window.count(opp_piece) == 3 and window.count(0) == 1:
-            score -= 10 #prev value 4
-
-        return score
-
-    # give a score for the current position by looking through all possible directions
-    def score_position(self, board, piece):
-        score = 0
-
-        # Center column gets extra reward
-        center_array = [int(i) for i in list(board[:, self.COLUMN_COUNT//2])]
-        center_count = center_array.count(piece)
-        score += center_count * 3
-
-        # Horizontal
-        for r in range(self.ROW_COUNT):
-            row_array = [int(i) for i in list(board[r,:])]
-            for c in range(self.COLUMN_COUNT-3):
-                window = row_array[c:c+self.WINDOW_LENGTH]
-                score += self.evaluate_window(window, piece)
-
-        # Vertical
-        for c in range(self.COLUMN_COUNT):
-            col_array = [int(i) for i in list(board[:,c])]
-            for r in range(self.ROW_COUNT-3):
-                window = col_array[r:r+self.WINDOW_LENGTH]
-                score += self.evaluate_window(window, piece)
-
-        # Positive diagonal
-        for r in range(self.ROW_COUNT-3):
-            for c in range(self.COLUMN_COUNT-3):
-                window = [board[r+i][c+i] for i in range(self.WINDOW_LENGTH)]
-                score += self.evaluate_window(window, piece)
-
-        # Negative diagonal
-        for r in range(self.ROW_COUNT-3):
-            for c in range(self.COLUMN_COUNT-3):
-                window = [board[r+3-i][c+i] for i in range(self.WINDOW_LENGTH)]
-                score += self.evaluate_window(window, piece)
-
-        return score
     def get_valid_locations(self, board):
         valid_locations = []
         for col in range(self.COLUMN_COUNT):
@@ -168,7 +116,7 @@ class Qlearning:
 
         if hasattr(self, 'last_state') and hasattr(self, 'last_action'):
     
-            reward = -1 if opponent_won else self.score_position(board, piece)
+            reward = -1 if opponent_won else score_position(board, piece)
             
             next_state = self.grid_to_key(board, True)  # True because it will be our turn again
             #print(next_state)
@@ -225,7 +173,7 @@ class Qlearning:
         self.last_action = column_to_place
 
         ## intermediate
-        reward = self.score_position(b_copy, piece)
+        reward = score_position(b_copy, piece)
         if winning_move(b_copy, piece):
             reward = 1000
         self.q_table[state][column_to_place] += self.alpha*(reward - self.q_table[state][column_to_place])
