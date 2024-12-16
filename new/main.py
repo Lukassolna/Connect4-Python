@@ -25,6 +25,8 @@ if __name__ == "__main__":
     mini3 = MinimaxAgent(game_setting, YELLOW, 3, "Mini")
     mini4 = MinimaxAgent(game_setting, YELLOW, 4, "Mini")
     qlrn = Qlearning(game_setting,WHITE)
+    qlrn.alpha = 0.9
+    qlrn.gamma = 0.1
     qlrn2 = Qlearning(game_setting,GREEN)
     rnd = RandomAgent(game_setting, RED)
     user = PlayerAgent(GREEN)
@@ -36,12 +38,13 @@ if __name__ == "__main__":
     mr_q_wins = 0
     random_wins = 0
     draws = 0
-    num_games = 2000000
-    #with open("vsqlrn_samea.txt", "w") as file:
-    #    file.write(f"Testing qlrn a={qlrn.alpha}, g={qlrn.gamma} against qlrn2 a={qlrn2.alpha}, g={qlrn2.gamma}")
+    num_games = 1000001
+    with open("4inarowhighalpha.txt", "w") as file:
+        file.write(f"Game Mode: {WIN_COUNT} in a row on {COLUMN_COUNT}x{ROW_COUNT}\n")
+        file.write(f"Testing qlrn a={qlrn.alpha}, g={qlrn.gamma} against random\n")
     for i in range(num_games):
         #print(i)
-        winner = start_game(user,mini4, True)
+        winner = start_game(qlrn,rnd, False)
         if winner == 1:
             mr_q_wins += 1
         elif winner == 10:
@@ -49,16 +52,16 @@ if __name__ == "__main__":
         else:
             random_wins += 1
        
-        print_count = 1000
+        print_count = 10000
         if i % print_count  == 0 and i !=0:
-            with open("vsqlrn_samea.txt", "a") as file:
+            with open("4inarowhighalpha.txt", "a") as file:
                 file.write(f"After {i} games - qlrn: {mr_q_wins/print_count:.1%}, "
-                       f"qlrn2: {random_wins/print_count:.1%}, "
+                       f"mini3: {random_wins/print_count:.1%}, "
                        f"Draws: {draws/print_count:.1%}, "
                        f"epsilon: {qlrn.epsilon}\n")
 
             random_wins=0
             mr_q_wins=0
             draws=0 
-        #if i % 100000 == 0:
-        #    qlrn.save(f'qlrn.pkl')
+      
+    #qlrn.save(f'qlrn3inarowvsmini3.pkl')
