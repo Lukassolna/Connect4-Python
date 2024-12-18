@@ -12,7 +12,10 @@ class MinimaxAgent:
         self.depth = depth
         self.color = color
         self.WINDOW_LENGTH = game_setting[2]
-        self.name= name + str(depth)
+        if name == "Minimax":
+            self.name= name + " " + str(depth)
+        else:
+            self.name = name
     
 
     # find all valid locations
