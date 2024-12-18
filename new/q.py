@@ -2,10 +2,10 @@ import numpy as np
 import pickle
 import sys
 from game import winning_move, score_position
-from mimimax_agent import MinimaxAgent
+from minimax_agent import MinimaxAgent
 
-class Qlearning:
-    def __init__(self, game_settings,color, helper = False):
+class QlearningAgent:
+    def __init__(self, game_settings,color, model = None, helper = False):
         self.helper = MinimaxAgent(game_settings, color, 2)
         self.use_helper = helper
         self.total_states_in_q_table = 0
@@ -20,6 +20,9 @@ class Qlearning:
         self.epsilon = self.initial_epsilon  # Current epsilon value
         self.epsilon_decay = 0.999999  # Decay rate
         self.q_table = {}
+        if model:
+            model += ".pkl"
+            self.load(model)
     def decay_epsilon(self):
         """Apply decay to epsilon after each iteration"""
         self.epsilon *= self.epsilon_decay
