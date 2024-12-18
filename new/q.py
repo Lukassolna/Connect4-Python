@@ -14,8 +14,8 @@ class Qlearning:
         self.COLUMN_COUNT = game_settings[1]
         self.WINDOW_LENGTH = game_settings[2]
         self.color = color
-        self.alpha = 0.5
-        self.gamma = 0.5
+        self.alpha = 0.1
+        self.gamma = 0.9
         self.initial_epsilon = 1  # Starting epsilon value
         self.epsilon = self.initial_epsilon  # Current epsilon value
         self.epsilon_decay = 0.999999  # Decay rate
