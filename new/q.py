@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import sys
-from game import winning_move, score_position
+from game import winning_move, score_position, start_game
 from minimax_agent import MinimaxAgent
 
 class QlearningAgent:
@@ -196,3 +196,41 @@ class QlearningAgent:
         self.q_table[self.last_state][self.last_action] += self.alpha * (
         reward + self.gamma * max(self.q_table[next_state].values()) 
             - self.q_table[self.last_state][self.last_action])
+        
+        
+    def train(self, episodes, opponent, model_name=None, print_res = None,  result_path=None):
+        print_frequency = episodes / 100
+        opp_wins=0
+        mr_q_wins=0
+        draws=0 
+        if result_path:
+            with open("result_path", "w") as file:
+                file.write(f"Game Mode: {self.WINDOW_LENGTH} in a row on {self.ROW_COUNT}x{self.COLUMN_COUNT}\n")
+                file.write(f"Testing {self.name} with a={self.alpha}, g={self.gamma} against {opponent.name}\n")
+        for i in range(episodes):
+            winner = start_game(self,opponent, False)
+            if winner == 1:
+                mr_q_wins += 1
+            elif winner == 10:
+                draws += 1
+            else:
+                opp_wins += 1
+        
+            if i % print_frequency  == 0 and i !=0:
+                if result_path:
+                    with open(result_path, "a") as file:
+                        file.write(f"After {i} games - {self.name}: {mr_q_wins/print_frequency:.1%}, "
+                            f"{opponent.name}: {opp_wins/print_frequency:.1%}, "
+                            f"Draws: {draws/print_frequency:.1%}, "
+                            f"epsilon: {self.epsilon}\n")
+                elif print_res:
+                    print(f"After {i} games - {self.name}: {mr_q_wins/print_frequency:.1%}, "
+                            f"{opponent.name}: {opp_wins/print_frequency:.1%}, "
+                            f"Draws: {draws/print_frequency:.1%}, "
+                            f"epsilon: {self.epsilon}")
+                    opp_wins=0
+                    mr_q_wins=0
+                    draws=0 
+                    
+        if model_name:
+            self.save(f'{model_name}.pkl')
