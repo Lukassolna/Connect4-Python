@@ -6,7 +6,7 @@ from minimax_agent import MinimaxAgent
 
 class QlearningAgent:
     def __init__(self, game_settings,color, model = None, helper = False):
-        self.helper = MinimaxAgent(game_settings, color, 2)
+        self.helper = MinimaxAgent(game_settings, color, 5)
         self.use_helper = helper
         self.total_states_in_q_table = 0
         self.name = "Mr.Q"
