@@ -93,8 +93,7 @@ class MinimaxAgent:
     def drop_piece(self, board, row, col, piece):
         board[row][col] = piece
 
-    # this winning move is used by the main minimax algorrithm with self.winning_move()
-    # I think this is duplicated in is_terminal_node but its not a big issue since this one uses self
+   
 
     # find_move
     #the main function

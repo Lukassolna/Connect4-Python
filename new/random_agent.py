@@ -18,5 +18,5 @@ class RandomAgent:
         return col
     
     def find_move(self, board, piece):
-        # Alternate method name for compatibility
+        # Same method name for compatibility
         return self.get_move(board)

@@ -36,26 +36,10 @@ if __name__ == "__main__":
     qlrn_w_helper = QlearningAgent(game_setting, PINK, helper=True)
     rnd = RandomAgent(game_setting, RED)
     user = PlayerAgent(GREEN)
+
+    # Runs a interactive game vs minimax depth 5
+    winner = start_game(user,mini5, True)
+
     
-
-    # mini vs random
-    #winner = start_game(mini3, rnd, True)
-
-    #mini 5 vs mini 3
-    #winner = start_game(mini3, mini5, True)
-        
-    #mini 3 vs mr q
-    #qlrn.load("trained_model_vs_mini3_1million_games_0eps.pkl")
-    #winner = start_game(qlrn, mini3, True)
-
-    #random vs mr.Q
-    #qlrn.load("trained_model_vs_random_1million_games.pkl")
-    #winner = start_game(qlrn, rnd, True)
-
-    #(Bonus feature)
-    #qlrn_w_helper.load("trained_model_for_helper.pkl")
-    #winner = start_game(user, qlrn_w_helper, True)
-    
-
     
    

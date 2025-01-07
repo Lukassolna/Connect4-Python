@@ -1,5 +1,5 @@
 import numpy as np
-
+# frozenlake example
 current_player_pos_x = 0
 current_player_pos_y = 0
 

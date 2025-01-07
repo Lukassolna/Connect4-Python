@@ -225,7 +225,7 @@ def start_game(agent1, agent2, use_gui=True):
                 draw_board(board, screen,  height,agent1.color,agent2.color)
                 pygame.time.wait(WAIT_TIME)  # Add delay to visualize moves
 
-            # not sure what this does, probably switch whose turn it is but seems like a weird way to do it
+            #  switch turn
             turn = (turn + 1) % 2
 
         # if the game is over, we want to wait a while in order for the user to have time to see who won
